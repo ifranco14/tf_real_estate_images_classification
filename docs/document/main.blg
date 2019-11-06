@@ -1,0 +1,64 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: portada.aux
+A level-1 auxiliary file: introduccion.aux
+A level-1 auxiliary file: marco_teorico.aux
+A level-1 auxiliary file: definiciones_trabajo.aux
+The style file: ieeetr.bst
+Database file #1: bibliografia.bib
+Warning--entry type for "restb_ai" isn't style-file defined
+--line 63 of file bibliografia.bib
+Warning--entry type for "hemnet" isn't style-file defined
+--line 70 of file bibliografia.bib
+Warning--entry type for "balanced_accuracy_score" isn't style-file defined
+--line 76 of file bibliografia.bib
+Warning--empty journal in comparation_techniques
+Warning--empty journal in vision_based_real_estate_price_estimation
+Warning--empty journal in lstm_real_estate
+Warning--empty journal in learning_deep_features
+Warning--empty journal in object_detectors_emerge_in_deep_scene_cnns
+Warning--empty journal in scene_recognition_cnn
+Warning--empty journal in scene_classification_using_gbrcn
+You've used 11 entries,
+            1876 wiz_defined-function locations,
+            516 strings with 4507 characters,
+and the built_in function-call counts, 1355 in all, are:
+= -- 102
+> -- 39
+< -- 0
++ -- 20
+- -- 9
+* -- 63
+:= -- 201
+add.period$ -- 8
+call.type$ -- 11
+change.case$ -- 11
+chr.to.int$ -- 0
+cite$ -- 18
+duplicate$ -- 79
+empty$ -- 192
+format.name$ -- 9
+if$ -- 327
+int.to.chr$ -- 0
+int.to.str$ -- 11
+missing$ -- 7
+newline$ -- 36
+num.names$ -- 8
+pop$ -- 67
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 35
+stack$ -- 0
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 7
+while$ -- 8
+width$ -- 13
+write$ -- 73
+(There were 10 warnings)

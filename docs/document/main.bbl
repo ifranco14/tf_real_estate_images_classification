@@ -1,0 +1,41 @@
+\begin{thebibliography}{10}
+
+\bibitem{comparation_techniques}
+H.~P. y~otros, ``Analysis of machine learning based scene classification
+  algorithms and quantitative evaluation,'' 2018.
+
+\bibitem{vision_based_real_estate_price_estimation}
+O.~P. y~otros, ``Vision-based real estate price estimation,'' 2017.
+
+\bibitem{lstm_real_estate}
+J.~H.~B. y~otros, ``Real estate image classification,'' 2017.
+
+\bibitem{learning_deep_features}
+B.~Z. y~otros, ``Learning deep features for scene recognition using places
+  database,'' 2014.
+
+\bibitem{object_detectors_emerge_in_deep_scene_cnns}
+B.~Z. y~otros, ``Object detectors emerge in deep scene cnns,'' 2015.
+
+\bibitem{scene_recognition_cnn}
+L.~H. y~otros, ``Scene recognition with cnns: objects, scales and dataset
+  bias,'' 2018.
+
+\bibitem{scene_classification_using_gbrcn}
+F.~Z. y~otros, ``Scene classification via a gradient boosting random
+  convolutional network framework,'' 2016.
+
+\bibitem{raahlen2019image}
+O.~R{\aa}hl{\'e}n and S.~Sj{\"o}qvist, ``Image classification of real estate
+  images with transfer learning,'' 2019.
+
+\bibitem{hemnet}
+``hemnet.se.''
+
+\bibitem{restb_ai}
+``restb.ai.''
+
+\bibitem{balanced_accuracy_score}
+``Balanced accuracy score.''
+
+\end{thebibliography}

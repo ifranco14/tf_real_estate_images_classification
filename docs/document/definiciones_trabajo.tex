@@ -1,0 +1,61 @@
+\section{Marco experimental}
+\subsection{Asunciones}
+Para este trabajo se tomarán como ciertos los siguientes puntos:
+\begin{itemize}
+	\item 1: Los datasets elegidos se encuetran etiquetados correctamente 
+	\item 2: Cada imagen de los datasets con los que se entrenarán los modelos resultan representativas a la escena a la que pertenecen.
+	\item 3: El hardware con el que se llevará a cabo el proyecto funcionará tal y como se establece en sus respectivo manual.
+	\item 4: Las red preentrenada a descargar (PlacesCNN) fue entrenada sólo con las imágenes del dataset Places.
+	\item 5: Para ambientes productivos la métrica \cite{balanced_accuracy_score} es la más representativa.
+\end{itemize}
+
+\subsection{Limitaciones} \label{ssec:limitaciones}
+El proyecto en curso contará con las siguientes limitaciones:
+\begin{itemize}
+	\item 1: El análisis se centrará en imágenes de las siguientes escenas de propiedades: cocina, comedor, baño, dormitorio, exterior, living, otros interior.
+	\item 2: Tanto los tiempos de entrenamiento y predicción como el tamaño de las redes, estarán restringidos al hardware con el que se cuenta.
+	\item 3: El trabajo intentará aceptar o refutar las hipótesis enumeradas a continuación, quedando excluídas del alcance del proyecto las posibles investigaciones que surjan a partir del mismo.
+\end{itemize}
+
+\subsection{Hipótesis}
+Teniendo en cuenta tanto las limitaciones como las asunciones definidas para el trabajo, se comprobarán las hipótesis declaradas a continuación. 
+
+\subsubsection{Hipótesis 1} \label{sssec:hipotesis1}
+Como se pudo observar en la revisión de antecedentes, existen múltiples formas de hacer frente al problema. El enfoque más simple podría ser mediante algún método tradicional como son las máquinas de soporte vectorial, pero por lo que se pudo observar, la mayoría de las soluciones utilizadas son redes neuronales convolucionales. Este punto de partida abre la primer hipótesis: ¿Puede una red convolucional obtener mejores resultados que una máquina de soporte vectorial en materia de clasificación de escenas?
+
+\subsubsection{Hipótesis 2} \label{sssec:hipotesis2}
+Las redes convolucionales tienen la capacidad de aprender características de las imágenes con las que se entrenan, aunque a veces resulta muy costoso hacerlo por las diferencias entre imágenes de la misma categoría o bien no se cuenta con la cantidad de imágenes que aporten la densidad y diversidad necesaria para alcanzar el tope máximo en la métrica elegida. ¿Puede significar una mejora introducir más imágenes de las escenas que se intentan clasificar al conjunto de entrenamiento de una red neuronal convolucional?
+
+\subsubsection{Hipótesis 3} \label{sssec:hipotesis3}
+Dado que la cantidad de escenas a clasificar es relativamente baja, sería posible plantear un enfoque en el que se entrene una red convolucional para cada una de las mismas. En este caso se trataría de clasificación binaria en la que la red sea capaz de detectar si se trata de una escena o no, aunque se debería tener en consideración el hecho de no estar cometiendo sobreentrenamiento. ¿Mejoran los resultados entrenando las una red convolucional que clasifique binariamente si se trata de una escena en particular o no en relación a los resultados obtenidos de contrastar la hipótesis \ref{sssec:hipotesis2}?
+
+\subsubsection{Hipótesis 4} \label{sssec:hipotesis4}
+Como se pudo ver en \cite{learning_deep_features}, Zhou y otros crearon una red entrenada con millones de imágenes de escenas (Places Dataset) que debería ser capaz de predecir las imágenes de las escenas con las que fue entrenada. En términos de cantidad de imágenes, esta red está mucho más entrenada que las utilizadas en este trabajo. ¿Utilizando el aprendizaje ya obtenido por esta red se obtienen mejores resultados que con una red convolucional entrenada con los tres datasets elegidos para los experimentos (utilizada para contrastar la hipótesis \ref{sssec:hipotesis2})?
+
+\subsubsection{Hipótesis 5} \label{sssec:hipotesis5}
+Una de las técnicas revisadas antes de comenzar con el trabajo es Aprendizaje por Transferencia (\ref{ssec:transfer_learning}), en el cual se parte de redes preentrenadas y se las reentrena con el conjunto de imágenes propio para ajustar los pesos al mismo. ¿Haciendo aprendizaje por transferencia a partir de la red PlacesCNN es posible mejorar los resultados obtenidos al contrastar la hipótesis \ref{sssec:hipotesis4}?
+
+\subsubsection{Hipótesis 6} \label{sssec:hipotesis6}
+En \cite{lstm_real_estate} se demostró que la aplicación de una técnica de ecualización del histograma a las imágenes del dataset (C.L.A.H.E.) mejora los resultados para las redes recurrentes que se utilizaron. Al aplicar este filtro a las imágenes de los tres datastes elegidos y luego haciendo aprendizaje por transferencia tomando como base PlacesCNN, ¿se obtienen mejores resultados que los expuestos al contrastar la hipótesis \ref{sssec:hipotesis5}?
+
+
+\subsection{Experimentos}
+Con el fin de validar las hipótesis descriptas, se realizarán los experimentos que sean suficientes para validar cada una. Los datasets a utilizar serán los generados en los trabajos \cite{vision_based_real_estate_price_estimation} y \cite{lstm_real_estate}, además del dataset público SCENE15, del cual se seleccionarán las escenas determinadas en las limitaciones del trabajo. En las figuras [AGREGAR FIGURAS] se puede observar la distribución de escenas que contienen de los mismos. La métrica con la cual se compararán los diferentes resultados será Exactitud Balanceada [AGREGAR FÓRMULA] con el fin de obtener los mejores resultados a partir de clasificar correctamente todas las categorías y no sólo algunas; esta métrica se puede explicar como el promedio de la métrica recall para cada clase, y se plantea para poder trabajar con datasets no balanceados (como los que se utilizarán a lo largo de los experimentos).
+
+\subsubsection{Experimento 1} \label{sssec:exp1}
+Se entranará tanto una red convolucional como una máquina de soporte vectorial con las imágenes del dataset generado en el trabajo \cite{vision_based_real_estate_price_estimation}. A continuación podremos comparar los resultados de ambos modelos de manera que será posible contrastarlos con la hipótesis \ref{sssec:hipotesis2}.
+
+\subsubsection{Experimento 2} \label{sssec:exp2}
+Se entrenará la misma red base que en \ref{sssec:exp1} agregando también los datasets \cite{lstm_real_estate} y SCENE15. A partir de los resultados obtenidos será posible contrastar la hipótesis \ref{sssec:hipotesis2}.
+
+\subsubsection{Experimento 3} \label{sssec:exp3}
+Se entrenará una red idéntica a las utilizadas en los experimentos \ref{sssec:exp1} y \ref{sssec:exp2} para cada escena descripta en \ref{ssec:limitaciones} como clasificador binario. Luego se compararán los resultados agregados con los obtenidos en los experimentos \ref{sssec:exp1} y \ref{sssec:exp2} para determinar si la hipótesis \ref{sssec:hipotesis3} se cumple.
+
+\subsubsection{Experimento 4} \label{sssec:exp4}
+Se descargará la red preentrenada con el dataset Places presentada en \cite{learning_deep_features} llamada PlacesCNN y se clasificarán las imágenes del dataset de testeo con el fin de verificar si se cumple con la hipótesis \ref{sssec:hipotesis4}.
+
+\subsubsection{Experimento 5} \label{sssec:exp5}
+Se realizará aprendizaje por transferencia tomando como red base PlacesCNN y entrenando con todos los datasets elegidos. A partir de esta red reentrenada, se podrá constatar la hipótesis \ref{sssec:hipotesis5}.
+
+\subsection{Experimento 6} \label{sssec:exp6}
+Se aplicará ecualización del histograma a las imágenes de los datasets elegidos, luego se procederá a los mismos pasos que en el experimento \ref{sssec:exp5}. De esta manera, será posible definir la veracidad de la hipótesis \ref{sssec:hipotesis6}.
