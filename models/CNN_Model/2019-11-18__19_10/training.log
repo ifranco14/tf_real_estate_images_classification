@@ -1,0 +1,2 @@
+epoch,categorical_accuracy,categorical_recall,loss,val_categorical_accuracy,val_categorical_recall,val_loss
+0,0.45,0.14999999,1.3956607431173325,1.0,0.1666666716337204,0.009726577438414097
