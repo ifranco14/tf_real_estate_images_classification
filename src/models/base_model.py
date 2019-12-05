@@ -246,7 +246,6 @@ class BaseModel:
                 batch_size=self.batch_size,
                 class_mode=self.image_generator_class_mode,
                 color_mode=self.image_generator_color_mode,
-                # save_to_dir='/home/ifranco/training_images/',
                 seed=self.SEED,)
 
             result.append(train_generator)
@@ -300,8 +299,7 @@ class BaseModel:
             instance.class_weights = weights
         return weights
 
-    def fit_from_generator(self, path, train_steps_per_epoch=1000,
-                           validation_steps_per_epoch=100, weighted=False,
+    def fit_from_generator(self, path, weighted=False,
                            train_generator=None, validation_generator=None,
                            evaluate_net=False, use_early_stop=True,
                            use_model_check_point=True, log_training=True,
@@ -351,12 +349,15 @@ class BaseModel:
                 mode='max', period=1)
             callbacks.append(check_point)
 
-        # TODO >> create callback to show activations after each epoch
-
         init = tf.group(tf.global_variables_initializer(),
                         tf.local_variables_initializer())
         sess = keras.backend.get_session()
         sess.run(init)
+
+        train_steps_per_epoch = np.ceil(
+            train_generator.classes / self.batch_size)
+        validation_steps_per_epoch = np.ceil(
+            validation_generator.classes / self.batch_size)
 
         start_training = dt.now()
         self.model_hist = self.model.fit_generator(
@@ -367,7 +368,9 @@ class BaseModel:
             validation_steps=validation_steps_per_epoch,
             class_weight=class_weights,
             callbacks=callbacks if callbacks else None,
-            workers=n_workers).history
+            workers=n_workers,
+            max_queue_size=64,
+            use_multiprocessing=True if n_workers > 1 else False,).history
         self.training_time = (dt.now() - start_training).total_seconds()
         self.model_is_trained = True
 
@@ -392,7 +395,7 @@ class BaseModel:
         # keras.backend.get_session().run(tf.global_variables_initializer())
         print(f'Evaluating generator with {nb_samples} images')
         score = self.model.evaluate_generator(
-            test_generator, steps=nb_samples,
+            test_generator, steps=np.ceil(nb_samples / self.batch_size),
             workers=3,)
 
         print('Scores:', score)

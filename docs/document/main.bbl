@@ -1,41 +1,60 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{}
 
-\bibitem{comparation_techniques}
-H.~P. y~otros, ``Analysis of machine learning based scene classification
-  algorithms and quantitative evaluation,'' 2018.
+\bibitem[bal, ]{balanced_accuracy_score}
+Balanced accuracy score.
 
-\bibitem{vision_based_real_estate_price_estimation}
-O.~P. y~otros, ``Vision-based real estate price estimation,'' 2017.
+\bibitem[hem, ]{hemnet}
+hemnet.se.
 
-\bibitem{lstm_real_estate}
-J.~H.~B. y~otros, ``Real estate image classification,'' 2017.
+\bibitem[res, ]{restb_ai}
+restb.ai.
 
-\bibitem{learning_deep_features}
-B.~Z. y~otros, ``Learning deep features for scene recognition using places
-  database,'' 2014.
+\bibitem[LeCun et~al., ]{lecun1995convolutional}
+LeCun, Y., Bengio, Y., et~al.
+\newblock Convolutional networks for images, speech, and time series.
 
-\bibitem{object_detectors_emerge_in_deep_scene_cnns}
-B.~Z. y~otros, ``Object detectors emerge in deep scene cnns,'' 2015.
+\bibitem[Ronchi and Perona, 2015]{BMVC2015_52}
+Ronchi, M.~R. and Perona, P. (2015).
+\newblock Describing common human visual actions in images.
+\newblock In Xianghua~Xie, M. W.~J. and Tam, G. K.~L., editors, {\em
+  Proceedings of the British Machine Vision Conference (BMVC)}, pages
+  52.1--52.12. BMVA Press.
 
-\bibitem{scene_recognition_cnn}
-L.~H. y~otros, ``Scene recognition with cnns: objects, scales and dataset
-  bias,'' 2018.
+\bibitem[Russakovsky et~al., 2015]{ImageNet}
+Russakovsky, O., Deng, J., Su, H., Krause, J., Satheesh, S., Ma, S., Huang, Z.,
+  Karpathy, A., Khosla, A., Bernstein, M., Berg, A.~C., and Fei-Fei, L. (2015).
+\newblock {ImageNet Large Scale Visual Recognition Challenge}.
+\newblock {\em International Journal of Computer Vision (IJCV)},
+  115(3):211--252.
 
-\bibitem{scene_classification_using_gbrcn}
-F.~Z. y~otros, ``Scene classification via a gradient boosting random
-  convolutional network framework,'' 2016.
+\bibitem[y~otros, 2014]{learning_deep_features}
+y~otros, B.~Z. (2014).
+\newblock Learning deep features for scene recognition using places database.
 
-\bibitem{raahlen2019image}
-O.~R{\aa}hl{\'e}n and S.~Sj{\"o}qvist, ``Image classification of real estate
-  images with transfer learning,'' 2019.
+\bibitem[y~otros, 2015]{object_detectors_emerge_in_deep_scene_cnns}
+y~otros, B.~Z. (2015).
+\newblock Object detectors emerge in deep scene cnns.
 
-\bibitem{hemnet}
-``hemnet.se.''
+\bibitem[y~otros, 2016]{scene_classification_using_gbrcn}
+y~otros, F.~Z. (2016).
+\newblock Scene classification via a gradient boosting random convolutional
+  network framework.
 
-\bibitem{restb_ai}
-``restb.ai.''
+\bibitem[y~otros, 2018a]{comparation_techniques}
+y~otros, H.~P. (2018a).
+\newblock Analysis of machine learning based scene classification algorithms
+  and quantitative evaluation.
 
-\bibitem{balanced_accuracy_score}
-``Balanced accuracy score.''
+\bibitem[y~otros, 2017a]{lstm_real_estate}
+y~otros, J. H.~B. (2017a).
+\newblock Real estate image classification.
+
+\bibitem[y~otros, 2018b]{scene_recognition_cnn}
+y~otros, L.~H. (2018b).
+\newblock Scene recognition with cnns: objects, scales and dataset bias.
+
+\bibitem[y~otros, 2017b]{vision_based_real_estate_price_estimation}
+y~otros, O.~P. (2017b).
+\newblock Vision-based real estate price estimation.
 
 \end{thebibliography}

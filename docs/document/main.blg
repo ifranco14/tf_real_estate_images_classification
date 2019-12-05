@@ -4,61 +4,73 @@ The top-level auxiliary file: main.aux
 A level-1 auxiliary file: portada.aux
 A level-1 auxiliary file: introduccion.aux
 A level-1 auxiliary file: marco_teorico.aux
+A level-1 auxiliary file: revision_de_antecedentes.aux
 A level-1 auxiliary file: definiciones_trabajo.aux
-The style file: ieeetr.bst
+The style file: apalike.bst
 Database file #1: bibliografia.bib
 Warning--entry type for "restb_ai" isn't style-file defined
---line 63 of file bibliografia.bib
+--line 57 of file bibliografia.bib
 Warning--entry type for "hemnet" isn't style-file defined
---line 70 of file bibliografia.bib
+--line 64 of file bibliografia.bib
 Warning--entry type for "balanced_accuracy_score" isn't style-file defined
---line 76 of file bibliografia.bib
-Warning--empty journal in comparation_techniques
-Warning--empty journal in vision_based_real_estate_price_estimation
-Warning--empty journal in lstm_real_estate
+--line 71 of file bibliografia.bib
+Warning--I didn't find a database entry for "raahlen2019image"
+Warning--to sort, need author or key in hemnet
+Warning--to sort, need author or key in restb_ai
+Warning--to sort, need author or key in balanced_accuracy_score
+Warning--empty year in balanced_accuracy_score
+Warning--empty year in hemnet
+Warning--empty year in restb_ai
+Warning--empty year in lecun1995convolutional
+Warning--empty journal in lecun1995convolutional
+Name 1 in "Xianghua Xie, Mark W. Jones, and Gary K. L. Tam" has a comma at the end for entry BMVC2015_52
+while executing---line 1098 of file apalike.bst
 Warning--empty journal in learning_deep_features
 Warning--empty journal in object_detectors_emerge_in_deep_scene_cnns
-Warning--empty journal in scene_recognition_cnn
 Warning--empty journal in scene_classification_using_gbrcn
-You've used 11 entries,
-            1876 wiz_defined-function locations,
-            516 strings with 4507 characters,
-and the built_in function-call counts, 1355 in all, are:
-= -- 102
-> -- 39
-< -- 0
-+ -- 20
-- -- 9
-* -- 63
-:= -- 201
-add.period$ -- 8
-call.type$ -- 11
-change.case$ -- 11
-chr.to.int$ -- 0
-cite$ -- 18
-duplicate$ -- 79
-empty$ -- 192
-format.name$ -- 9
-if$ -- 327
-int.to.chr$ -- 0
-int.to.str$ -- 11
-missing$ -- 7
-newline$ -- 36
-num.names$ -- 8
-pop$ -- 67
+Warning--empty journal in comparation_techniques
+Warning--empty journal in lstm_real_estate
+Warning--empty journal in scene_recognition_cnn
+Warning--empty journal in vision_based_real_estate_price_estimation
+You've used 13 entries,
+            1935 wiz_defined-function locations,
+            526 strings with 5307 characters,
+and the built_in function-call counts, 4063 in all, are:
+= -- 378
+> -- 151
+< -- 9
++ -- 52
+- -- 50
+* -- 309
+:= -- 719
+add.period$ -- 26
+call.type$ -- 13
+change.case$ -- 88
+chr.to.int$ -- 11
+cite$ -- 31
+duplicate$ -- 177
+empty$ -- 292
+format.name$ -- 62
+if$ -- 784
+int.to.chr$ -- 3
+int.to.str$ -- 0
+missing$ -- 10
+newline$ -- 54
+num.names$ -- 32
+pop$ -- 105
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 88
 quote$ -- 0
-skip$ -- 35
+skip$ -- 139
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 219
+swap$ -- 13
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 7
-while$ -- 8
-width$ -- 13
-write$ -- 73
-(There were 10 warnings)
+type$ -- 78
+warning$ -- 15
+while$ -- 24
+width$ -- 0
+write$ -- 129
+(There was 1 error message)
