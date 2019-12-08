@@ -8,69 +8,52 @@ A level-1 auxiliary file: revision_de_antecedentes.aux
 A level-1 auxiliary file: definiciones_trabajo.aux
 The style file: apalike.bst
 Database file #1: bibliografia.bib
-Warning--entry type for "restb_ai" isn't style-file defined
---line 57 of file bibliografia.bib
-Warning--entry type for "hemnet" isn't style-file defined
---line 64 of file bibliografia.bib
-Warning--entry type for "balanced_accuracy_score" isn't style-file defined
---line 71 of file bibliografia.bib
 Warning--I didn't find a database entry for "raahlen2019image"
-Warning--to sort, need author or key in hemnet
-Warning--to sort, need author or key in restb_ai
-Warning--to sort, need author or key in balanced_accuracy_score
-Warning--empty year in balanced_accuracy_score
-Warning--empty year in hemnet
 Warning--empty year in restb_ai
-Warning--empty year in lecun1995convolutional
+Warning--empty year in hemnet
 Warning--empty journal in lecun1995convolutional
 Name 1 in "Xianghua Xie, Mark W. Jones, and Gary K. L. Tam" has a comma at the end for entry BMVC2015_52
 while executing---line 1098 of file apalike.bst
-Warning--empty journal in learning_deep_features
-Warning--empty journal in object_detectors_emerge_in_deep_scene_cnns
-Warning--empty journal in scene_classification_using_gbrcn
-Warning--empty journal in comparation_techniques
-Warning--empty journal in lstm_real_estate
-Warning--empty journal in scene_recognition_cnn
-Warning--empty journal in vision_based_real_estate_price_estimation
+Warning--empty year in balanced_accuracy_score
 You've used 15 entries,
             1935 wiz_defined-function locations,
-            536 strings with 5588 characters,
-and the built_in function-call counts, 4689 in all, are:
-= -- 439
-> -- 177
+            562 strings with 6614 characters,
+and the built_in function-call counts, 6502 in all, are:
+= -- 633
+> -- 295
 < -- 11
-+ -- 60
-- -- 58
-* -- 356
-:= -- 836
-add.period$ -- 32
++ -- 101
+- -- 100
+* -- 526
+:= -- 1106
+add.period$ -- 46
 call.type$ -- 15
-change.case$ -- 102
-chr.to.int$ -- 13
-cite$ -- 33
-duplicate$ -- 203
-empty$ -- 332
-format.name$ -- 76
-if$ -- 903
-int.to.chr$ -- 3
+change.case$ -- 120
+chr.to.int$ -- 14
+cite$ -- 19
+duplicate$ -- 257
+empty$ -- 438
+format.name$ -- 123
+if$ -- 1294
+int.to.chr$ -- 2
 int.to.str$ -- 0
 missing$ -- 12
-newline$ -- 64
-num.names$ -- 38
-pop$ -- 115
+newline$ -- 77
+num.names$ -- 47
+pop$ -- 128
 preamble$ -- 1
-purify$ -- 102
+purify$ -- 123
 quote$ -- 0
-skip$ -- 162
+skip$ -- 201
 stack$ -- 0
-substring$ -- 243
-swap$ -- 15
-text.length$ -- 1
+substring$ -- 423
+swap$ -- 55
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 90
-warning$ -- 15
-while$ -- 28
+warning$ -- 4
+while$ -- 49
 width$ -- 0
-write$ -- 154
+write$ -- 188
 (There was 1 error message)

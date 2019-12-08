@@ -1,13 +1,26 @@
 \begin{thebibliography}{}
 
-\bibitem[bal, ]{balanced_accuracy_score}
-Balanced accuracy score.
+\bibitem[Bappy et~al., 2017]{lstm_real_estate}
+Bappy, J.~H., Barr, J.~R., Srinivasan, N., and Roy-Chowdhury, A.~K. (2017).
+\newblock Real estate image classification.
+\newblock In {\em 2017 IEEE Winter Conference on Applications of Computer
+  Vision (WACV)}, pages 373--381. IEEE.
 
-\bibitem[hem, ]{hemnet}
-hemnet.se.
+\bibitem[Esteban, ]{restb_ai}
+Esteban, A.
+\newblock {\em Restb AI}.
+\newblock \url{https://restb.ai/}, último acceso: 2019-12-08.
 
-\bibitem[res, ]{restb_ai}
-restb.ai.
+\bibitem[Hemnet, ]{hemnet}
+Hemnet.
+\newblock {\em Hemnet}.
+\newblock \url{https://www.hemnet.se/}, último acceso: 2019-12-08.
+
+\bibitem[Herranz et~al., 2016]{scene_recognition_cnn}
+Herranz, L., Jiang, S., and Li, X. (2016).
+\newblock Scene recognition with cnns: objects, scales and dataset bias.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}, pages 571--579.
 
 \bibitem[Ioffe and Szegedy, 2015]{BatchNorm}
 Ioffe, S. and Szegedy, C. (2015).
@@ -20,9 +33,21 @@ Kingma, D.~P. and Ba, J. (2014).
 \newblock Adam: A method for stochastic optimization.
 \newblock {\em arXiv preprint arXiv:1412.6980}.
 
-\bibitem[LeCun et~al., ]{lecun1995convolutional}
-LeCun, Y., Bengio, Y., et~al.
+\bibitem[LeCun et~al., 1995]{lecun1995convolutional}
+LeCun, Y., Bengio, Y., et~al. (1995).
 \newblock Convolutional networks for images, speech, and time series.
+
+\bibitem[Patel and Mewada, 2018]{comparation_techniques}
+Patel, H. and Mewada, H. (2018).
+\newblock Analysis of machine learning based scene classification algorithms
+  and quantitative evaluation.
+\newblock {\em International Journal of Applied Engineering Research},
+  13(10):7811--7819.
+
+\bibitem[Poursaeed et~al., 2018]{vision_based_real_estate_price_estimation}
+Poursaeed, O., Matera, T., and Belongie, S. (2018).
+\newblock Vision-based real estate price estimation.
+\newblock {\em Machine Vision and Applications}, 29(4):667--676.
 
 \bibitem[Ronchi and Perona, 2015]{BMVC2015_52}
 Ronchi, M.~R. and Perona, P. (2015).
@@ -38,34 +63,29 @@ Russakovsky, O., Deng, J., Su, H., Krause, J., Satheesh, S., Ma, S., Huang, Z.,
 \newblock {\em International Journal of Computer Vision (IJCV)},
   115(3):211--252.
 
-\bibitem[y~otros, 2014]{learning_deep_features}
-y~otros, B.~Z. (2014).
-\newblock Learning deep features for scene recognition using places database.
+\bibitem[Scikit-learn, ]{balanced_accuracy_score}
+Scikit-learn.
+\newblock {\em Balanced Accuracy Score}.
+\newblock
+  \url{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.balanced\_accuracy\_score.html},
+  último acceso: 2019-12-08.
 
-\bibitem[y~otros, 2015]{object_detectors_emerge_in_deep_scene_cnns}
-y~otros, B.~Z. (2015).
-\newblock Object detectors emerge in deep scene cnns.
-
-\bibitem[y~otros, 2016]{scene_classification_using_gbrcn}
-y~otros, F.~Z. (2016).
+\bibitem[Zhang et~al., 2015]{scene_classification_using_gbrcn}
+Zhang, F., Du, B., and Zhang, L. (2015).
 \newblock Scene classification via a gradient boosting random convolutional
   network framework.
+\newblock {\em IEEE Transactions on Geoscience and Remote Sensing},
+  54(3):1793--1802.
 
-\bibitem[y~otros, 2018a]{comparation_techniques}
-y~otros, H.~P. (2018a).
-\newblock Analysis of machine learning based scene classification algorithms
-  and quantitative evaluation.
+\bibitem[Zhou et~al., 2014a]{object_detectors_emerge_in_deep_scene_cnns}
+Zhou, B., Khosla, A., Lapedriza, A., Oliva, A., and Torralba, A. (2014a).
+\newblock Object detectors emerge in deep scene cnns.
+\newblock {\em arXiv preprint arXiv:1412.6856}.
 
-\bibitem[y~otros, 2017a]{lstm_real_estate}
-y~otros, J. H.~B. (2017a).
-\newblock Real estate image classification.
-
-\bibitem[y~otros, 2018b]{scene_recognition_cnn}
-y~otros, L.~H. (2018b).
-\newblock Scene recognition with cnns: objects, scales and dataset bias.
-
-\bibitem[y~otros, 2017b]{vision_based_real_estate_price_estimation}
-y~otros, O.~P. (2017b).
-\newblock Vision-based real estate price estimation.
+\bibitem[Zhou et~al., 2014b]{learning_deep_features}
+Zhou, B., Lapedriza, A., Xiao, J., Torralba, A., and Oliva, A. (2014b).
+\newblock Learning deep features for scene recognition using places database.
+\newblock In {\em Advances in neural information processing systems}, pages
+  487--495.
 
 \end{thebibliography}
