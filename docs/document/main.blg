@@ -32,45 +32,45 @@ Warning--empty journal in comparation_techniques
 Warning--empty journal in lstm_real_estate
 Warning--empty journal in scene_recognition_cnn
 Warning--empty journal in vision_based_real_estate_price_estimation
-You've used 13 entries,
+You've used 15 entries,
             1935 wiz_defined-function locations,
-            526 strings with 5307 characters,
-and the built_in function-call counts, 4063 in all, are:
-= -- 378
-> -- 151
-< -- 9
-+ -- 52
-- -- 50
-* -- 309
-:= -- 719
-add.period$ -- 26
-call.type$ -- 13
-change.case$ -- 88
-chr.to.int$ -- 11
-cite$ -- 31
-duplicate$ -- 177
-empty$ -- 292
-format.name$ -- 62
-if$ -- 784
+            536 strings with 5588 characters,
+and the built_in function-call counts, 4689 in all, are:
+= -- 439
+> -- 177
+< -- 11
++ -- 60
+- -- 58
+* -- 356
+:= -- 836
+add.period$ -- 32
+call.type$ -- 15
+change.case$ -- 102
+chr.to.int$ -- 13
+cite$ -- 33
+duplicate$ -- 203
+empty$ -- 332
+format.name$ -- 76
+if$ -- 903
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 10
-newline$ -- 54
-num.names$ -- 32
-pop$ -- 105
+missing$ -- 12
+newline$ -- 64
+num.names$ -- 38
+pop$ -- 115
 preamble$ -- 1
-purify$ -- 88
+purify$ -- 102
 quote$ -- 0
-skip$ -- 139
+skip$ -- 162
 stack$ -- 0
-substring$ -- 219
-swap$ -- 13
+substring$ -- 243
+swap$ -- 15
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 78
+type$ -- 90
 warning$ -- 15
-while$ -- 24
+while$ -- 28
 width$ -- 0
-write$ -- 129
+write$ -- 154
 (There was 1 error message)

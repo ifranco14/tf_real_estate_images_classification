@@ -9,6 +9,17 @@ hemnet.se.
 \bibitem[res, ]{restb_ai}
 restb.ai.
 
+\bibitem[Ioffe and Szegedy, 2015]{BatchNorm}
+Ioffe, S. and Szegedy, C. (2015).
+\newblock Batch normalization: Accelerating deep network training by reducing
+  internal covariate shift.
+\newblock {\em ArXiv}, abs/1502.03167.
+
+\bibitem[Kingma and Ba, 2014]{kingma2014adam}
+Kingma, D.~P. and Ba, J. (2014).
+\newblock Adam: A method for stochastic optimization.
+\newblock {\em arXiv preprint arXiv:1412.6980}.
+
 \bibitem[LeCun et~al., ]{lecun1995convolutional}
 LeCun, Y., Bengio, Y., et~al.
 \newblock Convolutional networks for images, speech, and time series.
