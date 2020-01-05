@@ -1,91 +1,83 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{10}
 
-\bibitem[Bappy et~al., 2017]{lstm_real_estate}
-Bappy, J.~H., Barr, J.~R., Srinivasan, N., and Roy-Chowdhury, A.~K. (2017).
-\newblock Real estate image classification.
-\newblock In {\em 2017 IEEE Winter Conference on Applications of Computer
-  Vision (WACV)}, pages 373--381. IEEE.
+\bibitem{comparation_techniques}
+H.~Patel and H.~Mewada, ``Analysis of machine learning based scene
+  classification algorithms and quantitative evaluation,'' {\em International
+  Journal of Applied Engineering Research}, vol.~13, no.~10, pp.~7811--7819,
+  2018.
 
-\bibitem[Esteban, ]{restb_ai}
-Esteban, A.
-\newblock {\em Restb AI}.
-\newblock \url{https://restb.ai/}, último acceso: 2019-12-08.
+\bibitem{vision_based_real_estate_price_estimation}
+O.~Poursaeed, T.~Matera, and S.~Belongie, ``Vision-based real estate price
+  estimation,'' {\em Machine Vision and Applications}, vol.~29, no.~4,
+  pp.~667--676, 2018.
 
-\bibitem[Hemnet, ]{hemnet}
-Hemnet.
-\newblock {\em Hemnet}.
+\bibitem{kingma2014adam}
+D.~P. Kingma and J.~Ba, ``Adam: A method for stochastic optimization,'' {\em
+  arXiv preprint arXiv:1412.6980}, 2014.
+
+\bibitem{BatchNorm}
+S.~Ioffe and C.~Szegedy, ``Batch normalization: Accelerating deep network
+  training by reducing internal covariate shift,'' {\em ArXiv},
+  vol.~abs/1502.03167, 2015.
+
+\bibitem{lecun1995convolutional}
+Y.~LeCun, Y.~Bengio, {\em et~al.}, ``Convolutional networks for images, speech,
+  and time series,'' 1995.
+
+\bibitem{ImageNet}
+O.~Russakovsky, J.~Deng, H.~Su, J.~Krause, S.~Satheesh, S.~Ma, Z.~Huang,
+  A.~Karpathy, A.~Khosla, M.~Bernstein, A.~C. Berg, and L.~Fei-Fei, ``{ImageNet
+  Large Scale Visual Recognition Challenge},'' {\em International Journal of
+  Computer Vision (IJCV)}, vol.~115, no.~3, pp.~211--252, 2015.
+
+\bibitem{BMVC2015_52}
+M.~R. Ronchi and P.~Perona, ``Describing common human visual actions in
+  images,'' in {\em Proceedings of the British Machine Vision Conference
+  (BMVC)} (M.~W.~J. Xianghua~Xie and G.~K.~L. Tam, eds.), pp.~52.1--52.12, BMVA
+  Press, September 2015.
+
+\bibitem{learning_deep_features}
+B.~Zhou, A.~Lapedriza, J.~Xiao, A.~Torralba, and A.~Oliva, ``Learning deep
+  features for scene recognition using places database,'' in {\em Advances in
+  neural information processing systems}, pp.~487--495, 2014.
+
+\bibitem{lstm_real_estate}
+J.~H. Bappy, J.~R. Barr, N.~Srinivasan, and A.~K. Roy-Chowdhury, ``Real estate
+  image classification,'' in {\em 2017 IEEE Winter Conference on Applications
+  of Computer Vision (WACV)}, pp.~373--381, IEEE, 2017.
+
+\bibitem{object_detectors_emerge_in_deep_scene_cnns}
+B.~Zhou, A.~Khosla, A.~Lapedriza, A.~Oliva, and A.~Torralba, ``Object detectors
+  emerge in deep scene cnns,'' {\em arXiv preprint arXiv:1412.6856}, 2014.
+
+\bibitem{scene_recognition_cnn}
+L.~Herranz, S.~Jiang, and X.~Li, ``Scene recognition with cnns: objects, scales
+  and dataset bias,'' in {\em Proceedings of the IEEE Conference on Computer
+  Vision and Pattern Recognition}, pp.~571--579, 2016.
+
+\bibitem{scene_classification_using_gbrcn}
+F.~Zhang, B.~Du, and L.~Zhang, ``Scene classification via a gradient boosting
+  random convolutional network framework,'' {\em IEEE Transactions on
+  Geoscience and Remote Sensing}, vol.~54, no.~3, pp.~1793--1802, 2015.
+
+\bibitem{hemnet}
+Hemnet, {\em Hemnet}.
 \newblock \url{https://www.hemnet.se/}, último acceso: 2019-12-08.
 
-\bibitem[Herranz et~al., 2016]{scene_recognition_cnn}
-Herranz, L., Jiang, S., and Li, X. (2016).
-\newblock Scene recognition with cnns: objects, scales and dataset bias.
-\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
-  Pattern Recognition}, pages 571--579.
+\bibitem{restb_ai}
+A.~Esteban, {\em Restb AI}.
+\newblock \url{https://restb.ai/}, último acceso: 2019-12-08.
 
-\bibitem[Ioffe and Szegedy, 2015]{BatchNorm}
-Ioffe, S. and Szegedy, C. (2015).
-\newblock Batch normalization: Accelerating deep network training by reducing
-  internal covariate shift.
-\newblock {\em ArXiv}, abs/1502.03167.
-
-\bibitem[Kingma and Ba, 2014]{kingma2014adam}
-Kingma, D.~P. and Ba, J. (2014).
-\newblock Adam: A method for stochastic optimization.
-\newblock {\em arXiv preprint arXiv:1412.6980}.
-
-\bibitem[LeCun et~al., 1995]{lecun1995convolutional}
-LeCun, Y., Bengio, Y., et~al. (1995).
-\newblock Convolutional networks for images, speech, and time series.
-
-\bibitem[Patel and Mewada, 2018]{comparation_techniques}
-Patel, H. and Mewada, H. (2018).
-\newblock Analysis of machine learning based scene classification algorithms
-  and quantitative evaluation.
-\newblock {\em International Journal of Applied Engineering Research},
-  13(10):7811--7819.
-
-\bibitem[Poursaeed et~al., 2018]{vision_based_real_estate_price_estimation}
-Poursaeed, O., Matera, T., and Belongie, S. (2018).
-\newblock Vision-based real estate price estimation.
-\newblock {\em Machine Vision and Applications}, 29(4):667--676.
-
-\bibitem[Ronchi and Perona, 2015]{BMVC2015_52}
-Ronchi, M.~R. and Perona, P. (2015).
-\newblock Describing common human visual actions in images.
-\newblock In Xianghua~Xie, M. W.~J. and Tam, G. K.~L., editors, {\em
-  Proceedings of the British Machine Vision Conference (BMVC)}, pages
-  52.1--52.12. BMVA Press.
-
-\bibitem[Russakovsky et~al., 2015]{ImageNet}
-Russakovsky, O., Deng, J., Su, H., Krause, J., Satheesh, S., Ma, S., Huang, Z.,
-  Karpathy, A., Khosla, A., Bernstein, M., Berg, A.~C., and Fei-Fei, L. (2015).
-\newblock {ImageNet Large Scale Visual Recognition Challenge}.
-\newblock {\em International Journal of Computer Vision (IJCV)},
-  115(3):211--252.
-
-\bibitem[Scikit-learn, ]{balanced_accuracy_score}
-Scikit-learn.
-\newblock {\em Balanced Accuracy Score}.
+\bibitem{balanced_accuracy_score}
+Scikit-learn, {\em Balanced Accuracy Score}.
 \newblock
   \url{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.balanced\_accuracy\_score.html},
   último acceso: 2019-12-08.
 
-\bibitem[Zhang et~al., 2015]{scene_classification_using_gbrcn}
-Zhang, F., Du, B., and Zhang, L. (2015).
-\newblock Scene classification via a gradient boosting random convolutional
-  network framework.
-\newblock {\em IEEE Transactions on Geoscience and Remote Sensing},
-  54(3):1793--1802.
-
-\bibitem[Zhou et~al., 2014a]{object_detectors_emerge_in_deep_scene_cnns}
-Zhou, B., Khosla, A., Lapedriza, A., Oliva, A., and Torralba, A. (2014a).
-\newblock Object detectors emerge in deep scene cnns.
-\newblock {\em arXiv preprint arXiv:1412.6856}.
-
-\bibitem[Zhou et~al., 2014b]{learning_deep_features}
-Zhou, B., Lapedriza, A., Xiao, J., Torralba, A., and Oliva, A. (2014b).
-\newblock Learning deep features for scene recognition using places database.
-\newblock In {\em Advances in neural information processing systems}, pages
-  487--495.
+\bibitem{glorot2010understanding}
+X.~Glorot and Y.~Bengio, ``Understanding the difficulty of training deep
+  feedforward neural networks,'' in {\em Proceedings of the thirteenth
+  international conference on artificial intelligence and statistics},
+  pp.~249--256, 2010.
 
 \end{thebibliography}

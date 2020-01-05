@@ -87,6 +87,12 @@ Y=\sigma\left(W^{T} X+b\right)
 %- optimizers
   La función de pérdida se define de diferentes maneras según el problema que se esté tratando, ya sea error cuadrático medio, error absoluto medio, proximidad del coseno, etc. La propuesta general para problemas de clasificación es usar \(entrop{\acute i}a-cruzada\) (o \(cross-entropy\) en inglés), una función derivable que mide qué tan lejos del resultado esperado están las salidas de la red, como se observa en la ecuación \ref{formula:loss_function}. Como se mencionó anteriormente, el objetivo de la red es minimizar la función de pérdida y para esto se requiere de una función de optimización. \(Adam\), introducido en \cite{kingma2014adam} es un optimizador en que se puede tener ciertas certezas de su correcto funcionamiento ya que su implementación tiene en cuenta las principales mejoras de otros como son el Descenso por el Gradiente con Momentum y la Propagacion de la Raíz Cuadrada de la Media de los Cuadrados.
   
+  En este trabajo se utilizará también una función de pérdida personalizada, que llamaremos de ahora en más Entropía Cruzada Categórica pesada por clase. Esta función es una variante que multiplica el resultado del valor de la función en su estado puro por la inversa de la distribución de probabilidad de las clases en el conjunto de datos. Esto hace que se le de mayor importancia a aquellas clases que en el conjunto de entrenamiento tienen menor cantidad de imágenes y manor importancia a las que tienen mayor cantidad.
+  
+  \begin{equation}\label{formula:custom_loss_function}
+  \mathcal{L}(y, \hat{y})=-\sum_{i=1}^{n} y_{i} \log \hat{y}_{i}
+  \end{equation}
+  
 %	- regularizers:
  %		- dropout
  %		- batch norm
@@ -127,7 +133,8 @@ Y=\sigma\left(W^{T} X+b\right)
  	\end{figure}
  	
  	\item Tangente hiperbólica (\(TanH\)): Su formulación se explicita en \ref{activations_tanh}. Como se puede observar en la figura \ref{fig:activationstanh}, mantiene la forma S de la función Sigmoide pero en este caso los resultados posibles van desde [-1, 1]. 
- 	\begin{equation}\label{activations_tanh}
+ 	\begin{equation}
+\label{activations_tanh}
  	\tanh (x)=\frac{2}{1+e^{-2 x}}-1
  	\end{equation}
  	\begin{figure}[!h]
@@ -148,7 +155,8 @@ Y=\sigma\left(W^{T} X+b\right)
  	ReLu(x)=\max (0, x)
  	\end{equation}
 	\item\label{item:softmax} Exponencial normalizada (\(Softmax\)): es una variante de la función Sigmoide pero definida para problemas de clasificación multiclase; como se observa en la fórmula \ref{activations_softmax}, normaliza las entradas en una salida que es en un vector de \(K\) valores de probabilidad (uno por cada clase definida) entre [0, 1] que sumados dan uno.
-	\begin{equation}\label{activations_softmax}
+	\begin{equation}
+\label{activations_softmax}
 	\sigma(\mathbf{z})_{j}=\frac{e^{z_{j}}}{\sum_{k=1}^{K} e^{z_{k}}} \quad \text { por cada } j=1, \ldots, K
 	\end{equation}
 	Siendo \(K\) la cantidad de clases.

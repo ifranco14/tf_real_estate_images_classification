@@ -195,7 +195,6 @@ class BaseModel:
             if show_heatmaps:
                 display_heatmaps(activations, arr_image,)
 
-
     def show_metrics(self, ):
         assert self.model_is_trained
         history = self.model_hist
@@ -222,7 +221,8 @@ class BaseModel:
         plt.show()
 
     def get_image_data_generator(self, path, train=True, validation=True,
-                                 test=False, class_mode_test=None):
+                                 test=False, class_mode_validation=None,
+                                 class_mode_test=None):
 
         result = []
 
@@ -260,8 +260,9 @@ class BaseModel:
                 f'{path}/validation/',
                 target_size=(self.img_size, self.img_size),
                 shuffle=False,
-                batch_size=self.batch_size,
-                class_mode=self.image_generator_class_mode,
+                batch_size=(1 if class_mode_validation is None
+                            else self.batch_size),
+                class_mode=class_mode_validation,
                 color_mode=self.image_generator_color_mode,
                 seed=self.SEED)
 
@@ -293,10 +294,11 @@ class BaseModel:
     @staticmethod
     def get_class_weights(samples, instance=None):
         weights =class_weight.compute_class_weight(
-                'balanced', np.unique(samples), samples)
+            'balanced', np.unique(samples), samples)
 
         if instance is not None:
             instance.class_weights = weights
+
         return weights
 
     def fit_from_generator(self, path, weighted=False,
@@ -355,22 +357,27 @@ class BaseModel:
         sess.run(init)
 
         train_steps_per_epoch = np.ceil(
-            train_generator.classes / self.batch_size)
+            len(train_generator.classes) / self.batch_size)
         validation_steps_per_epoch = np.ceil(
-            validation_generator.classes / self.batch_size)
+            len(validation_generator.classes) / self.batch_size)
 
         start_training = dt.now()
         self.model_hist = self.model.fit_generator(
             train_generator,
             steps_per_epoch=train_steps_per_epoch,
             epochs=self.epochs,
+            verbose=1,
+            initial_epoch=0,
             validation_data=validation_generator,
             validation_steps=validation_steps_per_epoch,
+            validation_freq=1,
+            max_queue_size=10,
+            workers=n_workers,
+            use_multiprocessing=True if n_workers > 1 else False,
+            shuffle=True,
             class_weight=class_weights,
             callbacks=callbacks if callbacks else None,
-            workers=n_workers,
-            max_queue_size=64,
-            use_multiprocessing=True if n_workers > 1 else False,).history
+        ).history
         self.training_time = (dt.now() - start_training).total_seconds()
         self.model_is_trained = True
 
@@ -412,7 +419,8 @@ class BaseModel:
         return score
 
     def predict_from_generator(self, path, test_generator=None,
-                               validation_generator=None, show_samples=False):
+                               validation_generator=None,
+                               return_pred_proba=False):
         if test_generator is None:
             test_generator = self.get_image_data_generator(
                 path, test=True, train=False, validation=False)
@@ -431,6 +439,9 @@ class BaseModel:
             test_generator,
             steps=nb_samples,
             workers=3,)
+
+        if return_pred_proba:
+            return pred_proba
 
         labels = {v: k for k, v in validation_generator.class_indices.items()}
 

@@ -6,54 +6,51 @@ A level-1 auxiliary file: introduccion.aux
 A level-1 auxiliary file: marco_teorico.aux
 A level-1 auxiliary file: revision_de_antecedentes.aux
 A level-1 auxiliary file: definiciones_trabajo.aux
-The style file: apalike.bst
+The style file: ieeetr.bst
 Database file #1: bibliografia.bib
 Warning--I didn't find a database entry for "raahlen2019image"
-Warning--empty year in restb_ai
-Warning--empty year in hemnet
 Warning--empty journal in lecun1995convolutional
 Name 1 in "Xianghua Xie, Mark W. Jones, and Gary K. L. Tam" has a comma at the end for entry BMVC2015_52
-while executing---line 1098 of file apalike.bst
-Warning--empty year in balanced_accuracy_score
-You've used 15 entries,
-            1935 wiz_defined-function locations,
-            562 strings with 6614 characters,
-and the built_in function-call counts, 6502 in all, are:
-= -- 633
-> -- 295
-< -- 11
-+ -- 101
-- -- 100
-* -- 526
-:= -- 1106
-add.period$ -- 46
-call.type$ -- 15
-change.case$ -- 120
-chr.to.int$ -- 14
-cite$ -- 19
-duplicate$ -- 257
-empty$ -- 438
-format.name$ -- 123
-if$ -- 1294
-int.to.chr$ -- 2
-int.to.str$ -- 0
-missing$ -- 12
-newline$ -- 77
-num.names$ -- 47
-pop$ -- 128
+while executing---line 969 of file ieeetr.bst
+You've used 16 entries,
+            1876 wiz_defined-function locations,
+            575 strings with 6658 characters,
+and the built_in function-call counts, 4476 in all, are:
+= -- 426
+> -- 190
+< -- 0
++ -- 69
+- -- 53
+* -- 307
+:= -- 627
+add.period$ -- 19
+call.type$ -- 16
+change.case$ -- 13
+chr.to.int$ -- 0
+cite$ -- 17
+duplicate$ -- 236
+empty$ -- 430
+format.name$ -- 53
+if$ -- 1082
+int.to.chr$ -- 0
+int.to.str$ -- 16
+missing$ -- 13
+newline$ -- 54
+num.names$ -- 18
+pop$ -- 66
 preamble$ -- 1
-purify$ -- 123
+purify$ -- 0
 quote$ -- 0
-skip$ -- 201
+skip$ -- 157
 stack$ -- 0
-substring$ -- 423
-swap$ -- 55
-text.length$ -- 4
+substring$ -- 307
+swap$ -- 96
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 90
-warning$ -- 4
-while$ -- 49
-width$ -- 0
-write$ -- 188
+type$ -- 0
+warning$ -- 1
+while$ -- 42
+width$ -- 18
+write$ -- 149
 (There was 1 error message)
