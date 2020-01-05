@@ -11,40 +11,15 @@ O.~Poursaeed, T.~Matera, and S.~Belongie, ``Vision-based real estate price
   estimation,'' {\em Machine Vision and Applications}, vol.~29, no.~4,
   pp.~667--676, 2018.
 
-\bibitem{kingma2014adam}
-D.~P. Kingma and J.~Ba, ``Adam: A method for stochastic optimization,'' {\em
-  arXiv preprint arXiv:1412.6980}, 2014.
-
-\bibitem{BatchNorm}
-S.~Ioffe and C.~Szegedy, ``Batch normalization: Accelerating deep network
-  training by reducing internal covariate shift,'' {\em ArXiv},
-  vol.~abs/1502.03167, 2015.
-
-\bibitem{lecun1995convolutional}
-Y.~LeCun, Y.~Bengio, {\em et~al.}, ``Convolutional networks for images, speech,
-  and time series,'' 1995.
-
-\bibitem{ImageNet}
-O.~Russakovsky, J.~Deng, H.~Su, J.~Krause, S.~Satheesh, S.~Ma, Z.~Huang,
-  A.~Karpathy, A.~Khosla, M.~Bernstein, A.~C. Berg, and L.~Fei-Fei, ``{ImageNet
-  Large Scale Visual Recognition Challenge},'' {\em International Journal of
-  Computer Vision (IJCV)}, vol.~115, no.~3, pp.~211--252, 2015.
-
-\bibitem{BMVC2015_52}
-M.~R. Ronchi and P.~Perona, ``Describing common human visual actions in
-  images,'' in {\em Proceedings of the British Machine Vision Conference
-  (BMVC)} (M.~W.~J. Xianghua~Xie and G.~K.~L. Tam, eds.), pp.~52.1--52.12, BMVA
-  Press, September 2015.
+\bibitem{lstm_real_estate}
+J.~H. Bappy, J.~R. Barr, N.~Srinivasan, and A.~K. Roy-Chowdhury, ``Real estate
+  image classification,'' in {\em 2017 IEEE Winter Conference on Applications
+  of Computer Vision (WACV)}, pp.~373--381, IEEE, 2017.
 
 \bibitem{learning_deep_features}
 B.~Zhou, A.~Lapedriza, J.~Xiao, A.~Torralba, and A.~Oliva, ``Learning deep
   features for scene recognition using places database,'' in {\em Advances in
   neural information processing systems}, pp.~487--495, 2014.
-
-\bibitem{lstm_real_estate}
-J.~H. Bappy, J.~R. Barr, N.~Srinivasan, and A.~K. Roy-Chowdhury, ``Real estate
-  image classification,'' in {\em 2017 IEEE Winter Conference on Applications
-  of Computer Vision (WACV)}, pp.~373--381, IEEE, 2017.
 
 \bibitem{object_detectors_emerge_in_deep_scene_cnns}
 B.~Zhou, A.~Khosla, A.~Lapedriza, A.~Oliva, and A.~Torralba, ``Object detectors
@@ -68,16 +43,53 @@ Hemnet, {\em Hemnet}.
 A.~Esteban, {\em Restb AI}.
 \newblock \url{https://restb.ai/}, último acceso: 2019-12-08.
 
-\bibitem{balanced_accuracy_score}
-Scikit-learn, {\em Balanced Accuracy Score}.
-\newblock
-  \url{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.balanced\_accuracy\_score.html},
-  último acceso: 2019-12-08.
+\bibitem{scikit-learn}
+F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,
+  M.~Blondel, P.~Prettenhofer, R.~Weiss, V.~Dubourg, J.~Vanderplas, A.~Passos,
+  D.~Cournapeau, M.~Brucher, M.~Perrot, and E.~Duchesnay, ``Scikit-learn:
+  Machine learning in {P}ython,'' {\em Journal of Machine Learning Research},
+  vol.~12, pp.~2825--2830, 2011.
 
 \bibitem{glorot2010understanding}
 X.~Glorot and Y.~Bengio, ``Understanding the difficulty of training deep
   feedforward neural networks,'' in {\em Proceedings of the thirteenth
   international conference on artificial intelligence and statistics},
   pp.~249--256, 2010.
+
+\bibitem{kingma2014adam}
+D.~P. Kingma and J.~Ba, ``Adam: A method for stochastic optimization,'' {\em
+  arXiv preprint arXiv:1412.6980}, 2014.
+
+\bibitem{BatchNorm}
+S.~Ioffe and C.~Szegedy, ``Batch normalization: Accelerating deep network
+  training by reducing internal covariate shift,'' {\em ArXiv},
+  vol.~abs/1502.03167, 2015.
+
+\bibitem{nwankpa2018activation}
+C.~Nwankpa, W.~Ijomah, A.~Gachagan, and S.~Marshall, ``Activation functions:
+  Comparison of trends in practice and research for deep learning,'' {\em arXiv
+  preprint arXiv:1811.03378}, 2018.
+
+\bibitem{lecun1995convolutional}
+Y.~LeCun, Y.~Bengio, {\em et~al.}, ``Convolutional networks for images, speech,
+  and time series,'' 1995.
+
+\bibitem{ImageNet}
+O.~Russakovsky, J.~Deng, H.~Su, J.~Krause, S.~Satheesh, S.~Ma, Z.~Huang,
+  A.~Karpathy, A.~Khosla, M.~Bernstein, A.~C. Berg, and L.~Fei-Fei, ``{ImageNet
+  Large Scale Visual Recognition Challenge},'' {\em International Journal of
+  Computer Vision (IJCV)}, vol.~115, no.~3, pp.~211--252, 2015.
+
+\bibitem{BMVC2015_52}
+M.~R. Ronchi and P.~Perona, ``Describing common human visual actions in
+  images,'' in {\em Proceedings of the British Machine Vision Conference
+  (BMVC)} (M.~W.~J. Xianghua~Xie and G.~K.~L. Tam, eds.), pp.~52.1--52.12, BMVA
+  Press, September 2015.
+
+\bibitem{balanced_accuracy_score}
+Scikit-learn, {\em Balanced Accuracy Score}.
+\newblock
+  \url{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.balanced\_accuracy\_score.html},
+  último acceso: 2019-12-08.
 
 \end{thebibliography}

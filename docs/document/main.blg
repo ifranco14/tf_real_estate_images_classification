@@ -3,54 +3,55 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: portada.aux
 A level-1 auxiliary file: introduccion.aux
-A level-1 auxiliary file: marco_teorico.aux
 A level-1 auxiliary file: revision_de_antecedentes.aux
+A level-1 auxiliary file: marco_teorico.aux
 A level-1 auxiliary file: definiciones_trabajo.aux
+A level-1 auxiliary file: anexo.aux
 The style file: ieeetr.bst
 Database file #1: bibliografia.bib
 Warning--I didn't find a database entry for "raahlen2019image"
 Warning--empty journal in lecun1995convolutional
 Name 1 in "Xianghua Xie, Mark W. Jones, and Gary K. L. Tam" has a comma at the end for entry BMVC2015_52
 while executing---line 969 of file ieeetr.bst
-You've used 16 entries,
+You've used 18 entries,
             1876 wiz_defined-function locations,
-            575 strings with 6658 characters,
-and the built_in function-call counts, 4476 in all, are:
-= -- 426
-> -- 190
+            587 strings with 7255 characters,
+and the built_in function-call counts, 5198 in all, are:
+= -- 480
+> -- 254
 < -- 0
-+ -- 69
-- -- 53
-* -- 307
-:= -- 627
-add.period$ -- 19
-call.type$ -- 16
-change.case$ -- 13
++ -- 91
+- -- 73
+* -- 373
+:= -- 745
+add.period$ -- 21
+call.type$ -- 18
+change.case$ -- 15
 chr.to.int$ -- 0
-cite$ -- 17
-duplicate$ -- 236
-empty$ -- 430
-format.name$ -- 53
-if$ -- 1082
+cite$ -- 19
+duplicate$ -- 264
+empty$ -- 480
+format.name$ -- 73
+if$ -- 1241
 int.to.chr$ -- 0
-int.to.str$ -- 16
-missing$ -- 13
-newline$ -- 54
-num.names$ -- 18
-pop$ -- 66
+int.to.str$ -- 18
+missing$ -- 15
+newline$ -- 60
+num.names$ -- 20
+pop$ -- 72
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 157
+skip$ -- 175
 stack$ -- 0
-substring$ -- 307
-swap$ -- 96
+substring$ -- 347
+swap$ -- 108
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 42
-width$ -- 18
-write$ -- 149
+while$ -- 47
+width$ -- 20
+write$ -- 167
 (There was 1 error message)

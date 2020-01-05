@@ -101,13 +101,13 @@ Se entranará tanto una red convolucional como un perceptrón multicapa con las 
 El perceptrón multicapa del experimento cuenta con cinco capas ocultas totalmente conectadas de 1024, 1024, 512, 256 y 128 neuronas en cada una, con una capa de dropout intercalada luego de cada una de ellas con probabilidad de 0.3, finalmente, una capa de salida con activación softmax como se observa en la imagen \ref{fig:h1mlpmodel}. 
 
 
-Por el lado de la red neuronal convolucional se utilizará una arquitectura que concatenará dos bloques compuestos por: capa convolucional, capa de normalización en bache, capa convolucional, capa de normalización en bache, capa de pooling y capa de dropout; en el primer bloque las capas convolutivas aplicarán 64 filtros cada una, mientras que en el segundo 128, todos ellos de tamaño \([5\;x\;5]\) en todas las capas convolutivas, las capas de pooling aplicarán filtros de \([2\;x\;2]\) y las capas de dropout tendrán asignada una probabilidad de 0.25. Luego de estos bloques, la red seguirá con una capa totalmente conectada de 512 neuronas con regularización L2, una capa dropout con probabilidad 0.5 y la capa de salida con activación Softmax. La inicialización de los pesos de la red se realizará mediante inicialización de Xavier \cite{glorot2010understanding}. 
+Por el lado de la red neuronal convolucional se utilizará una arquitectura que concatenará dos bloques compuestos por: capa convolucional, capa de normalización en lote, capa convolucional, capa de normalización en lote, capa de pooling y capa de dropout; en el primer bloque las capas convolutivas aplicarán 64 filtros cada una, mientras que en el segundo 128, todos ellos de tamaño \([5\;x\;5]\) en todas las capas convolutivas, las capas de pooling aplicarán filtros de \([2\;x\;2]\) y las capas de dropout tendrán asignada una probabilidad de 0.25. Luego de estos bloques, la red seguirá con una capa totalmente conectada de 512 neuronas con regularización L2, una capa dropout con probabilidad 0.5 y la capa de salida con activación Softmax. La inicialización de los pesos de la red se realizará mediante inicialización de Xavier \cite{glorot2010understanding}. 
 
 En ambas redes se utilizaron de la misma manera las siguientes configuraciones: 
 \begin{itemize}
-	\item Tamaño de bache: la cantidad de imágenes a computar antes de realizar una actualización de pesos es de 64.
+	\item Tamaño del lote: la cantidad de imágenes a computar antes de realizar una actualización de pesos es de 64.
 	\item Entradas: ambas redes se entrenaron con los tres canales de las imágenes (Red, Green, Blue), redimensionando cada una a \(128\; x\; 128\) y luego normalizando el valor de los colores (se divide el valor de cada pixel sobre 255, el valor máximo en la escala RGB).
-	\item Optimizador: exactitud categórica. En cada bache contabiliza las veces en las que la posición de la probabilidad más alta se condice con la posición de la predicción correcta. Vale aclarar que los resultados, al utilizar una capa de activación softmax son \(one-hot\; encoders\), es decir, para cada imagen se tiene como resultado un vector de longitud igual a la cantidad de clases a predecir con la probabilidad para cada clase. 
+	\item Optimizador: exactitud categórica. En cada lote contabiliza las veces en las que la posición de la probabilidad más alta se condice con la posición de la predicción correcta. Vale aclarar que los resultados, al utilizar una capa de activación softmax son \(one-hot\; encoders\), es decir, para cada imagen se tiene como resultado un vector de longitud igual a la cantidad de clases a predecir con la probabilidad para cada clase. 
 	\item Función de pérdida: entropía cruzada categórica pesada por clase definida en  \ref{formula:custom_loss_function}.
 \end{itemize}
 
@@ -245,7 +245,25 @@ Como es posible observar en la tabla \ref{exp3:results}, los resultados obtenido
 Con fundamento en los resultados obtenidos queda rechazada la hipótesis \ref{sssec:hipotesis3}, dado que el modelo preentrenado no fue capaz de mejorar los resultados obtenidos a partir del experimento \ref{sssec:exp2}. De esta manera, el modelo obtenido en el experimento \ref{sssec:exp2} continúa siendo el de mejor rendimiento para el conjunto de datos elegido.
 
 \subsubsection{Experimento 4} \label{sssec:exp4}
-Se realizará aprendizaje por transferencia tomando como red base PlacesCNN y entrenando con todos los conjuntos de datos elegidos. A partir de esta red reentrenada, se podrá constatar la hipótesis \ref{sssec:hipotesis4}.
+Se realizará aprendizaje por transferencia tomando como red base PlacesCNN y entrenando con el conjunto de datos elegido. A partir de esta red reentrenada, se podrá constatar la hipótesis \ref{sssec:hipotesis4}.
+
+Se reentrenó la red con el total de imágenes de entrenamiento definidas en el experimento \ref{sssec:exp2} (114361) utilizando diferentes variantes en cuanto a arquitectura del clasificador (capas que siguen luego del último bloque convolutivo) como a la cantidad de capas preentrenadas que se vuelven a entrenar con los nuevos datos; a continuación se detallará cada una. Vale aclarar que para todas estas variantes capa de salida es la misma: una capa densa con activación \(softmax\) de 6 unidades.
+
+Aprendizaje por transferencia - variantes con las capas de la red preentrenada configuradas como no-entrenables:
+\begin{enumerate}
+	\item Luego de las capas convolutivas se agregó un clasificador con dos capas: una totalmente conectada de 512 neuronas con activación \(Relu\), una capa de dropout con probabilidad de 0.5.
+	\item Luego de las capas convolutivas se agregó un clasificador con una capa totalmente conectada de 512 neuronas con activación \(Relu\).
+	\item Luego de las capas convolutivas se entrenó un clasificador con una cuatro capas, compuestas por dos bloques con una capa totalmente conectada de 512 neuronas con activación \(Relu\) y una capa de dropout con probabilidad de 0.5 cada uno.
+\end{enumerate}
+
+Aprendizaje por transferencia - variantes que reentrenan capas de la red preentrenada:
+\begin{enumerate}
+	\item Se configuraron como entrenables todas las capas de la red PlacesCNN preentrenada y se agregó un clasificador compuesto de dos bloques con una capa totalmente conectada de 512 neuronas con activación \(Relu\) y una capa de dropout con probabilidad de 0.5.
+	\item Se configuraron como entrenables todas las capas de la red PlacesCNN preentrenada y se agregó un clasificador compuesto de dos bloques con una capa totalmente conectada con activación \(Relu\) y una capa de dropout con probabilidad de 0.5, teniendo cada capa totalmente conectada 4096 y 2048 unidades cada una respectivamente.
+\end{enumerate}
+
+En la tabla [HACER TABLA RESULTADOS] se observan los resultados obtenidos para cada una de las diferentes pruebas realizadas. A partir de estos resultados es posible afirmar que no se cuenta con las evidencias suficientes para definir la hipótesis \ref{sssec:hipotesis4} como inválida.
+
 
 \subsubsection{Experimento 5} \label{sssec:exp5}
 Se aplicará ecualización del histograma a las imágenes de los conjuntos de datos elegidos, luego se procederá a los mismos pasos que en el experimento \ref{sssec:exp4}. De esta manera, será posible definir la veracidad de la hipótesis \ref{sssec:hipotesis5}.
