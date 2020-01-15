@@ -1,387 +1,109 @@
 \section{Anexo}\label{sec:anexo}
 
-\subsection{Anexo 1}
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.7\linewidth]{images/h1_mlp_model}
-	\caption[Perceptrón Multi-capa utilizado en Hipótesis 1]{Perceptrón Multi-capa utilizado en Hipótesis 1}
-	\label{fig:h1mlpmodel}
-\end{figure}
+\subsection{Anexo 1: Repositorio abierto del trabajo}
+Para este trabajo final se utilizó la herramienta de control de versionado GIT, puntualmente alojado en la plataforma GitHub, y el tanto el código como los modelos generados por este trabajo son abiertos, es decir, cualquier persona puede acceder y hacer uso de lo realizado bajo su propia responsabilidad (ver Licencia del proyecto \ref{anexo2:license}). Además, la estructura de los directorios elegida se detalla a continuación:
+\begin{itemize}
+	\item LICENSE: Licencia del proyecto.
+	\item README.md: Archivo de lectura inicial para desarrolladores o quien esté interesado en conocer el proyecto.
+	\item data: directorio con los conjuntos de datos.
+		\subitem - external: bancos de datos comprimidos.
+		\subitem - interim: conjuntos de datos utilizados en cada experimento comprimidos.
+		\subitem - processed: directorios con conjuntos de datos finales para entrenar y medir rendimiento de modelos (divididos en conjuntos de entrenamiento, validación y verificación cada uno).
+		\subitem - raw: bancos de datos en crudo (sin dividir en conjuntos diferentes).
+	\item docs: directorio con el presente documento, tanto en su versión compilable LaTex como en PDF.
+	\item models: directorio con los modelos entrenados, instancias de abstracciones propias creadas y archivos json con los pesos de las redes entrenadas.
+	\item notebooks: directorio con Jupyter Notebooks versionados con los que se trabajó durante el proyecto.
+	\item requirements.txt: archivo con librerías requeridas para poder ejecutar correctamente el contenido del repositorio.
+	\item setup.py: archivo de instalación del repositorio para poder importarlo como una librería python.
+	\item src: directorio con el código fuente utilizado en el proyecto.
+		\subitem - data: módulos utilizados para generar los diferentes conjuntos de datos.
+		\subitem - models: módulos con las abstracciones utilizadas para entrenar y medir el rendimiento de los modelos.
+		\subitem - visualization: módulos con visualizaciones.
+\end{itemize}
 
-\subsection{Anexo 2}\label{ssec:anexo2}
+\subsection{Anexo 2: Licencia del proyecto}\label{anexo2:license}
+La licencia del presente proyecto es la \(Licencia\) \(MIT\) (en su versión \(X11\)), es para software libre de código abierto y especifica lo siguiente:
+\begin{enumerate}
+	\item Condiciones: La condición es que la nota de copyright y la parte de los derechos se incluya en todas las copias o partes sustanciales del Software. Esta es la condición que invalidaría la licencia en caso de no cumplirse.
+	\item Derechos: sin restricciones; incluyendo usar, copiar, modificar, integrar con otro Software, publicar, sublicenciar o vender copias del Software, y además permitir a las personas a las que se les entregue el Software hacer lo mismo.
+	\item Limitación de responsabilidad: finalmente se tiene un disclaimer o nota de limitación de la responsabilidad habitual en este tipo de licencias.
+\end{enumerate}
 
+
+%\subsection{Anexo 2}
+%\begin{figure}[h!]
+%	\centering
+%	\includegraphics[width=0.7\linewidth]{images/h1_mlp_model}
+%	\caption[Perceptrón Multi-capa utilizado en Hipótesis 1]{Perceptrón Multi-capa utilizado en Hipótesis 1}
+%	\label{fig:h1mlpmodel}
+%\end{figure}
+
+\subsection{Anexo 3: Mapeo de clases realizado para el experimento \ref{sssec:exp3}}\label{ssec:anexo3}
+En la tabla \ref{anexo:exp3:mapping} se presentan los mapeos elegidos entre las clases con las que la red PlacesCNN fue entrenada y las clases esperadas que se predigan para el dataset utilizado en el experimento \ref{sssec:exp3}.
 \begin{table}[h!]
-	\centering
-	\begin{tabular}{| l | l |}
-		\toprule
-		Clase en Places365 &       Mapeo \\
+	\noindent
+	\begin{tabular}{||l|l||l|l||}
+		\toprule                                                                                        		Clase en Places365 &       Mapeo & 		Clase en Places365 &       Mapeo \\                                                                                                       
 		\midrule
-		airfield &        other \\
-		airplane\_cabin &        other \\
-		airport\_terminal &        other \\
-		alcove &        other \\
-		alley &        other \\
-		amphitheater &        other \\
-		amusement\_arcade &        other \\
-		amusement\_park &        other \\
-		apartment\_building/outdoor &    frontyard \\
-		aquarium &        other \\
-		aqueduct &        other \\
-		arcade &        other \\
-		arch &        other \\
-		archaelogical\_excavation &        other \\
-		archive &        other \\
-		arena/hockey &        other \\
-		arena/performance &        other \\
-		arena/rodeo &        other \\
-		army\_base &        other \\
-		art\_gallery &        other \\
-		art\_school &        other \\
-		art\_studio &        other \\
-		artists\_loft &        other \\
-		assembly\_line &        other \\
-		athletic\_field/outdoor &        other \\
-		atrium/public &        other \\
-		attic &        other \\
-		auditorium &        other \\
-		auto\_factory &        other \\
-		auto\_showroom &        other \\
-		badlands &        other \\
-		bakery/shop &        other \\
-		balcony/exterior &        other \\
-		balcony/interior &        other \\
-		ball\_pit &        other \\
-		ballroom &        other \\
-		bamboo\_forest &        other \\
-		bank\_vault &        other \\
-		banquet\_hall &        other \\
-		bar &        other \\
-		barn &        other \\
-		barndoor &        other \\
-		baseball\_field &        other \\
-		basement &        other \\
-		basketball\_court/indoor &        other \\
-		bathroom &     bathroom \\
-		bazaar/indoor &        other \\
-		bazaar/outdoor &        other \\
-		beach &        other \\
-		beach\_house &        other \\
-		beauty\_salon &        other \\
-		bedchamber &      bedroom \\
-		bedroom &      bedroom \\
-		beer\_garden &        other \\
-		beer\_hall &        other \\
-		berth &        other \\
-		biology\_laboratory &        other \\
-		boardwalk &        other \\
-		boat\_deck &        other \\
-		boathouse &        other \\
-		bookstore &        other \\
-		booth/indoor &        other \\
-		botanical\_garden &        other \\
-		bow\_window/indoor &        other \\
-		bowling\_alley &        other \\
-		boxing\_ring &        other \\
-		bridge &        other \\
-		building\_facade &    frontyard \\
-		bullring &        other \\
-		burial\_chamber &        other \\
-		bus\_interior &        other \\
-		bus\_station/indoor &        other \\
-		butchers\_shop &        other \\
-		butte &        other \\
-		cabin/outdoor &        other \\
-		cafeteria &        other \\
-		campsite &        other \\
-		campus &        other \\
-		canal/natural &        other \\
-		canal/urban &        other \\
-		candy\_store &        other \\
-		canyon &        other \\
-		car\_interior &        other \\
-		carrousel &        other \\
-		castle &        other \\
-		catacomb &        other \\
-		cemetery &        other \\
-		chalet &    frontyard \\
-		chemistry\_lab &        other \\
-		childs\_room &      bedroom \\
-		church/indoor &        other \\
-		church/outdoor &        other \\
-		classroom &        other \\
-		clean\_room &      bedroom \\
-		cliff &        other \\
-		closet &      bedroom \\
-		clothing\_store &        other \\
-		coast &        other \\
-		cockpit &        other \\
-		coffee\_shop &        other \\
-		computer\_room &        other \\
-		conference\_center &        other \\
-		conference\_room &        other \\
-		construction\_site &        other \\
-		corn\_field &        other \\
-		corral &        other \\
-		corridor &        other \\
-		cottage &    frontyard \\
-		courthouse &    frontyard \\
-		courtyard &    frontyard \\
-		creek &        other \\
-		crevasse &        other \\
-		crosswalk &        other \\
-		dam &        other \\
-		delicatessen &        other \\
-		department\_store &        other \\
-		desert/sand &        other \\
-		desert/vegetation &        other \\
-		desert\_road &        other \\
-		diner/outdoor &  dining\_room \\
-		dining\_hall &  dining\_room \\
-		dining\_room &  dining\_room \\
-		discotheque &        other \\
-		doorway/outdoor &    frontyard \\
-		dorm\_room &      bedroom \\
-		downtown &        other \\
-		dressing\_room &      bedroom \\
-		driveway &        other \\
-		drugstore &        other \\
-		elevator/door &        other \\
-		elevator\_lobby &        other \\
-		elevator\_shaft &        other \\
-		embassy &        other \\
-		engine\_room &        other \\
-		entrance\_hall &        other \\
-		escalator/indoor &        other \\
-		excavation &        other \\
-		fabric\_store &        other \\
-		farm &        other \\
-		fastfood\_restaurant &        other \\
-		field/cultivated &        other \\
-		field/wild &        other \\
-		field\_road &        other \\
-		fire\_escape &        other \\
-		fire\_station &        other \\
-		fishpond &        other \\
-		flea\_market/indoor &        other \\
-		florist\_shop/indoor &        other \\
-		food\_court &        other \\
-		football\_field &        other \\
-		forest/broadleaf &        other \\
-		forest\_path &        other \\
-		forest\_road &        other \\
-		formal\_garden &        other \\
-		fountain &        other \\
-		galley &        other \\
-		garage/indoor &        other \\
-		garage/outdoor &        other \\
-		gas\_station &        other \\
-		gazebo/exterior &        other \\
-		general\_store/indoor &        other \\
-		general\_store/outdoor &        other \\
-		gift\_shop &        other \\
-		glacier &        other \\
-		golf\_course &        other \\
-		greenhouse/indoor &        other \\
-		greenhouse/outdoor &        other \\
-		grotto &        other \\
-		gymnasium/indoor &        other \\
-		hangar/indoor &        other \\
-		hangar/outdoor &        other \\
-		harbor &        other \\
-		hardware\_store &        other \\
-		hayfield &        other \\
-		heliport &        other \\
-		highway &        other \\
-		home\_office &   livingRoom \\
-		home\_theater &   livingRoom \\
-		hospital &        other \\
-		hospital\_room &      bedroom \\
-		hot\_spring &        other \\
-		hotel/outdoor &        other \\
-		hotel\_room &      bedroom \\
-		house &    frontyard \\
-		hunting\_lodge/outdoor &        other \\
-		ice\_cream\_parlor &        other \\
-		ice\_floe &        other \\
-		ice\_shelf &        other \\
-		ice\_skating\_rink/indoor &        other \\
-		ice\_skating\_rink/outdoor &        other \\
-		iceberg &        other \\
-		igloo &        other \\
-		industrial\_area &        other \\
-		inn/outdoor &        other \\
-		islet &        other \\
-		jacuzzi/indoor &        other \\
-		jail\_cell &        other \\
-		japanese\_garden &        other \\
-		jewelry\_shop &        other \\
-		junkyard &        other \\
-		kasbah &    frontyard \\
-		kennel/outdoor &        other \\
-		kindergarden\_classroom &        other \\
-		kitchen &      kitchen \\
-		lagoon &        other \\
-		lake/natural &        other \\
-		landfill &        other \\
-		landing\_deck &        other \\
-		laundromat &        other \\
-		lawn &        other \\
-		lecture\_room &   livingRoom \\
-		legislative\_chamber &        other \\
-		library/indoor &        other \\
-		library/outdoor &        other \\
-		lighthouse &        other \\
-		living\_room &   livingRoom \\
-		loading\_dock &        other \\
-		lobby &   livingRoom \\
-		lock\_chamber &        other \\
-		locker\_room &        other \\
-		mansion &        other \\
-		manufactured\_home &    frontyard \\
-		market/indoor &        other \\
-		market/outdoor &        other \\
-		marsh &        other \\
-		martial\_arts\_gym &        other \\
-		mausoleum &        other \\
-		medina &        other \\
-		mezzanine &        other \\
-		moat/water &        other \\
-		mosque/outdoor &        other \\
-		motel &        other \\
-		mountain &        other \\
-		mountain\_path &        other \\
-		mountain\_snowy &        other \\
-		movie\_theater/indoor &        other \\
-		museum/indoor &        other \\
-		museum/outdoor &        other \\
-		music\_studio &        other \\
-		natural\_history\_museum &        other \\
-		nursery &        other \\
-		nursing\_home &        other \\
-		oast\_house &        other \\
-		ocean &        other \\
-		office &        other \\
-		office\_building &        other \\
-		office\_cubicles &   livingRoom \\
-		oilrig &        other \\
-		operating\_room &        other \\
-		orchard &        other \\
-		orchestra\_pit &        other \\
-		pagoda &        other \\
-		palace &        other \\
-		pantry &        other \\
-		park &        other \\
-		parking\_garage/indoor &        other \\
-		parking\_garage/outdoor &        other \\
-		parking\_lot &        other \\
-		pasture &        other \\
-		patio &    frontyard \\
-		pavilion &        other \\
-		pet\_shop &        other \\
-		pharmacy &        other \\
-		phone\_booth &        other \\
-		physics\_laboratory &        other \\
-		picnic\_area &        other \\
-		pier &        other \\
-		pizzeria &        other \\
-		playground &        other \\
-		playroom &        other \\
-		plaza &        other \\
-		pond &        other \\
-		porch &    frontyard \\
-		promenade &        other \\
-		pub/indoor &        other \\
-		racecourse &        other \\
-		raceway &        other \\
-		raft &        other \\
-		railroad\_track &        other \\
-		rainforest &        other \\
-		reception &        other \\
-		recreation\_room &   livingRoom \\
-		repair\_shop &        other \\
-		residential\_neighborhood &        other \\
-		restaurant &        other \\
-		restaurant\_kitchen &      kitchen \\
-		restaurant\_patio &        other \\
-		rice\_paddy &        other \\
-		river &        other \\
-		rock\_arch &        other \\
-		roof\_garden &        other \\
-		rope\_bridge &        other \\
-		ruin &        other \\
-		runway &        other \\
-		sandbox &        other \\
-		sauna &        other \\
-		schoolhouse &        other \\
-		science\_museum &        other \\
-		server\_room &        other \\
-		shed &        other \\
-		shoe\_shop &        other \\
-		shopfront &        other \\
-		shopping\_mall/indoor &        other \\
-		shower &     bathroom \\
-		ski\_resort &        other \\
-		ski\_slope &        other \\
-		sky &        other \\
-		skyscraper &        other \\
-		slum &        other \\
-		snowfield &        other \\
-		soccer\_field &        other \\
-		stable &        other \\
-		stadium/baseball &        other \\
-		stadium/football &        other \\
-		stadium/soccer &        other \\
-		stage/indoor &        other \\
-		stage/outdoor &        other \\
-		staircase &        other \\
-		storage\_room &        other \\
-		street &        other \\
-		subway\_station/platform &        other \\
-		supermarket &        other \\
-		sushi\_bar &        other \\
-		swamp &        other \\
-		swimming\_hole &        other \\
-		swimming\_pool/indoor &        other \\
-		swimming\_pool/outdoor &        other \\
-		synagogue/outdoor &        other \\
-		television\_room &   livingRoom \\
-		television\_studio &   livingRoom \\
-		temple/asia &        other \\
-		throne\_room &        other \\
-		ticket\_booth &        other \\
-		topiary\_garden &        other \\
-		tower &        other \\
-		toyshop &        other \\
-		train\_interior &        other \\
-		train\_station/platform &        other \\
-		tree\_farm &        other \\
-		tree\_house &        other \\
-		trench &        other \\
-		tundra &        other \\
-		underwater/ocean\_deep &        other \\
-		utility\_room &        other \\
-		valley &        other \\
-		vegetable\_garden &        other \\
-		veterinarians\_office &        other \\
-		viaduct &        other \\
-		village &        other \\
-		vineyard &        other \\
-		volcano &        other \\
-		volleyball\_court/outdoor &        other \\
-		waiting\_room &   livingRoom \\
-		water\_park &        other \\
-		water\_tower &        other \\
-		waterfall &        other \\
-		watering\_hole &        other \\
-		wave &        other \\
-		wet\_bar &        other \\
-		wheat\_field &        other \\
-		wind\_farm &        other \\
-		windmill &        other \\
-		yard &    frontyard \\
-		youth\_hostel &        other \\
-		zen\_garden &        other \\
+		\midrule 
+		apartment\_ &    {} &       hospital\_room &     bedroom \\
+		building/outdoor &    frontyard &       {} &     {} \\
+		\midrule                                                                                 
+		bathroom &     bathroom &          hotel\_room &     bedroom \\
+		\midrule
+		bedchamber &      bedroom &               house &   frontyard \\
+		\midrule                                                                                   
+		bedroom &      bedroom &              kasbah &   frontyard \\      
+		\midrule                                                                              
+		building\_facade &    frontyard &             kitchen &     kitchen \\
+		\midrule
+		chalet &    frontyard &        lecture\_room &  livingRoom \\
+		\midrule
+		childs\_room &      bedroom &         living\_room &  livingRoom \\
+		\midrule
+		clean\_room &      bedroom &               lobby &  livingRoom \\
+		\midrule
+		closet &      bedroom &   manufactured\_home &   frontyard \\
+		\midrule
+		cottage &    frontyard &     office\_cubicles &  livingRoom \\
+		\midrule
+		courthouse &    frontyard &               patio &   frontyard \\
+		\midrule
+		courtyard &    frontyard &               porch &   frontyard \\
+		\midrule
+		diner/outdoor &  dining\_room &     recreation\_room &  livingRoom \\
+		\midrule
+		dining\_hall &  dining\_room &  restaurant\_kitchen &     kitchen \\
+		\midrule
+		dining\_room &  dining\_room &              shower &    bathroom \\
+		\midrule
+		doorway/outdoor &    frontyard &     television\_room &  livingRoom \\
+		\midrule
+		dorm\_room &      bedroom &   television\_studio &  livingRoom \\
+		\midrule
+		dressing\_room &      bedroom &        waiting\_room &  livingRoom \\
+		\midrule
+		home\_office &   livingRoom &                yard &   frontyard \\
+		\midrule
+		home\_theater &  livingRoom & & \\
 		\bottomrule
 	\end{tabular}
-	\label{anexo:exp3:mapping}
+	\caption{Mapeo entre clases con las que la red PlacesCNN fue entrenada y las clases del conjunto de datos utilizado en el experimento \ref{sssec:exp3}}
+\label{anexo:exp3:mapping}
 \end{table}
+
+
+
+\subsection{Anexo 4: Detalle de arquitecturas utilizadas en experimento \ref{sssec:exp1}}\label{ssec:anexo4}
+
+\subsection{Anexo 5: Detalle de arquitectura utilizadas en experimento \ref{sssec:exp2}}\label{ssec:anexo5}
+
+\subsection{Anexo 6: Detalle de arquitectura utilizadas en experimento \ref{sssec:exp3}}\label{ssec:anexo6}
+
+\subsection{Anexo 7: Detalle de arquitecturas utilizadas en experimentos \ref{sssec:exp4} y \ref{sssec:exp6}}\label{ssec:anexo7}
+
+\subsection{Anexo 8: Detalle de arquitecturas utilizadas en experimento \ref{sssec:exp5}}\label{ssec:anexo8}
+
+%\subsection{Anexo 9: Detalle de arquitecturas utilizadas en experimento \ref{sssec:exp7}}\label{ssec:anexo9}
+% TODO agregar imágenes con arquitecturas
+

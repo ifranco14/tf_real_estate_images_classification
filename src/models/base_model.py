@@ -306,7 +306,7 @@ class BaseModel:
                            evaluate_net=False, use_early_stop=True,
                            use_model_check_point=True, log_training=True,
                            n_workers=3, show_activations=False,
-                           test_generator=None):
+                           test_generator=None, initial_epoch=0):
         assert self.model_is_compiled, 'The model should be compiled before fit'
 
         if train_generator is None:
@@ -367,7 +367,7 @@ class BaseModel:
             steps_per_epoch=train_steps_per_epoch,
             epochs=self.epochs,
             verbose=1,
-            initial_epoch=0,
+            initial_epoch=initial_epoch,
             validation_data=validation_generator,
             validation_steps=validation_steps_per_epoch,
             validation_freq=1,
@@ -385,7 +385,7 @@ class BaseModel:
             self.show_activations(path, train_generator.class_indices,
                                   subset='validation')
 
-        self.pred = self.predict_from_generator(path, test_generator, validation_generator)
+        # self.pred = self.predict_from_generator(path, test_generator, validation_generator)
         self.scores = self.evaluate_from_generator(path, validation_generator)
         self.scores_test = self.evaluate_from_generator(path, test_generator)
 

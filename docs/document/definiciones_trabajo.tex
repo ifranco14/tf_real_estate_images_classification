@@ -24,13 +24,15 @@ Para llevar adelante el trabajo se utilizarán los siguientes componentes:
 	\item Memoria RAM de 16gb.
 	\item Disco sólido 256GB NVMe™ M.2 SSD.
 	\item Tarjeta gráfica Gigabyte GTX 1080 de 8gb.
+	\item eGPU HP Omen Accelerator.
 \end{itemize}
 
 \subsection{Hipótesis}
 Teniendo en cuenta tanto las limitaciones como las asunciones definidas para el trabajo, se comprobarán las hipótesis declaradas a continuación. 
 
 \subsubsection{Hipótesis 1} \label{sssec:hipotesis1}
-Como se pudo observar en la revisión de antecedentes, existen múltiples formas de hacer frente al problema. El enfoque más simple podría ser mediante perceptrón multicapa, pero por lo que se pudo observar, la mayoría de las soluciones utilizadas son redes neuronales convolucionales. Este punto de partida abre la primer hipótesis del trabajo: una red convolucional es capaz de obtener mejores resultados que un perceptrón multicapa en materia de clasificación de escenas.
+Como se pudo observar en la revisión de antecedentes, existen múltiples formas de hacer frente al problema. El enfoque más simple podría ser mediante perceptrón multicapa, pero por lo que se pudo observar, la mayoría de las soluciones utilizadas son redes neuronales convolucionales. 
+Hipótesis: "Una red convolucional es capaz de obtener mejores resultados que un perceptrón multicapa en materia de clasificación de escenas".
 
 \subsubsection{Hipótesis 2} \label{sssec:hipotesis2}
 Las redes convolucionales tienen la capacidad de aprender características de las imágenes con las que se entrenan, aunque a veces resulta muy costoso hacerlo por las diferencias entre imágenes de la misma categoría o bien no se cuenta con la cantidad de imágenes que aporten la densidad y diversidad necesaria para alcanzar el tope máximo en la métrica elegida. 
@@ -50,10 +52,26 @@ Una de las técnicas revisadas antes de comenzar con el trabajo es Aprendizaje p
 
 Hipótesis: "Haciendo aprendizaje por transferencia a partir de la red PlacesCNN es posible mejorar los resultados obtenidos al contrastar la hipótesis \ref{sssec:hipotesis3}".
 
-\subsubsection{Hipótesis 5} \label{sssec:hipotesis5}
-El Aprendizaje por Transferencia depende en gran medida del conjunto de datos utilizado al entrenar la red. Como se explicó en la revisión de antecedentes, ImageNet es una base de datos de imágenes centrada en objetos, mientras que el conjunto de datos Places es centrado en escenas. 
 
-Hipótesis: "Una red pre-entrenada con imágenes centradas a escenas y con ajuste fino utilizando un conjunto de datos \(X\) consigue mejores resultados una red pre-entrenada con imágenes centradas a objetos y luego ajustada finamente mediante el mismo conjunto de datos \(X\)".
+\subsubsection{Hipótesis 5} \label{sssec:hipotesis5}
+Otra red pre-entrenada existente es ImageNetCNN, la cual fue entrenada con el dataset ImageNet centrado en objetos. Aunque no fue entrenada para escenas como PlacesCNN, se puede interpretar que tiene cierta capacidad de detectarlas a partir de los objetos que se encuentren en ella. 
+
+Hipótesis: "Haciendo aprendizaje por transferencia a partir de la red ImageNetCNN es posible mejorar los resultados obtenidos al contrastar la hipótesis \ref{sssec:hipotesis3}".
+
+\subsubsection{Hipótesis 6} \label{sssec:hipotesis6}
+Un caso observado en la revisión de antecedentes es el de \cite{lstm_real_estate} en el cual se obtienen mejoras luego de aplicar un filtro de ecualización del histograma a las imágenes tanto para entrenar como para predecir. 
+
+Hipótesis: "Realizar aprendizaje por transferencia utilizando PlacesCNN sobre un nuevo conjunto de datos obtenido a partir de aplicar el filtro utiizado en \cite{lstm_real_estate} para el conjunto de datos completo hará que los resultados mejores".
+
+%\subsubsection{Hipótesis 7} \label{sssec:hipotesis7}
+
+%Hipótesis: "Entrenar una red con la misma arquitectura que se entrenó para la hipótesis \ref{sssec:hipotesis2} pero utilizando un nuevo conjunto de datos obtenido aplicando el filtro utiizado en \cite{lstm_real_estate} para todo el conjunto de datos hará que se obtengan mejores resultados a los obtenidos al verificar la hipótesis \ref{sssec:hipotesis2}".
+
+%\subsubsection{Hipótesis 8} \label{sssec:hipotesis8}
+%La red ImageNetCNN fue entrenanda para detectar cientos de objetos diferentes, aunque en el caso de las escenas de propiedades inmuebles sólo un subconjunto de éstos son posibles de encontrar.
+
+%Hipótesis: "Realizar aprendizaje por transferencia a partir de una versión reentrenada de la red ImageNetCNN con objetos posibles de encontrar en el contexto de las escenas de propiedades inmuebles hará que se obtengan mejores resultados a los obtenidos en el resto de los experimentos".
+
 
 \subsection{Experimentos}
 %Se validará cada hipótesis a partir de experimentos individuales con el fin de constratar cada una. 
@@ -129,17 +147,12 @@ Se llevó a cabo el entrenamiento de ambas redes con una porción de 4671 imáge
 \end{table}
 
 
-%TODO Agregar tabla con resultados para validation y test con nombre exp1:results
-
 A partir de los resultados expuestos en la tabla previamente mencionada, no se cuenta con las evidencias necesarias para negar la hipótesis \ref{sssec:hipotesis1}. 
 
 \subsubsection{Experimento 2} \label{sssec:exp2}
 Se entrenará la misma red base que en \ref{sssec:exp1} pero esta vez con diferentes subconjuntos del conjunto de datos del trabajo \cite{lstm_real_estate} y finalmente con el conjunto de datos completo. A partir de los resultados obtenidos será posible contrastar la hipótesis \ref{sssec:hipotesis2}.
 
 En este experimento se utilizará la misma red neuronal convolucional detallada en el experimento \ref{sssec:exp1}, será entrenada con subconjuntos aleatorios tanto del diez como del cincuenta por ciento del conjunto de datos total elegido, además del entrenamiento con la totalidad del mismo. En la tabla \ref{exp2:distribucion_clase_datasets} se puede observar la cantidad de imágenes de cada clase que se tienen para cada el entrenamiento en cada experimento. Además, en la tabla \ref{exp2:distribucion_clase_datasets_validation_test} se muestran las distribuciones de los conjuntos de datos de validación y verificación por clase, que serán fijos para hacer posible el testeo correcto de la hipótesis.
-
-%TODO Agregar distribución de las clases de cada experimento con nombre exp2:distribucion_clase_datasets
-
 
 \begin{table}[h!]
 	\centering
@@ -173,9 +186,6 @@ En este experimento se utilizará la misma red neuronal convolucional detallada 
 	\caption{Imágenes por conjunto de entrenamiento utilizado en el experimento \ref{sssec:exp2}}
 	\label{exp2:distribucion_clase_datasets}
 \end{table}
-
-
-%TODO Agregar distribución de las clases para validation y test con nombre exp2:distribucion_clase_datasets_validation_test
 
 
 \begin{table}[h!]
@@ -218,13 +228,10 @@ En la tabla \ref{exp2:results} se muestran los resultados obtenidos para cada co
 \end{table}
 
 
-%\subsubsection{Experimento 3} \label{sssec:exp3}
-%Se entrenará una red idéntica a las utilizadas en los experimentos \ref{sssec:exp1} y \ref{sssec:exp2} para cada escena descripta en \ref{ssec:limitaciones} como clasificador binario. Luego se compararán los resultados agregados con los obtenidos en los experimentos \ref{sssec:exp1} y \ref{sssec:exp2} para determinar si la hipótesis \ref{sssec:hipotesis3} se cumple.
-
 \subsubsection{Experimento 3} \label{sssec:exp3}
 Se descargará la red preentrenada con el conjunto de datos Places presentada en \cite{learning_deep_features} llamada PlacesCNN y se clasificarán las imágenes de los conjuntos de datos de validación y verificación previamente utilizados (en \ref{sssec:exp2}) con el fin constatar la hipótesis \ref{sssec:hipotesis3}.
 
-Al tratarse de una red entrenada para predecir sobre 365 categorías diferentes, sucede que algunas de las etiquetas del conjunto de datos del trabajo \cite{learning_deep_features} no tienen un par directo con las utilizadas para entrenar el modelo, por lo que se realizó un mapeo entre las clases que predice el modelo y las esperadas para el conjunto de datos propio. La forma de hacerlo fue asignando a cada una de las 365 etiquetas que es capaz de predecir el modelo una de las clases del conjunto de datos utilizado en el trabajo, de manera que cuando se clasifique un "baño" (en inglés \(bathroom\)) como "ducha" (\(shower\)) se considere como una predicción correcta. Los mapeos realizados se encuentran en la tabla \ref{anexo:exp3:mapping} del anexo \ref{ssec:anexo2}. 
+Al tratarse de una red entrenada para predecir sobre 365 categorías diferentes, sucede que algunas de las etiquetas del conjunto de datos del trabajo \cite{learning_deep_features} no tienen un par directo con las utilizadas para entrenar el modelo, por lo que se realizó un mapeo entre las clases que predice el modelo y las esperadas para el conjunto de datos propio. La forma de hacerlo fue asignando a cada una de las 365 etiquetas que es capaz de predecir el modelo una de las clases del conjunto de datos utilizado en el trabajo, de manera que cuando se clasifique un "baño" (en inglés \(bathroom\)) como "ducha" (\(shower\)) se considere como una predicción correcta. Los mapeos realizados se encuentran en la tabla \ref{anexo:exp3:mapping} del anexo \ref{ssec:anexo3}. 
 
 \begin{table}[h!]
 	\centering
@@ -236,7 +243,7 @@ Al tratarse de una red entrenada para predecir sobre 365 categorías diferentes,
 		Places-CNN con mapeo & 0.056 & 0.05 \\
 		\bottomrule
 	\end{tabular}
-	\caption{Exactitud categórica por modelo para los conjuntos de validación y verificación experimento \ref{sssec:exp1}}
+	\caption{Exactitud categórica por modelo para los conjuntos de validación y verificación experimento \ref{sssec:exp3}}
 	\label{exp3:results}
 \end{table}
 
@@ -249,27 +256,108 @@ Se realizará aprendizaje por transferencia tomando como red base PlacesCNN y en
 
 Se reentrenó la red con el total de imágenes de entrenamiento definidas en el experimento \ref{sssec:exp2} (114361) utilizando diferentes variantes en cuanto a arquitectura del clasificador (capas que siguen luego del último bloque convolutivo) como a la cantidad de capas preentrenadas que se vuelven a entrenar con los nuevos datos; a continuación se detallará cada una. Vale aclarar que para todas estas variantes capa de salida es la misma: una capa densa con activación \(softmax\) de 6 unidades.
 
+Se realizaron variantes de entrenamiento tanto congelando (configurando como no entrenables) la red completa y entrenando un clasificador como congelando partes de la red y reentrenando el resto, también agregando un clasificador. Las pruebas realizadas se observan en los siguientes listados. 
+
 Aprendizaje por transferencia - variantes con las capas de la red preentrenada configuradas como no-entrenables:
-\begin{enumerate}
-	\item Luego de las capas convolutivas se agregó un clasificador con dos capas: una totalmente conectada de 512 neuronas con activación \(Relu\), una capa de dropout con probabilidad de 0.5.
-	\item Luego de las capas convolutivas se agregó un clasificador con una capa totalmente conectada de 512 neuronas con activación \(Relu\).
-	\item Luego de las capas convolutivas se entrenó un clasificador con una cuatro capas, compuestas por dos bloques con una capa totalmente conectada de 512 neuronas con activación \(Relu\) y una capa de dropout con probabilidad de 0.5 cada uno.
-\end{enumerate}
+\begin{itemize}
+	\item Variante 1: Luego de las capas convolutivas se agregó un clasificador con dos capas: una totalmente conectada de 512 neuronas con activación \(Relu\), una capa de dropout con probabilidad de 0.5.
+	\item Variante 2: Luego de las capas convolutivas se agregó un clasificador con una capa totalmente conectada de 512 neuronas con activación \(Relu\).
+	\item Variante 3: Luego de las capas convolutivas se entrenó un clasificador con una cuatro capas, compuestas por dos bloques con una capa totalmente conectada de 512 neuronas con activación \(Relu\) y una capa de dropout con probabilidad de 0.5 cada uno.
+\end{itemize}
 
 Aprendizaje por transferencia - variantes que reentrenan capas de la red preentrenada:
-\begin{enumerate}
-	\item Se configuraron como entrenables todas las capas de la red PlacesCNN preentrenada y se agregó un clasificador compuesto de dos bloques con una capa totalmente conectada de 512 neuronas con activación \(Relu\) y una capa de dropout con probabilidad de 0.5.
-	\item Se configuraron como entrenables todas las capas de la red PlacesCNN preentrenada y se agregó un clasificador compuesto de dos bloques con una capa totalmente conectada con activación \(Relu\) y una capa de dropout con probabilidad de 0.5, teniendo cada capa totalmente conectada 4096 y 2048 unidades cada una respectivamente.
-\end{enumerate}
+\begin{itemize}
+	\item Variante 4: Se configuraron como entrenables todas las capas de la red PlacesCNN preentrenada y se agregó un clasificador compuesto de una capa totalmente conectada de 512 neuronas con activación \(Relu\) y una capa de \(Dropout\) con probabilidad de 0.5.
+	\item Variante 5: Se configuró como entrenable sólo el último bloque de la red PlacesCNN (de nombre \(block_5\) en la red), al cual se le agregó una capa de Pooling Máximo Global (llamada \(GlobalMaxPooling\) en inglés), que continuó con una capa totalmente conectada con activación \(Relu\) de 256 neuronas (también se hicieron experimentos con 128, 256 y 1024) y una capa de dropout con probabilidad de 0.5.
+	\item Variante 6: Se configuraron como entrenables las capas 3(de nombre \(block_3\)), 4 (\(block_4\)) y 5 (\(block_5\)) de la red PlacesCNN, seguid de una capa totalmente conectada con activación \(Relu\) de 256 neuronas y una capa de dropout con probabilidad de 0.5.
+\end{itemize}
 
-En la tabla [HACER TABLA RESULTADOS] se observan los resultados obtenidos para cada una de las diferentes pruebas realizadas. A partir de estos resultados es posible afirmar que no se cuenta con las evidencias suficientes para definir la hipótesis \ref{sssec:hipotesis4} como inválida.
+Entre todos los experimentos, la variante que mejor resultó en razón de exactitud categórica fue la número 5 y sus resultados se observan en la tabla \ref{exp4:results}.
 
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{| l | r | r |}
+		\toprule
+		Modelo: Aprendizaje & Exactitud Categórica &  Exactitud Categórica \\
+		por Transferencia PlacesCNN & Conj. de Validación &  Conj. de Verificación \\
+		\midrule
+		Variante 1 & 0.45 & 0.44 \\
+		\midrule
+		Variante 2 & 0.19 & 0.18 \\
+		\midrule
+		Variante 3 & 0.42 & 0.41 \\
+		\midrule
+		Variante 4 & 0.18 & 0.19 \\
+		\midrule
+		Variante 5 & 0.65 & 0.64 \\
+		\midrule
+		Variante 6 & 0.07 & 0.07 \\
+		\bottomrule
+	\end{tabular}
+	\caption{Exactitud categórica por modelo para los conjuntos de validación y verificación experimento \ref{sssec:exp4}}
+	\label{exp4:results}
+\end{table}
+
+Como es posible observar en la tabla de resultados \ref{exp4:results}, en ninguno de los casos de alcanzan o sobrepasan los resultados obtenidos en el experimento \ref{sssec:exp2}, por lo que se refuta la hipótesis \ref{sssec:hipotesis4}.
 
 \subsubsection{Experimento 5} \label{sssec:exp5}
-Se aplicará ecualización del histograma a las imágenes de los conjuntos de datos elegidos, luego se procederá a los mismos pasos que en el experimento \ref{sssec:exp4}. De esta manera, será posible definir la veracidad de la hipótesis \ref{sssec:hipotesis5}.
+Se reentrenará la red ImageNetCNN con el mismo conjunto de datos utilizado en los experimentos \ref{sssec:exp2}, \ref{sssec:exp3} y \ref{sssec:exp4}.
+
+Al igual que con el experimento \ref{sssec:exp4}, se realizaron diferentes variantes de arquitecturas y capas entrenables para realizar la transferencia del aprendizaje. En todos los casos, de igual manera, la capa de salida  es la misma: una capa densa con activación \(softmax\) de 6 unidades. Los diferentes experimentos realizados fueron:
+
+\begin{itemize}
+	\item Variante 1: Se agregó una capa totalmente conectada de 512 neuronas, seguida de una capa de dropout con probabilidad de 0.5.
+	\item Variante 2: Se agregó una capa \(GlobalMaxPooling\) luego de las capas totalmente conectadas, continuada por una capa densa de 256 neuronas, también conectada a una capa de dropout con probabilidad de 0.5.
+	\item Variante 3: Se configuró como entrenable el último bloque convolucional de la red (\(block_5\)), el cual fue conectado a una capa densa de 1024 neuronas seguida de una capa de dropout con probabilidad de 0.5.
+	\item Variante 4: Se configuraron como entrenables las últimas dos capas convolucionales de la red (\(block_5\) y \(block_4\)), y luego se conectaron a una capa densa de 1024 neuronas seguida por una capa de dropout con probabilidad 0.5.
+\end{itemize}
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{| l | r | r |}
+		\toprule
+		Modelo: Aprendizaje por & Exactitud Categórica &  Exactitud Categórica \\
+		transferencia Imagenet-CNN & Conj. de Validación &  Conj. de Verificación \\
+		\midrule
+		Variante 1 & 0.51 & 0.50 \\
+		\midrule
+		Variante 2 & 0.34 & 0.34 \\
+		\midrule
+		Variante 3 & 0.62 & 0.63 \\
+		\midrule
+		Variante 4 & 0.18 & 0.19 \\
+		\bottomrule
+	\end{tabular}
+	\caption{Exactitud categórica por modelo para los conjuntos de validación y verificación experimento \ref{sssec:exp5}}
+	\label{exp5:results}
+\end{table}
+
+En la tabla \ref{exp5:results} se detallan los resultados de cada variante enunciada anteriormente. Como se puede observar la Variante 3 fue la que mejores resultados obtuvo, aunque igualmente no supera los resultados del experimento \ref{sssec:exp2}, por lo tanto la hipótesis \ref{sssec:hipotesis5} se declara inválida.
+
+\subsubsection{Experimento 6} \label{sssec:exp6}
+Se aplicará ecualización del histograma a las imágenes de los conjuntos de datos elegidos, luego se procederá a los mismos pasos que en el experimento \ref{sssec:exp4}. De esta manera, será posible comprobar de la hipótesis \ref{sssec:hipotesis6}.
+
+A partir de la aplicación del filtro C.L.A.H.E. explicado en \ref{clahe:explanation} se obtuvo un nuevo conjunto de datos, algunos de los ejemplos comparados se observan en las figuras \ref{clahe:fig:example1}, \ref{clahe:fig:example2} y \ref{clahe:fig:example3}. Como se puede apreciar, existe un mayor contraste entre los bordes y una clarificación de la imagen. Con este nuevo banco de imágenes se realizó Aprendizaje mediante Transferencia utilizando la misma arquitectura que alcanzó los mejores resultados en el experimento \ref{sssec:exp4} (es decir, la Variante 5). Es importante aclarar que aunque se le haya aplicado un filtro a las imágenes, los conjuntos de entrenamiento, validación y verificación se mantuvieron iguales.
+
+% TODO Agregar ejemplos clahe (pares de imáges con y sin filtro aplicado)
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{| l | r | r |}
+		\toprule
+		Modelo: Aprendizaje & Exactitud Categórica &  Exactitud Categórica \\
+		por Transferencia PlacesCNN & Conj. de Validación &  Conj. de Verificación \\
+		\midrule
+		Variante 5 & 0.00 & 0.00 \\
+		\bottomrule
+	\end{tabular}
+	\caption{Exactitud categórica para los conjuntos de validación y verificación experimento \ref{sssec:exp6}}
+	\label{exp6:results}
+\end{table}
+%TODO Agregar resultados finales experimento 6
+
+En la tabla \ref{exp6:results} se pueden observar los resultados del modelo, con lo cual la hipótesis \ref{sssec:hipotesis6} se declara como inválida. El hecho de aplicar el filtro C.L.A.H.E. no hizo que los resultados mejoren en relación a no haberlos aplicado.
 
 
-% análisis distribución de clases en datasets
-% ejemplos de imágenes
 % modelos calibrados?
-
