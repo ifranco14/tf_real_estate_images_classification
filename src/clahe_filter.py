@@ -97,7 +97,7 @@ from src.data import data
 
 def apply_clahe_and_save(img_name, dataset_path, dataset, category, processed_data_path, ):
     img_file_path = f'{dataset_path}/{dataset}/{category}/{img_name}'
-    new_category_path = f'{processed_data_path}/clahe_vision_based_dataset/{dataset}/{category}/'
+    new_category_path = f'{processed_data_path}/right_clahe_vision_based_dataset/{dataset}/{category}/'
 
     if not os.path.exists(new_category_path):
         os.makedirs(new_category_path)
@@ -125,9 +125,10 @@ def safe_clahe_conversion(img_name, dataset_path, dataset, category, processed_d
 
 def main():
     processed_data_path = f'{data.PATH().PROCESSED_DATA_PATH}'
-    dataset_path = f'{processed_data_path}/vision_based_dataset/'
+    dataset_path = f'{processed_data_path}/right_vision_based_dataset/'
 
     datasets = ['train', 'validation', 'test']
+    datasets = ['test']
     for dataset in datasets:
         categories = os.listdir(f'{dataset_path}/{dataset}')
 
@@ -141,9 +142,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-
-
-
-

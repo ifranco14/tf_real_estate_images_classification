@@ -66,6 +66,12 @@ class PlacesOntop_Model(base_model.BaseModel):
         if version == 15:
             return self.get_model_v15(input_shape)
 
+        if version == 16:
+            return self.get_model_v16(input_shape)
+
+        if version == 17:
+            return self.get_model_v17(input_shape)
+
         return self.get_model_v1(input_shape)
 
     def get_model_v1(self, input_shape):
@@ -425,7 +431,57 @@ class PlacesOntop_Model(base_model.BaseModel):
 
         x = Dense(256, activation='relu',
                   name='fc1')(x)
+        x = Dropout(0.5, name='drop_fc1')(x)
+
+        x = Dense(self.n_classes, activation='softmax', name="predictions")(x)
+
+        model = Model(inputs=vgg16_places.input, outputs=x)
+
+        return model
+
+    def get_model_v16(self, input_shape):
+
+        vgg16_places = VGG16_Places365(
+            weights='places', include_top=False, input_shape=input_shape,
+            pooling='max'
+        )
+
+        for l in vgg16_places.layers:
+            if l.name.startswith('block5'):
+                l.trainable = True
+            else:
+                l.trainable = False
+
+        x = vgg16_places.output
+
+        x = Dense(256, activation='relu',
+                  name='fc1')(x)
         x = Dropout(0.25, name='drop_fc1')(x)
+
+        x = Dense(self.n_classes, activation='softmax', name="predictions")(x)
+
+        model = Model(inputs=vgg16_places.input, outputs=x)
+
+        return model
+
+    def get_model_v17(self, input_shape):
+
+        vgg16_places = VGG16_Places365(
+            weights='places', include_top=False, input_shape=input_shape)
+
+        for l in vgg16_places.layers:
+            if l.name.startswith('block5'):
+                l.trainable = True
+            else:
+                l.trainable = False
+
+        x = vgg16_places.output
+
+        x = Flatten(name='flatten')(x)
+
+        x = Dense(256, activation='relu',
+                  name='fc1')(x)
+        x = Dropout(0.5, name='drop_fc1')(x)
 
         x = Dense(self.n_classes, activation='softmax', name="predictions")(x)
 

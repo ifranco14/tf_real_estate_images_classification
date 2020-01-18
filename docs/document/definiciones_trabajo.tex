@@ -5,14 +5,14 @@ En este trabajo se tomarán como ciertos los siguientes puntos:
 	\item Los conjuntos de datos elegidos se encuetran etiquetados correctamente 
 	\item Cada imagen de los conjuntos de datos con los que se entrenarán los modelos resultan representativas a la escena a la que pertenecen.
 	\item El hardware con el que se llevará a cabo el proyecto funcionará tal y como se establece en sus respectivo manual.
-	\item Las red preentrenada a descargar (PlacesCNN) fue entrenada sólo con las imágenes del conjuntos de datos Places.
-	\item Para ambientes productivos la métrica \cite{balanced_accuracy_score} es la más representativa.
+	\item Las redes preentrenadas a descargar, PlacesCNN e ImagenetCNN, fueron entrenadas sólo con las imágenes de los conjuntos datos Places365 e ImageNet, respectivamente.
+	\item Para ambientes productivos la métrica exactitud categórica \cite{balanced_accuracy_score} es la más representativa.
 \end{enumerate}
 
 \subsection{Limitaciones} \label{ssec:limitaciones}
 El proyecto en curso contará con las siguientes limitaciones:
 \begin{enumerate}
-	\item El análisis se centrará en imágenes de las siguientes escenas de propiedades: cocina, comedor, baño, dormitorio, exterior, living, otros interior.
+	\item El análisis se centrará en imágenes de las siguientes escenas de propiedades: cocina, comedor, baño, dormitorio, exterior y living.
 	\item Tanto los tiempos de entrenamiento y predicción como el tamaño de las redes, estarán restringidos al hardware con el que se cuenta.
 	\item El trabajo intentará aceptar o refutar las hipótesis enumeradas a continuación, quedando excluídas del alcance del proyecto las posibles investigaciones que surjan a partir del mismo.
 \end{enumerate}
@@ -32,6 +32,7 @@ Teniendo en cuenta tanto las limitaciones como las asunciones definidas para el 
 
 \subsubsection{Hipótesis 1} \label{sssec:hipotesis1}
 Como se pudo observar en la revisión de antecedentes, existen múltiples formas de hacer frente al problema. El enfoque más simple podría ser mediante perceptrón multicapa, pero por lo que se pudo observar, la mayoría de las soluciones utilizadas son redes neuronales convolucionales. 
+
 Hipótesis: "Una red convolucional es capaz de obtener mejores resultados que un perceptrón multicapa en materia de clasificación de escenas".
 
 \subsubsection{Hipótesis 2} \label{sssec:hipotesis2}
@@ -48,20 +49,20 @@ Como se pudo ver en \cite{learning_deep_features}, Zhou y otros crearon una red 
 Hipótesis: "Realizar inferencia directamente a partir de esta red preentrenada alcanza mejores resultados que una red convolucional entrenada con el conjunto de datos del trabajo \cite{vision_based_real_estate_price_estimation} (el de mayor cantidad de imágenes que se tiene) para los conjuntos de validación y verificación definidos al contrastar la hipótesis \ref{sssec:hipotesis2}".
 
 \subsubsection{Hipótesis 4} \label{sssec:hipotesis4}
-Una de las técnicas revisadas antes de comenzar con el trabajo es Aprendizaje por Transferencia (\ref{ssec:transfer_learning}), en el cual se parte de redes preentrenadas y se las reentrena con el conjunto de imágenes propio para ajustar los pesos al mismo. 
+Una de las técnicas revisadas antes de comenzar con el trabajo fue Aprendizaje por Transferencia (\ref{ssec:transfer_learning}), en el cual se parte de redes preentrenadas y se las reentrena con el conjunto de imágenes propio para ajustar los pesos de la red al mismo. 
 
-Hipótesis: "Haciendo aprendizaje por transferencia a partir de la red PlacesCNN es posible mejorar los resultados obtenidos al contrastar la hipótesis \ref{sssec:hipotesis3}".
+Hipótesis: "Haciendo Aprendizaje por Transferencia a partir de la red PlacesCNN es posible mejorar los resultados obtenidos al contrastar la hipótesis \ref{sssec:hipotesis2}".
 
 
 \subsubsection{Hipótesis 5} \label{sssec:hipotesis5}
 Otra red pre-entrenada existente es ImageNetCNN, la cual fue entrenada con el dataset ImageNet centrado en objetos. Aunque no fue entrenada para escenas como PlacesCNN, se puede interpretar que tiene cierta capacidad de detectarlas a partir de los objetos que se encuentren en ella. 
 
-Hipótesis: "Haciendo aprendizaje por transferencia a partir de la red ImageNetCNN es posible mejorar los resultados obtenidos al contrastar la hipótesis \ref{sssec:hipotesis3}".
+Hipótesis: "La realización de Aprendizaje por Transferencia a partir de la red ImageNetCNN posibilita mejorar los resultados obtenidos al contrastar la hipótesis \ref{sssec:hipotesis2}".
 
 \subsubsection{Hipótesis 6} \label{sssec:hipotesis6}
 Un caso observado en la revisión de antecedentes es el de \cite{lstm_real_estate} en el cual se obtienen mejoras luego de aplicar un filtro de ecualización del histograma a las imágenes tanto para entrenar como para predecir. 
 
-Hipótesis: "Realizar aprendizaje por transferencia utilizando PlacesCNN sobre un nuevo conjunto de datos obtenido a partir de aplicar el filtro utiizado en \cite{lstm_real_estate} para el conjunto de datos completo hará que los resultados mejores".
+Hipótesis: "Realizar aprendizaje por transferencia utilizando PlacesCNN sobre un nuevo conjunto de datos obtenido a partir de aplicar el filtro utiizado en \cite{lstm_real_estate} para el conjunto de datos completo hará que los resultados sean mejores".
 
 %\subsubsection{Hipótesis 7} \label{sssec:hipotesis7}
 
@@ -71,6 +72,13 @@ Hipótesis: "Realizar aprendizaje por transferencia utilizando PlacesCNN sobre u
 %La red ImageNetCNN fue entrenanda para detectar cientos de objetos diferentes, aunque en el caso de las escenas de propiedades inmuebles sólo un subconjunto de éstos son posibles de encontrar.
 
 %Hipótesis: "Realizar aprendizaje por transferencia a partir de una versión reentrenada de la red ImageNetCNN con objetos posibles de encontrar en el contexto de las escenas de propiedades inmuebles hará que se obtengan mejores resultados a los obtenidos en el resto de los experimentos".
+
+
+%\subsubsection{Hipótesis 7} \label{sssec:hipotesis7}
+%Si se tiene en cuenta la cantidad de imágenes con el que se entrenó PlacesCNN y el conjunto de datos utilizado en el trabajo la diferencia es abrupta. Una manera de lidiar con la falta de datos es realizar Aumentación de los Datos.
+
+%Hipótesis: "Hacer Aprendizaje por Transferencia partiendo de la red PlacesCNN pero realizando técnicas de Aumentación de Datos hará que los resultados obtenidos en el experimento realizado al contrastar la hipótesis \ref{sssec:hipotesis4} mejoren".
+
 
 
 \subsection{Experimentos}
@@ -116,10 +124,10 @@ Los conjuntos de datos a utilizar en los experimentos serán los generados en lo
 \subsubsection{Experimento 1} \label{sssec:exp1}
 Se entranará tanto una red convolucional como un perceptrón multicapa con las imágenes del conjunto de datos generado en el trabajo \cite{vision_based_real_estate_price_estimation}. A continuación podremos comparar los resultados de ambos modelos de manera que será posible contrastarlos con la hipótesis \ref{sssec:hipotesis1}.
 
-El perceptrón multicapa del experimento cuenta con cinco capas ocultas totalmente conectadas de 1024, 1024, 512, 256 y 128 neuronas en cada una, con una capa de dropout intercalada luego de cada una de ellas con probabilidad de 0.3, finalmente, una capa de salida con activación softmax como se observa en la imagen \ref{fig:h1mlpmodel}. 
+El perceptrón multicapa del experimento cuenta con cinco capas ocultas totalmente conectadas de 1024, 1024, 512, 256 y 128 neuronas en cada una, con una capa de dropout intercalada luego de cada una de ellas con probabilidad de 0.3, finalmente, una capa de salida con activación softmax como se observa en en anexo \ref{ssec:anexo4}.
 
 
-Por el lado de la red neuronal convolucional se utilizará una arquitectura que concatenará dos bloques compuestos por: capa convolucional, capa de normalización en lote, capa convolucional, capa de normalización en lote, capa de pooling y capa de dropout; en el primer bloque las capas convolutivas aplicarán 64 filtros cada una, mientras que en el segundo 128, todos ellos de tamaño \([5\;x\;5]\) en todas las capas convolutivas, las capas de pooling aplicarán filtros de \([2\;x\;2]\) y las capas de dropout tendrán asignada una probabilidad de 0.25. Luego de estos bloques, la red seguirá con una capa totalmente conectada de 512 neuronas con regularización L2, una capa dropout con probabilidad 0.5 y la capa de salida con activación Softmax. La inicialización de los pesos de la red se realizará mediante inicialización de Xavier \cite{glorot2010understanding}. 
+Por el lado de la red neuronal convolucional se utilizará una arquitectura que concatenará dos bloques compuestos por: capa convolucional, capa de normalización en lote, capa convolucional, capa de normalización en lote, capa de pooling y capa de dropout; en el primer bloque las capas convolutivas aplicarán 64 filtros cada una, mientras que en el segundo 128, todos ellos de tamaño \([5\;x\;5]\) en todas las capas convolutivas, las capas de pooling aplicarán filtros de \([2\;x\;2]\) y las capas de dropout tendrán asignada una probabilidad de 0.25. Luego de estos bloques, la red seguirá con una capa totalmente conectada de 512 neuronas con regularización L2, una capa dropout con probabilidad 0.5 y la capa de salida con activación Softmax. La inicialización de los pesos de la red se realizará mediante inicialización de Xavier \cite{glorot2010understanding}. En \ref{ssec:anexo5} se puede observar la arquitectura de esta red.
 
 En ambas redes se utilizaron de la misma manera las siguientes configuraciones: 
 \begin{itemize}
@@ -150,7 +158,7 @@ Se llevó a cabo el entrenamiento de ambas redes con una porción de 4671 imáge
 A partir de los resultados expuestos en la tabla previamente mencionada, no se cuenta con las evidencias necesarias para negar la hipótesis \ref{sssec:hipotesis1}. 
 
 \subsubsection{Experimento 2} \label{sssec:exp2}
-Se entrenará la misma red base que en \ref{sssec:exp1} pero esta vez con diferentes subconjuntos del conjunto de datos del trabajo \cite{lstm_real_estate} y finalmente con el conjunto de datos completo. A partir de los resultados obtenidos será posible contrastar la hipótesis \ref{sssec:hipotesis2}.
+Se entrenará la misma red que en \ref{sssec:exp1} pero esta vez con diferentes subconjuntos del conjunto de datos del trabajo \cite{vision_based_real_estate_price_estimation} y finalmente con el conjunto de datos completo. A partir de los resultados obtenidos será posible contrastar la hipótesis \ref{sssec:hipotesis2}.
 
 En este experimento se utilizará la misma red neuronal convolucional detallada en el experimento \ref{sssec:exp1}, será entrenada con subconjuntos aleatorios tanto del diez como del cincuenta por ciento del conjunto de datos total elegido, además del entrenamiento con la totalidad del mismo. En la tabla \ref{exp2:distribucion_clase_datasets} se puede observar la cantidad de imágenes de cada clase que se tienen para cada el entrenamiento en cada experimento. Además, en la tabla \ref{exp2:distribucion_clase_datasets_validation_test} se muestran las distribuciones de los conjuntos de datos de validación y verificación por clase, que serán fijos para hacer posible el testeo correcto de la hipótesis.
 
@@ -290,7 +298,7 @@ Entre todos los experimentos, la variante que mejor resultó en razón de exacti
 		\midrule
 		Variante 4 & 0.18 & 0.19 \\
 		\midrule
-		Variante 5 & 0.65 & 0.64 \\
+		Variante 5 & 0.657 & 0.639 \\
 		\midrule
 		Variante 6 & 0.07 & 0.07 \\
 		\bottomrule
@@ -324,7 +332,7 @@ Al igual que con el experimento \ref{sssec:exp4}, se realizaron diferentes varia
 		\midrule
 		Variante 2 & 0.34 & 0.34 \\
 		\midrule
-		Variante 3 & 0.62 & 0.63 \\
+		Variante 3 & 0.627 & 0.623 \\
 		\midrule
 		Variante 4 & 0.18 & 0.19 \\
 		\bottomrule
@@ -338,9 +346,14 @@ En la tabla \ref{exp5:results} se detallan los resultados de cada variante enunc
 \subsubsection{Experimento 6} \label{sssec:exp6}
 Se aplicará ecualización del histograma a las imágenes de los conjuntos de datos elegidos, luego se procederá a los mismos pasos que en el experimento \ref{sssec:exp4}. De esta manera, será posible comprobar de la hipótesis \ref{sssec:hipotesis6}.
 
-A partir de la aplicación del filtro C.L.A.H.E. explicado en \ref{clahe:explanation} se obtuvo un nuevo conjunto de datos, algunos de los ejemplos comparados se observan en las figuras \ref{clahe:fig:example1}, \ref{clahe:fig:example2} y \ref{clahe:fig:example3}. Como se puede apreciar, existe un mayor contraste entre los bordes y una clarificación de la imagen. Con este nuevo banco de imágenes se realizó Aprendizaje mediante Transferencia utilizando la misma arquitectura que alcanzó los mejores resultados en el experimento \ref{sssec:exp4} (es decir, la Variante 5). Es importante aclarar que aunque se le haya aplicado un filtro a las imágenes, los conjuntos de entrenamiento, validación y verificación se mantuvieron iguales.
+A partir de la aplicación del filtro C.L.A.H.E. explicado en \ref{clahe:explanation} se obtuvo un nuevo conjunto de datos, algunos de los ejemplos comparados se observan en la figura \ref{fig:normal_vs_clahe}. Como se puede apreciar, existe un mayor contraste entre los bordes y una clarificación de la imagen. Con este nuevo banco de imágenes se realizó Aprendizaje mediante Transferencia utilizando la misma arquitectura que alcanzó los mejores resultados en el experimento \ref{sssec:exp4} (es decir, la Variante 5). Es importante aclarar que aunque se le haya aplicado un filtro a las imágenes, los conjuntos de entrenamiento, validación y verificación se mantuvieron iguales.
 
-% TODO Agregar ejemplos clahe (pares de imáges con y sin filtro aplicado)
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1\linewidth, height=1\textheight]{images/normal_vs_clahe_png}
+	\caption[Ejemplo aplicación del algoritmo C.L.A.H.E. en imágenes del dataset utilizado en el experimento \ref{sssec:exp6}]{Ejemplo aplicación del algoritmo C.L.A.H.E. en imágenes del dataset utilizado en el experimento \ref{sssec:exp6}}
+	\label{fig:normal_vs_clahe}
+\end{figure}
 
 \begin{table}[h!]
 	\centering
@@ -349,15 +362,11 @@ A partir de la aplicación del filtro C.L.A.H.E. explicado en \ref{clahe:explana
 		Modelo: Aprendizaje & Exactitud Categórica &  Exactitud Categórica \\
 		por Transferencia PlacesCNN & Conj. de Validación &  Conj. de Verificación \\
 		\midrule
-		Variante 5 & 0.00 & 0.00 \\
+		Variante 5 & 0.656 & 0.642 \\
 		\bottomrule
 	\end{tabular}
 	\caption{Exactitud categórica para los conjuntos de validación y verificación experimento \ref{sssec:exp6}}
 	\label{exp6:results}
 \end{table}
-%TODO Agregar resultados finales experimento 6
 
-En la tabla \ref{exp6:results} se pueden observar los resultados del modelo, con lo cual la hipótesis \ref{sssec:hipotesis6} se declara como inválida. El hecho de aplicar el filtro C.L.A.H.E. no hizo que los resultados mejoren en relación a no haberlos aplicado.
-
-
-% modelos calibrados?
+En la tabla \ref{exp6:results} se pueden observar los resultados del modelo, con lo cual no existen evidencias suficientes para decir que la hipótesis \ref{sssec:hipotesis6} sea inválida. El hecho de aplicar el filtro C.L.A.H.E. no hizo que los resultados mejoren en gran medida en relación a haber dejado las imágenes en crudo, pero de todos modos el modelo de este experimento obtuvo mejor exactitud categórica que el del experimento \ref{sssec:exp4}.	

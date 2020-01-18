@@ -222,22 +222,46 @@ class BaseModel:
 
     def get_image_data_generator(self, path, train=True, validation=True,
                                  test=False, class_mode_validation=None,
-                                 class_mode_test=None):
+                                 class_mode_test=None,
+                                 featurewise_center=False,
+                                 samplewise_center=False,
+                                 featurewise_std_normalization=False,
+                                 samplewise_std_normalization=False,
+                                 zca_whitening=False,
+                                 zca_epsilon=1e-06,
+                                 rotation_range=0,
+                                 width_shift_range=0.0,
+                                 height_shift_range=0.0,
+                                 brightness_range=None,
+                                 shear_range=0.0,
+                                 zoom_range=0.0,
+                                 channel_shift_range=0.0,
+                                 fill_mode='nearest',
+                                 cval=0.0,
+                                 horizontal_flip=False,
+                                 vertical_flip=False,
+                                 preprocessing_function=None,
+                                 data_format='channels_last',
+                                 validation_split=0.0,
+                                 interpolation_order=1, dtype='float32',
+                                 rescale=1./255):
 
         result = []
 
         if train:
             train_datagen = ImageDataGenerator(
-                rescale=1./255,
+                # rescale=1./255,
+                rescale=rescale,
                 dtype=tf.float32,
-                # shear_range=0.2,
-                # zoom_range=0.2,
-                # horizontal_flip=True,
-                # featurewise_center=True,
-                # featurewise_std_normalization=True,
-                # rotation_range=20,
-                # width_shift_range=0.2,
-                # height_shift_range=0.2,
+                shear_range=shear_range,
+                zoom_range=zoom_range,
+                horizontal_flip=horizontal_flip,
+                # featurewise_center=featurewise_center,
+                # featurewise_std_normalization=featurewise_std_normalization,
+                rotation_range=rotation_range,
+                width_shift_range=width_shift_range,
+                height_shift_range=height_shift_range,
+                preprocessing_function=preprocessing_function,
              )
 
             train_generator = train_datagen.flow_from_directory(
@@ -252,8 +276,10 @@ class BaseModel:
 
         if validation:
             validation_datagen = ImageDataGenerator(
-                rescale=1./255,
+                # rescale=1./255,
+                rescale=rescale,
                 dtype=tf.float32,
+                preprocessing_function=preprocessing_function,
                 )
 
             validation_generator = validation_datagen.flow_from_directory(
@@ -270,8 +296,10 @@ class BaseModel:
 
         if test:
             test_datagen = ImageDataGenerator(
-                rescale=1./255,
+                # rescale=1./255,
+                rescale=rescale,
                 dtype=tf.float32,
+                preprocessing_function=preprocessing_function,
                 )
 
             test_generator = test_datagen.flow_from_directory(
@@ -371,9 +399,9 @@ class BaseModel:
             validation_data=validation_generator,
             validation_steps=validation_steps_per_epoch,
             validation_freq=1,
-            max_queue_size=10,
+            max_queue_size=2*self.batch_size,
             workers=n_workers,
-            use_multiprocessing=True if n_workers > 1 else False,
+            use_multiprocessing=n_workers > 1,
             shuffle=True,
             class_weight=class_weights,
             callbacks=callbacks if callbacks else None,
@@ -420,7 +448,8 @@ class BaseModel:
 
     def predict_from_generator(self, path, test_generator=None,
                                validation_generator=None,
-                               return_pred_proba=False):
+                               return_pred_proba=False,
+                               batch_size=1):
         if test_generator is None:
             test_generator = self.get_image_data_generator(
                 path, test=True, train=False, validation=False)
@@ -431,7 +460,9 @@ class BaseModel:
 
 
         filenames = test_generator.filenames
-        nb_samples = len(filenames)
+        nb_samples = np.ceil(len(filenames) / batch_size)
+
+        print(nb_samples)
 
         # keras.backend.get_session().run(tf.global_variables_initializer())
 

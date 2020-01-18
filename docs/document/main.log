@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.1)  15 JAN 2020 01:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.1)  18 JAN 2020 02:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,10 +6,19 @@ entering extended mode
 (./main.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(/usr/share/texlive/texmf-dist/tex/latex/extsizes/extarticle.cls
+Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/extsizes/size14.clo
+File: size14.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/exscale.sty
+Package: exscale 2014/09/29 v2.1h Standard LaTeX package exscale
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+\big@size=\dimen102
 )
 \c@part=\count79
 \c@section=\count80
@@ -21,12 +30,42 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \c@table=\count86
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
-\bibindent=\dimen102
+\bibindent=\dimen103
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count87
+\Gm@cntv=\count88
+\c@Gm@tempcnt=\count89
+\Gm@bindingoffset=\dimen104
+\Gm@wd@mp=\dimen105
+\Gm@odd@mp=\dimen106
+\Gm@even@mp=\dimen107
+\Gm@layoutwidth=\dimen108
+\Gm@layoutheight=\dimen109
+\Gm@layouthoffset=\dimen110
+\Gm@layoutvoffset=\dimen111
+\Gm@dimlist=\toks15
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks14
-\inpenc@posthook=\toks15
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
@@ -344,10 +383,6 @@ Now handling font encoding U ...
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks16
-)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
@@ -362,8 +397,8 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen103
-\Gin@req@width=\dimen104
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2017/09/02 v2.17a AMS math features
@@ -375,103 +410,100 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks17
-\ex@=\dimen105
+\@emptytoks=\toks18
+\ex@=\dimen114
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen106
+\pmbraise@=\dimen115
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count87
+\inf@bad=\count90
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count88
-\leftroot@=\count89
+\uproot@=\count91
+\leftroot@=\count92
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count90
-\DOTSCASE@=\count91
+\classnum@=\count93
+\DOTSCASE@=\count94
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
-\big@size=\dimen107
+\big@size=\dimen116
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count92
-\c@MaxMatrixCols=\count93
+\macc@depth=\count95
+\c@MaxMatrixCols=\count96
 \dotsspace@=\muskip10
-\c@parentequation=\count94
-\dspbrk@lvl=\count95
-\tag@help=\toks18
-\row@=\count96
-\column@=\count97
-\maxfields@=\count98
-\andhelp@=\toks19
-\eqnshift@=\dimen108
-\alignsep@=\dimen109
-\tagshift@=\dimen110
-\tagwidth@=\dimen111
-\totwidth@=\dimen112
-\lineht@=\dimen113
-\@envbody=\toks20
+\c@parentequation=\count97
+\dspbrk@lvl=\count98
+\tag@help=\toks19
+\row@=\count99
+\column@=\count100
+\maxfields@=\count101
+\andhelp@=\toks20
+\eqnshift@=\dimen117
+\alignsep@=\dimen118
+\tagshift@=\dimen119
+\tagwidth@=\dimen120
+\totwidth@=\dimen121
+\lineht@=\dimen122
+\@envbody=\toks21
 \multlinegap=\skip44
 \multlinetaggap=\skip45
-\mathdisplay@stack=\toks21
+\mathdisplay@stack=\toks22
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2016/04/27 v1.618033 publication quality tables
-\heavyrulewidth=\dimen114
-\lightrulewidth=\dimen115
-\cmidrulewidth=\dimen116
-\belowrulesep=\dimen117
-\belowbottomsep=\dimen118
-\aboverulesep=\dimen119
-\abovetopsep=\dimen120
-\cmidrulesep=\dimen121
-\cmidrulekern=\dimen122
-\defaultaddspace=\dimen123
-\@cmidla=\count99
-\@cmidlb=\count100
-\@aboverulesep=\dimen124
-\@belowrulesep=\dimen125
-\@thisruleclass=\count101
-\@lastruleclass=\count102
-\@thisrulewidth=\dimen126
+\heavyrulewidth=\dimen123
+\lightrulewidth=\dimen124
+\cmidrulewidth=\dimen125
+\belowrulesep=\dimen126
+\belowbottomsep=\dimen127
+\aboverulesep=\dimen128
+\abovetopsep=\dimen129
+\cmidrulesep=\dimen130
+\cmidrulekern=\dimen131
+\defaultaddspace=\dimen132
+\@cmidla=\count102
+\@cmidlb=\count103
+\@aboverulesep=\dimen133
+\@belowrulesep=\dimen134
+\@thisruleclass=\count104
+\@lastruleclass=\count105
+\@thisrulewidth=\dimen135
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
-\col@sep=\dimen127
-\extrarowheight=\dimen128
-\NC@list=\toks22
+\col@sep=\dimen136
+\extrarowheight=\dimen137
+\NC@list=\toks23
 \extratabsurround=\skip46
 \backup@length=\skip47
 )
-\TX@col@width=\dimen129
-\TX@old@table=\dimen130
-\TX@old@col=\dimen131
-\TX@target=\dimen132
-\TX@delta=\dimen133
-\TX@cols=\count103
-\TX@ftn=\toks23
+\TX@col@width=\dimen138
+\TX@old@table=\dimen139
+\TX@old@col=\dimen140
+\TX@target=\dimen141
+\TX@delta=\dimen142
+\TX@cols=\count106
+\TX@ftn=\toks24
 )
 (/usr/share/texlive/texmf-dist/tex/latex/ctable/ctable.sty
 Package: ctable 2015/10/17 v1.31 ctable package for flexible typesetting of tab
 le and figure floats using key/value directives
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
-)
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count104
+\etb@tempcnta=\count107
 )
 (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
@@ -495,10 +527,10 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks24
-\XKV@tempa@toks=\toks25
+\XKV@toks=\toks25
+\XKV@tempa@toks=\toks26
 )
-\XKV@depth=\count105
+\XKV@depth=\count108
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
@@ -507,11 +539,11 @@ Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@r@tfl@t=\count106
+\c@r@tfl@t=\count109
 \rotFPtop=\skip48
 \rotFPbot=\skip49
 \rot@float@box=\box28
-\rot@mess@toks=\toks26
+\rot@mess@toks=\toks27
 )
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/transparent.sty
 Package: transparent 2016/05/16 v1.1 Transparency via pdfTeX's color stack (HO)
@@ -520,58 +552,92 @@ Package: transparent 2016/05/16 v1.1 Transparency via pdfTeX's color stack (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 ))
-\@CTframesep=\dimen134
-\@dfltCTframesep=\dimen135
-\@CTframerule=\dimen136
-\@dfltCTframerule=\dimen137
-\@CTwidth=\dimen138
-\@dfltCTwidth=\dimen139
-\@CTcaptionskip=\dimen140
-\@dfltCTcaptionskip=\dimen141
-\@CTmaxwidth=\dimen142
-\@dfltCTmaxwidth=\dimen143
-\@CTmincapwidth=\dimen144
-\@dfltCTmincapwidth=\dimen145
-\@CTfooterwidth=\dimen146
-\@dfltCTfooterwidth=\dimen147
-\@CTw=\dimen148
-\@CTfloatwidth=\dimen149
-\@CToldsep=\dimen150
-\@CToldrule=\dimen151
+\@CTframesep=\dimen143
+\@dfltCTframesep=\dimen144
+\@CTframerule=\dimen145
+\@dfltCTframerule=\dimen146
+\@CTwidth=\dimen147
+\@dfltCTwidth=\dimen148
+\@CTcaptionskip=\dimen149
+\@dfltCTcaptionskip=\dimen150
+\@CTmaxwidth=\dimen151
+\@dfltCTmaxwidth=\dimen152
+\@CTmincapwidth=\dimen153
+\@dfltCTmincapwidth=\dimen154
+\@CTfooterwidth=\dimen155
+\@dfltCTfooterwidth=\dimen156
+\@CTw=\dimen157
+\@CTfloatwidth=\dimen158
+\@CToldsep=\dimen159
+\@CToldrule=\dimen160
 \CT@t=\box29
-\@CTcurftwidth=\dimen152
+\@CTcurftwidth=\dimen161
 ) (./main.aux
 (./portada.aux) (./introduccion.aux) (./revision_de_antecedentes.aux)
-(./marco_teorico.aux) (./definiciones_trabajo.aux) (./conclusiones.aux)
-(./anexo.aux))
+(./marco_teorico.aux) (./definiciones_trabajo.aux)
+(./analisis_resultados_trabajo.aux) (./conclusiones.aux) (./anexo.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
+* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=418.25368pt
+* \textheight=591.5302pt
+* \oddsidemargin=17.3571pt
+* \evensidemargin=17.3571pt
+* \topmargin=-9.86334pt
+* \headheight=14.0pt
+* \headsep=25.0pt
+* \topskip=14.0pt
+* \footskip=30.0pt
+* \marginparwidth=15.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=12.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count107
-\scratchdimen=\dimen153
+\scratchcounter=\count110
+\scratchdimen=\dimen162
 \scratchbox=\box30
-\nofMPsegments=\count108
-\nofMParguments=\count109
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count110
-\MPscratchDim=\dimen154
-\MPnumerator=\count111
-\makeMPintoPDFobject=\count112
-\everyMPtoPDFconversion=\toks28
+\nofMPsegments=\count111
+\nofMParguments=\count112
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count113
+\MPscratchDim=\dimen163
+\MPnumerator=\count114
+\makeMPintoPDFobject=\count115
+\everyMPtoPDFconversion=\toks29
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -634,314 +700,373 @@ e
 \openout2 = `introduccion.aux'.
 
 
-(./introduccion.tex [2
+(./introduccion.tex [1
 
 
-] [3]
+] [2]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 39.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 39.
- [4]
-Overfull \hbox (3.39037pt too wide) in paragraph at lines 49--51
-[]\OT1/cmr/m/n/12 En [[]] se de-mues-tra que a par-tir de la in-for-maci^^Son q
-ue brin-dan las im^^Sagenes
+
+Overfull \hbox (11.71265pt too wide) in paragraph at lines 39--40
+\OT1/cmr/m/n/14.4 ficar las es-ce-nas de cada propiedad de la que se tiene cono
+cimiento
  []
 
-[5]
-Overfull \hbox (6.52367pt too wide) in paragraph at lines 56--57
-[]\OT1/cmr/m/n/12 Por ^^Sultimo, es im-por-tante destacar la posi-bil-i-dad de 
-ex-traer el conocimiento
+[3]
+Overfull \hbox (31.52574pt too wide) in paragraph at lines 43--44
+[]\OT1/cmr/m/n/14.4 Valoraci^^Son au-tom^^Satica o re-fi-namiento de val-o-raci
+ones de propiedades
  []
 
-) [6]
+[4]
+Overfull \hbox (7.36272pt too wide) in paragraph at lines 52--53
+[]\OT1/cmr/m/n/14.4 Por otro lado, en ac-tivi-dades como el con-trol o chequeo 
+de im^^Sagenes
+ []
+
+
+Overfull \hbox (3.40938pt too wide) in paragraph at lines 54--55
+\OT1/cmr/m/n/14.4 de obtener la relaci^^Son en-tre pre-cio con el que se venden
+ las propiedades
+ []
+
+[5]) [6] [7]
 \openout2 = `revision_de_antecedentes.aux'.
 
  (./revision_de_antecedentes.tex
-Overfull \hbox (6.46632pt too wide) in paragraph at lines 2--2
-[]\OT1/cmr/bx/n/14.4 Clasificaci^^Son de es-ce-nas me-di-ante Re-des Neu-ronale
-s
+Overfull \hbox (4.13818pt too wide) in paragraph at lines 2--2
+[]\OT1/cmr/bx/n/17.28 Clasificaci^^Son de es-ce-nas me-di-ante Re-des Neu-
  []
 
-<images/lstm_clahe_example.png, id=24, 908.39375pt x 772.8875pt>
+<images/lstm_clahe_example.png, id=32, 908.39375pt x 772.8875pt>
 File: images/lstm_clahe_example.png Graphic file (type png)
 <use images/lstm_clahe_example.png>
 Package pdftex.def Info: images/lstm_clahe_example.png  used on input line 11.
-(pdftex.def)             Requested size: 390.00568pt x 274.25314pt.
+(pdftex.def)             Requested size: 418.2543pt x 295.76413pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7
+[8
 
 
-]
-<images/lstm_architecture.png, id=30, 856.19875pt x 351.3125pt>
+] [9 <./images/lstm_clahe_example.png>]
+<images/lstm_architecture.png, id=41, 856.19875pt x 351.3125pt>
 File: images/lstm_architecture.png Graphic file (type png)
 <use images/lstm_architecture.png>
 Package pdftex.def Info: images/lstm_architecture.png  used on input line 23.
-(pdftex.def)             Requested size: 390.00217pt x 164.55403pt.
+(pdftex.def)             Requested size: 418.24767pt x 177.46768pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 2980) has occurred while \output is active []
-
- [8 <./images/lstm_clahe_example.png>]
-Overfull \hbox (6.46632pt too wide) in paragraph at lines 33--33
-[]\OT1/cmr/bx/n/14.4 Clasificaci^^Son de es-ce-nas me-di-ante Re-des Neu-ronale
-s
+Overfull \hbox (4.13818pt too wide) in paragraph at lines 33--33
+[]\OT1/cmr/bx/n/17.28 Clasificaci^^Son de es-ce-nas me-di-ante Re-des Neu-
  []
 
-[9 <./images/lstm_architecture.png>] [10]
-<images/places_metrics.png, id=48, 770.88pt x 162.6075pt>
+[10 <./images/lstm_architecture.png>] [11] [12]
+<images/places_metrics.png, id=59, 770.88pt x 162.6075pt>
 File: images/places_metrics.png Graphic file (type png)
 <use images/places_metrics.png>
 Package pdftex.def Info: images/places_metrics.png  used on input line 66.
-(pdftex.def)             Requested size: 390.0pt x 82.26376pt.
+(pdftex.def)             Requested size: 418.25368pt x 88.22357pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[11]
-<images/places_metrics_hybrid.png, id=52, 1252.68pt x 73.27374pt>
+[13]
+<images/places_metrics_hybrid.png, id=63, 1252.68pt x 73.27374pt>
 File: images/places_metrics_hybrid.png Graphic file (type png)
 <use images/places_metrics_hybrid.png>
 Package pdftex.def Info: images/places_metrics_hybrid.png  used on input line 7
 6.
-(pdftex.def)             Requested size: 390.0pt x 22.81189pt.
-<images/objects_detectors_emerge_min_representation_examples.png, id=53, 1290.8
+(pdftex.def)             Requested size: 418.25368pt x 24.4655pt.
+<images/objects_detectors_emerge_min_representation_examples.png, id=64, 1290.8
 225pt x 538.01pt>
 File: images/objects_detectors_emerge_min_representation_examples.png Graphic f
 ile (type png)
 <use images/objects_detectors_emerge_min_representation_examples.png>
 Package pdftex.def Info: images/objects_detectors_emerge_min_representation_exa
 mples.png  used on input line 89.
-(pdftex.def)             Requested size: 390.0pt x 162.54533pt.
- [12 <./images/places_metrics.png> <./images/places_metrics_hybrid.png>]
+(pdftex.def)             Requested size: 418.25368pt x 174.32578pt.
+ [14 <./images/places_metrics.png> <./images/places_metrics_hybrid.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/objects_detectors_emerge_final_example.png, id=59, 1078.0275pt x 781.92
+<images/objects_detectors_emerge_final_example.png, id=70, 1078.0275pt x 781.92
 125pt>
 File: images/objects_detectors_emerge_final_example.png Graphic file (type png)
 
 <use images/objects_detectors_emerge_final_example.png>
 Package pdftex.def Info: images/objects_detectors_emerge_final_example.png  use
 d on input line 98.
-(pdftex.def)             Requested size: 389.99773pt x 383.94415pt.
+(pdftex.def)             Requested size: 418.25772pt x 414.07028pt.
+[15]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[13] [14 <./images/objects_detectors_emerge_min_representation_examples.png>]
-Underfull \vbox (badness 3514) has occurred while \output is active []
 
- [15 <./images/objects_detectors_emerge_final_example.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (14.48598pt too wide) in paragraph at lines 104--105
+[]\OT1/cmr/m/n/14.4 En [[]] Her-ranz y otros, bas^^Sandose en la idea de que el
+ re-conocimiento
+ []
 
- [16]
-<images/gbrcnn_architecture.png, id=75, 1072.005pt x 738.76pt>
+[16 <./images/objects_detectors_emerge_min_representation_examples.png>]
+[17 <./images/objects_detectors_emerge_final_example.png>] [18] [19]
+<images/gbrcnn_architecture.png, id=89, 1072.005pt x 738.76pt>
 File: images/gbrcnn_architecture.png Graphic file (type png)
 <use images/gbrcnn_architecture.png>
 Package pdftex.def Info: images/gbrcnn_architecture.png  used on input line 135
 .
-(pdftex.def)             Requested size: 390.0pt x 268.76025pt.
+(pdftex.def)             Requested size: 418.25368pt x 288.22795pt.
+ [20 <./images/gbrcnn_architecture.png>]
+Overfull \hbox (11.0301pt too wide) in paragraph at lines 145--145
+[]\OT1/cmr/bx/n/17.28 Clasificaci^^Son de es-ce-nas me-di-ante Apren-dizaje
+ []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Citation `raahlen2019image' on page 17 undefined on input line 1
+LaTeX Warning: Citation `raahlen2019image' on page 21 undefined on input line 1
 46.
 
-<images/transfer_learning_dataset.png, id=76, 963.6pt x 551.05875pt>
+<images/transfer_learning_dataset.png, id=94, 963.6pt x 551.05875pt>
 File: images/transfer_learning_dataset.png Graphic file (type png)
 <use images/transfer_learning_dataset.png>
 Package pdftex.def Info: images/transfer_learning_dataset.png  used on input li
 ne 151.
-(pdftex.def)             Requested size: 272.99881pt x 156.12003pt.
-[17]
+(pdftex.def)             Requested size: 292.77629pt x 167.42941pt.
+
+Overfull \hbox (2.31268pt too wide) in paragraph at lines 146--155
+\OT1/cmr/m/n/14.4 dizaje me-di-ante trans-fer-en-cia para clasi-ficar im^^Sagen
+es de propiedades.
+ []
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/metrics_transfer_learning.png, id=80, 982.67125pt x 417.56pt>
+<images/metrics_transfer_learning.png, id=95, 982.67125pt x 417.56pt>
 File: images/metrics_transfer_learning.png Graphic file (type png)
 <use images/metrics_transfer_learning.png>
 Package pdftex.def Info: images/metrics_transfer_learning.png  used on input li
 ne 162.
-(pdftex.def)             Requested size: 234.00238pt x 99.43275pt.
-[18 <./images/gbrcnn_architecture.png>]
-<images/metrics_transfer_learning_fine_tunned.png, id=85, 654.445pt x 275.0275p
+(pdftex.def)             Requested size: 250.95476pt x 106.63248pt.
+[21]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/metrics_transfer_learning_fine_tunned.png, id=99, 654.445pt x 275.0275p
 t>
 File: images/metrics_transfer_learning_fine_tunned.png Graphic file (type png)
 <use images/metrics_transfer_learning_fine_tunned.png>
 Package pdftex.def Info: images/metrics_transfer_learning_fine_tunned.png  used
  on input line 170.
-(pdftex.def)             Requested size: 272.99881pt x 114.726pt.
- [19 <./images/transfer_learning_dataset.png> <./images/metrics_transfer_learni
-ng.png>]
-<images/vision_based_example_3c.png, id=92, 1230.5975pt x 911.405pt>
+(pdftex.def)             Requested size: 292.77629pt x 123.03522pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[22 <./images/transfer_learning_dataset.png>]
+Overfull \hbox (1.66612pt too wide) in paragraph at lines 178--178
+[]\OT1/cmr/bx/n/17.28 Otros tra-ba-jos rela-ciona-dos a las propiedades
+ []
+
+
+Overfull \hbox (14.17007pt too wide) in paragraph at lines 178--178
+\OT1/cmr/bx/n/17.28 in-mue-bles que toman prove-cho de las im^^Sagenes
+ []
+
+<images/vision_based_example_3c.png, id=104, 1230.5975pt x 911.405pt>
 File: images/vision_based_example_3c.png Graphic file (type png)
 <use images/vision_based_example_3c.png>
 Package pdftex.def Info: images/vision_based_example_3c.png  used on input line
  184.
-(pdftex.def)             Requested size: 350.99762pt x 259.94781pt.
- [20 <./images/metrics_transfer_learning_fine_tunned.png>]
+(pdftex.def)             Requested size: 376.42575pt x 278.77776pt.
+[23 <./images/metrics_transfer_learning.png> <./images/metrics_transfer_learnin
+g_fine_tunned.png>]
 
-LaTeX Warning: Reference `embedding' on page 21 undefined on input line 189.
+LaTeX Warning: Reference `embedding' on page 24 undefined on input line 189.
 
 
-LaTeX Warning: Reference `fig:vision_based_example_3c' on page 21 undefined on 
+LaTeX Warning: Reference `fig:vision_based_example_3c' on page 24 undefined on 
 input line 189.
 
-<./images/arquitectura_vision_based.png, id=97, 1392.20125pt x 400.49625pt>
+<./images/arquitectura_vision_based.png, id=110, 1392.20125pt x 400.49625pt>
 File: ./images/arquitectura_vision_based.png Graphic file (type png)
 <use ./images/arquitectura_vision_based.png>
 Package pdftex.def Info: ./images/arquitectura_vision_based.png  used on input 
 line 193.
-(pdftex.def)             Requested size: 389.98364pt x 191.97934pt.
+(pdftex.def)             Requested size: 418.23717pt x 207.04314pt.
+[24 <./images/vision_based_example_3c.png>]
+Overfull \hbox (9.69708pt too wide) in paragraph at lines 198--199
+[]\OT1/cmr/m/n/14.4 Finalmente, con la ar-qui-tec-tura uti-lizada (ver Fig. 12[
+]) de-mostraron
+ []
 
-Underfull \vbox (badness 6741) has occurred while \output is active []
-
- [21 <./images/vision_based_example_3c.png>]) [22 <./images/arquitectura_vision
-_based.png>] [23]
+[25 <./images/arquitectura_vision_based.png>]) [26] [27]
 \openout2 = `marco_teorico.aux'.
 
  (./marco_teorico.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (5.95273pt too wide) in paragraph at lines 6--7
+[]\OT1/cmr/m/n/14.4 Los primeros se uti-lizan cuando para un con-junto de en-tr
+e-namiento
+ []
 
- [24
+
+Overfull \hbox (2.34943pt too wide) in paragraph at lines 13--14
+[]\OT1/cmr/m/n/14.4 En este tra-bajo se con-tar^^Sa tanto con un con-junto de e
+n-tre-namiento
+ []
+
+[28
 
 
 ]
-<images/representacion_neurona.png, id=112, 1188.44pt x 653.44125pt>
+<images/representacion_neurona.png, id=129, 1188.44pt x 653.44125pt>
 File: images/representacion_neurona.png Graphic file (type png)
 <use images/representacion_neurona.png>
 Package pdftex.def Info: images/representacion_neurona.png  used on input line 
 31.
-(pdftex.def)             Requested size: 312.00119pt x 171.54585pt.
+(pdftex.def)             Requested size: 334.60422pt x 183.97931pt.
 
-[25 <./images/representacion_neurona.png>]
-<images/red_neuronal.png, id=118, 1322.9425pt x 865.2325pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[29]
+<images/red_neuronal.png, id=133, 1322.9425pt x 865.2325pt>
 File: images/red_neuronal.png Graphic file (type png)
 <use images/red_neuronal.png>
 Package pdftex.def Info: images/red_neuronal.png  used on input line 52.
-(pdftex.def)             Requested size: 272.99881pt x 178.53561pt.
+(pdftex.def)             Requested size: 292.77629pt x 191.47394pt.
 
-Overfull \hbox (8.35143pt too wide) in paragraph at lines 58--60
-[]\OT1/cmr/m/n/12 Para ex-plicar el fun-cionamiento de las re-des neu-ronales e
-s nece-sario tambi^^Sen
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[30 <./images/representacion_neurona.png>]
+
+LaTeX Warning: Citation `zhao2016loss' on page 31 undefined on input line 71.
+
+[31 <./images/red_neuronal.png (PNG copy)>]
+
+LaTeX Warning: Citation `choi2019empirical' on page 32 undefined on input line 
+87.
+
+
+Overfull \hbox (27.4158pt too wide) in paragraph at lines 90--91
+\OT1/cmr/m/n/14.4 son-al-izada, que lla-mare-mos de ahora en m^^Sas En-trop^^S^
+^Pa Cruzada Categ^^Sorica
  []
 
-[26 <./images/red_neuronal.png (PNG copy)>] [27] [28]
-<images/activations_sigmoid.png, id=128, 1047.915pt x 540.0175pt>
+[32]
+
+LaTeX Warning: Citation `baldi2013understanding' on page 33 undefined on input 
+line 100.
+
+[33]
+<images/activations_sigmoid.png, id=148, 1047.915pt x 540.0175pt>
 File: images/activations_sigmoid.png Graphic file (type png)
 <use images/activations_sigmoid.png>
-Package pdftex.def Info: images/activations_sigmoid.png  used on input line 133
+Package pdftex.def Info: images/activations_sigmoid.png  used on input line 131
 .
-(pdftex.def)             Requested size: 272.99881pt x 140.6814pt.
-<images/activations_tanh.png, id=129, 1059.96pt x 541.02126pt>
+(pdftex.def)             Requested size: 292.77629pt x 150.87427pt.
+<images/activations_tanh.png, id=149, 1059.96pt x 541.02126pt>
 File: images/activations_tanh.png Graphic file (type png)
 <use images/activations_tanh.png>
-Package pdftex.def Info: images/activations_tanh.png  used on input line 145.
-(pdftex.def)             Requested size: 272.99881pt x 139.34135pt.
+Package pdftex.def Info: images/activations_tanh.png  used on input line 143.
+(pdftex.def)             Requested size: 292.77629pt x 149.43759pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/activations_relu.png, id=130, 1039.885pt x 528.97626pt>
+<images/activations_relu.png, id=150, 1039.885pt x 528.97626pt>
 File: images/activations_relu.png Graphic file (type png)
 <use images/activations_relu.png>
-Package pdftex.def Info: images/activations_relu.png  used on input line 153.
-(pdftex.def)             Requested size: 272.99881pt x 138.87045pt.
-[29]
+Package pdftex.def Info: images/activations_relu.png  used on input line 151.
+(pdftex.def)             Requested size: 292.77629pt x 148.92755pt.
+[34]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[30 <./images/activations_sigmoid.png> <./images/activations_tanh.png>]
-<images/convolution.png, id=140, 680.5425pt x 463.7325pt>
+[35 <./images/activations_sigmoid.png> <./images/activations_tanh.png>]
+<images/convolution.png, id=159, 680.5425pt x 463.7325pt>
 File: images/convolution.png Graphic file (type png)
 <use images/convolution.png>
-Package pdftex.def Info: images/convolution.png  used on input line 176.
-(pdftex.def)             Requested size: 272.99881pt x 186.02748pt.
+Package pdftex.def Info: images/convolution.png  used on input line 174.
+(pdftex.def)             Requested size: 292.77629pt x 199.50014pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[31 <./images/activations_relu.png>]
-<images/cnn_explanation.png, id=146, 2164.085pt x 935.495pt>
+[36 <./images/activations_relu.png>] [37 <./images/convolution.png (PNG copy)>]
+<images/cnn_explanation.png, id=168, 2164.085pt x 935.495pt>
 File: images/cnn_explanation.png Graphic file (type png)
 <use images/cnn_explanation.png>
-Package pdftex.def Info: images/cnn_explanation.png  used on input line 197.
-(pdftex.def)             Requested size: 292.5pt x 126.44339pt.
+Package pdftex.def Info: images/cnn_explanation.png  used on input line 195.
+(pdftex.def)             Requested size: 313.69025pt x 135.59334pt.
 
-Overfull \hbox (11.2889pt too wide) in paragraph at lines 202--205
-[]\OT1/cmr/m/n/12 Existen muchas con-fig-u-ra-ciones de re-des neu-ronales con-
-volu-cionales, aunque
+Overfull \hbox (15.58759pt too wide) in paragraph at lines 200--203
+[]\OT1/cmr/m/n/14.4 Existen muchas con-fig-u-ra-ciones de re-des neu-ronales co
+n-volu-cionales,
  []
 
+[38 <./images/cnn_explanation.png (PNG copy)>]
+Overfull \hbox (10.04015pt too wide) in paragraph at lines 204--204
+[]\OT1/cmr/bx/n/17.28 Redes preen-tre-nadas y Apren-dizaje por trans-
+ []
 
-Underfull \vbox (badness 3954) has occurred while \output is active []
-
- [32 <./images/convolution.png (PNG copy)>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [33 <./images/cnn_explanation.png (PNG copy)>]
-<images/vgg16.png, id=153, 903.375pt x 508.90125pt>
+<images/vgg16.png, id=172, 903.375pt x 508.90125pt>
 File: images/vgg16.png Graphic file (type png)
 <use images/vgg16.png>
-Package pdftex.def Info: images/vgg16.png  used on input line 214.
-(pdftex.def)             Requested size: 390.0pt x 219.70073pt.
+Package pdftex.def Info: images/vgg16.png  used on input line 212.
+(pdftex.def)             Requested size: 418.25368pt x 235.61938pt.
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-LaTeX Warning: Citation `simonyan2014very' on page 34 undefined on input line 2
-20.
-
-
-LaTeX Warning: Citation `szegedy2015going' on page 34 undefined on input line 2
-20.
-
-
-LaTeX Warning: Citation `huang2017densely' on page 34 undefined on input line 2
-20.
-
-
-LaTeX Warning: Citation `he2016deep' on page 34 undefined on input line 220.
-
-
-LaTeX Warning: Citation `devlin2018bert' on page 34 undefined on input line 220
-.
-
-
-LaTeX Warning: Citation `radford2019language' on page 34 undefined on input lin
-e 220.
-
-[34 <./images/vgg16.png>]
-<images/googlenet.png, id=158, 1797.71625pt x 402.50375pt>
+[39]
+<images/googlenet.png, id=176, 1797.71625pt x 402.50375pt>
 File: images/googlenet.png Graphic file (type png)
 <use images/googlenet.png>
-Package pdftex.def Info: images/googlenet.png  used on input line 228.
-(pdftex.def)             Requested size: 390.0pt x 87.3166pt.
-) [35 <./images/googlenet.png (PNG copy)>]
+Package pdftex.def Info: images/googlenet.png  used on input line 226.
+(pdftex.def)             Requested size: 418.25368pt x 93.64256pt.
+) [40 <./images/vgg16.png>] [41 <./images/googlenet.png (PNG copy)>]
 \openout2 = `definiciones_trabajo.aux'.
 
 
 (./definiciones_trabajo.tex
-Overfull \hbox (14.87914pt too wide) in paragraph at lines 15--16
-[]\OT1/cmr/m/n/12 El an^^Salisis se cen-trar^^Sa en im^^Sagenes de las sigu-ien
-tes es-ce-nas de propiedades:
+Overfull \hbox (15.20625pt too wide) in paragraph at lines 8--9
+[]\OT1/cmr/m/n/14.4 Las re-des preen-tre-nadas a descar-gar, PlacesCNN e Im-a-g
+enetCNN,
  []
 
-[36
+
+Overfull \hbox (6.46439pt too wide) in paragraph at lines 16--17
+[]\OT1/cmr/m/n/14.4 Tanto los tiem-pos de en-tre-namiento y predicci^^Son como 
+el tama~no
+ []
+
+[42
 
 
-] [37]
-Overfull \hbox (8.66818pt too wide) in paragraph at lines 53--54
-\OT1/cmr/m/n/12 PlacesCNN es posi-ble mejo-rar los re-sul-ta-dos obtenidos al c
-on-trastar la hip^^Sotesis
+]
+Overfull \hbox (10.30264pt too wide) in paragraph at lines 31--32
+\OT1/cmr/m/n/14.4 Teniendo en cuenta tanto las lim-ita-ciones como las asun-cio
+nes definidas
+ []
+
+
+Overfull \hbox (10.61598pt too wide) in paragraph at lines 34--35
+\OT1/cmr/m/n/14.4 Como se pudo ob-ser-var en la re-visi^^Son de an-tecedentes, 
+ex-is-ten m^^Sultiples
+ []
+
+[43] [44]
+Overfull \hbox (22.34435pt too wide) in paragraph at lines 60--61
+\OT1/cmr/m/n/14.4 par-tir de la red Im-a-geNetCNN posi-bilita mejo-rar los re-s
+ul-ta-dos obtenidos
+ []
+
+
+Overfull \hbox (43.02559pt too wide) in paragraph at lines 65--66
+[]\OT1/cmr/m/n/14.4 Hip^^Sotesis: "Re-alizar apren-dizaje por trans-fer-en-cia 
+uti-lizando PlacesCNN
  []
 
 
@@ -950,97 +1075,222 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[38]
-
-LaTeX Warning: Reference `fig:h1mlpmodel' on page 39 undefined on input line 11
-9.
-
-[39]
-Overfull \hbox (2.08482pt too wide) in paragraph at lines 127--128
-[]\OT1/cmr/m/n/12 Entradas: am-bas re-des se en-tre-naron con los tres canales 
-de las im^^Sagenes
- []
-
-
-Overfull \hbox (9.46114pt too wide) in paragraph at lines 129--130
-[]\OT1/cmr/m/n/12 Funci^^Son de p^^Serdida: en-trop^^S^^Pa cruzada categ^^Soric
-a pe-sada por clase definida
- []
-
-
-Overfull \hbox (13.63097pt too wide) in paragraph at lines 136--145
- [][] 
- []
-
-[40]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[41]
-
-LaTeX Warning: Text page 42 contains only floats.
-
-
-Overfull \vbox (2.15918pt too high) has occurred while \output is active []
-
-
-[42] [43] [44]
-Overfull \hbox (18.65314pt too wide) in paragraph at lines 280--298
- [][] 
- []
-
-[45]
-Overfull \hbox (13.5268pt too wide) in paragraph at lines 318--332
+[45] [46]
+Overfull \hbox (58.5825pt too wide) in paragraph at lines 144--153
  [][] 
  []
 
 
-LaTeX Warning: Reference `clahe:fig:example1' on page 46 undefined on input lin
-e 341.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[47]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Reference `clahe:fig:example2' on page 46 undefined on input lin
-e 341.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Reference `clahe:fig:example3' on page 46 undefined on input lin
-e 341.
-
-[46]
-Overfull \hbox (18.65314pt too wide) in paragraph at lines 347--355
+Overfull \hbox (37.39609pt too wide) in paragraph at lines 224--234
  [][] 
  []
 
-) [47]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[48]
+Overfull \hbox (27.7146pt too wide) in paragraph at lines 246--254
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[49] [50] [51]
+Overfull \hbox (14.77184pt too wide) in paragraph at lines 279--280
+\OT1/cmr/m/n/14.4 tal-mente conec-tada con ac-ti-vaci^^Son $\OML/cmm/m/it/14.4 
+Relu$ \OT1/cmr/m/n/14.4 de 256 neu-ronas (tambi^^Sen
+ []
+
+
+Overfull \hbox (64.60912pt too wide) in paragraph at lines 288--306
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[52] [53]
+Overfull \hbox (58.45755pt too wide) in paragraph at lines 326--340
+ [][] 
+ []
+
+[54]
+<images/normal_vs_clahe_png.png, id=227, 473.77pt x 669.50125pt>
+File: images/normal_vs_clahe_png.png Graphic file (type png)
+<use images/normal_vs_clahe_png.png>
+Package pdftex.def Info: images/normal_vs_clahe_png.png  used on input line 353
+.
+(pdftex.def)             Requested size: 418.2635pt x 591.58406pt.
+
+
+LaTeX Warning: Float too large for page by 46.85385pt on input line 356.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (64.60912pt too wide) in paragraph at lines 360--368
+ [][] 
+ []
+
+) [55] [56 <./images/normal_vs_clahe_png.png>]
+\openout2 = `analisis_resultados_trabajo.aux'.
+
+
+(./analisis_resultados_trabajo.tex
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (1.10011pt too wide) in paragraph at lines 46--46
+[]\OT1/cmr/bx/n/17.28 Distribuci^^Son de prob-a-bil-i-dades de sal-ida para
+ []
+
+[57
+
+
+]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[58]
+<images/results_exp_2_errors_by_threshold.png, id=241, 1440.38126pt x 838.13126
+pt>
+File: images/results_exp_2_errors_by_threshold.png Graphic file (type png)
+<use images/results_exp_2_errors_by_threshold.png>
+Package pdftex.def Info: images/results_exp_2_errors_by_threshold.png  used on 
+input line 100.
+(pdftex.def)             Requested size: 460.08159pt x 267.70871pt.
+
+Overfull \hbox (41.82791pt too wide) in paragraph at lines 100--101
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/results_exp_6_errors_by_threshold.png, id=242, 1441.385pt x 830.10126pt
+>
+File: images/results_exp_6_errors_by_threshold.png Graphic file (type png)
+<use images/results_exp_6_errors_by_threshold.png>
+Package pdftex.def Info: images/results_exp_6_errors_by_threshold.png  used on 
+input line 107.
+(pdftex.def)             Requested size: 460.08159pt x 264.95384pt.
+
+Overfull \hbox (41.82791pt too wide) in paragraph at lines 107--108
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[59]
+<images/results_exp_2_distribution_of_pred_proba.png, id=246, 1477.52pt x 775.8
+9874pt>
+File: images/results_exp_2_distribution_of_pred_proba.png Graphic file (type pn
+g)
+<use images/results_exp_2_distribution_of_pred_proba.png>
+Package pdftex.def Info: images/results_exp_2_distribution_of_pred_proba.png  u
+sed on input line 116.
+(pdftex.def)             Requested size: 460.08159pt x 241.6035pt.
+
+Overfull \hbox (41.82791pt too wide) in paragraph at lines 116--117
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/results_exp_6_distribution_of_pred_proba.png, id=247, 1483.5425pt x 785
+.93625pt>
+File: images/results_exp_6_distribution_of_pred_proba.png Graphic file (type pn
+g)
+<use images/results_exp_6_distribution_of_pred_proba.png>
+Package pdftex.def Info: images/results_exp_6_distribution_of_pred_proba.png  u
+sed on input line 123.
+(pdftex.def)             Requested size: 460.08159pt x 243.73366pt.
+
+Overfull \hbox (41.82791pt too wide) in paragraph at lines 123--124
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (12.00209pt too wide) in paragraph at lines 130--130
+[]\OT1/cmr/bx/n/17.28 Exactitud categ^^Sorica ca-sos que de-ber^^S^^Pan poder
+ []
+
+[60 <./images/results_exp_2_errors_by_threshold.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [61 <./images/results_exp_6_errors_by_threshold.png>] [62 <./images/results_e
+xp_2_distribution_of_pred_proba.png>] [63 <./images/results_exp_6_distribution_
+of_pred_proba.png>]
 \openout2 = `conclusiones.aux'.
 
- (./conclusiones.tex) [48
+ (./conclusiones.tex
+
+LaTeX Warning: Reference `anexo4:random_img_por_dataset' on page 64 undefined o
+n input line 7.
+
+[64
 
 
-]
+] [65]) [66]
 \openout2 = `anexo.aux'.
 
- (./anexo.tex [49
+ (./anexo.tex [67
 
 
 ]
+Overfull \hbox (5.52435pt too wide) in paragraph at lines 28--29
+\OT1/cmr/m/n/14.4 in-te-grar con otro Soft-ware, pub-licar, sub-li-cen-ciar o v
+ender copias
+ []
+
+
+Overfull \hbox (3.68105pt too wide) in paragraph at lines 29--30
+[]\OT1/cmr/m/n/14.4 Limitaci^^Son de re-spon-s-abil-i-dad: fi-nal-mente se tien
+e un dis-claimer
+ []
+
+
+Overfull \hbox (23.67848pt too wide) in paragraph at lines 35--82
+[] 
+ []
+
+[68]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [50]
-Overfull \vbox (165.55777pt too high) has occurred while \output is active []
 
+LaTeX Warning: Reference `sssec:exp7' on page 69 undefined on input line 98.
 
-[51] (./main.bbl
+) [69] [70] (./main.bbl
+Underfull \hbox (badness 3557) in paragraph at lines 15--18
+[]\OT1/cmr/m/n/14.4 J. H. Bappy, J. R. Barr, N. Srini-vasan, and A. K.
+ []
+
 ! Undefined control sequence.
 l.40 \newblock \url
                    {https://www.hemnet.se/}, último acceso: 2019-12-08.
@@ -1059,17 +1309,22 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[52
+[71
 
 ]
-Underfull \hbox (badness 4291) in paragraph at lines 64--67
-\OT1/cmr/m/n/12 net-work train-ing by re-duc-ing in-ter-nal co-vari-ate shift,'
-' \OT1/cmr/m/it/12 ArXiv\OT1/cmr/m/n/12 ,
+Underfull \hbox (badness 2980) in paragraph at lines 52--57
+[]\OT1/cmr/m/n/14.4 F. Pe-dregosa, G. Varo-quaux, A. Gram-fort, V. Michel,
  []
 
+
+Underfull \hbox (badness 1902) in paragraph at lines 52--57
+\OT1/cmr/m/n/14.4 V. Dubourg, J. Van-der-plas, A. Pas-sos, D. Cour-na-peau,
+ []
+
+[72] [73]
 ! Undefined control sequence.
-l.92   \url
-           {https://scikit-learn.org/stable/modules/generated/sklearn.metric...
+l.136   \url
+            {https://scikit-learn.org/stable/modules/generated/sklearn.metri...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1077,47 +1332,48 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--94
-[]\OT1/cmr/m/n/12 Scikit-learn, \OT1/cmr/m/it/12 Bal-anced Ac-cu-racy Score\OT1
-/cmr/m/n/12 .  https://scikit-
+Underfull \hbox (badness 7722) in paragraph at lines 134--138
+[]\OT1/cmr/m/n/14.4 Scikit-learn, \OT1/cmr/m/it/14.4 Bal-anced Ac-cu-racy Score
+\OT1/cmr/m/n/14.4 .  https://scikit-
  []
 
 
-Overfull \hbox (58.75394pt too wide) in paragraph at lines 90--94
-\OT1/cmr/m/n/12 learn.org/stable/modules/generated/sklearn.metrics.balanced[]ac
-curacy[]score.html,
+Overfull \hbox (120.24977pt too wide) in paragraph at lines 134--138
+\OT1/cmr/m/n/14.4 learn.org/stable/modules/generated/sklearn.metrics.balanced[]
+accuracy[]score.html,
  []
 
-) [53] (./main.aux (./portada.aux) (./introduccion.aux)
+) [74] (./main.aux (./portada.aux) (./introduccion.aux)
 (./revision_de_antecedentes.aux) (./marco_teorico.aux)
-(./definiciones_trabajo.aux) (./conclusiones.aux) (./anexo.aux))
+(./definiciones_trabajo.aux) (./analisis_resultados_trabajo.aux)
+(./conclusiones.aux) (./anexo.aux))
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4122 strings out of 494923
- 55851 string characters out of 6180742
- 129014 words of memory out of 5000000
- 7288 multiletter control sequences out of 15000+600000
- 10142 words of font info for 36 fonts, out of 8000000 for 9000
+ 4670 strings out of 494923
+ 66904 string characters out of 6180742
+ 142444 words of memory out of 5000000
+ 7815 multiletter control sequences out of 15000+600000
+ 8094 words of font info for 29 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 41i,15n,53p,1991b,348s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,15n,53p,2021b,348s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
-12.pfb>
-Output written on main.pdf (53 pages, 6453106 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ti12.pfb>
+Output written on main.pdf (75 pages, 7438743 bytes).
 PDF statistics:
- 259 PDF objects out of 1000 (max. 8388607)
- 153 compressed objects within 2 object streams
+ 337 PDF objects out of 1000 (max. 8388607)
+ 202 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 131 words of extra memory for PDF output out of 10000 (max. 10000000)
 
