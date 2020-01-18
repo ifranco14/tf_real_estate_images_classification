@@ -1,0 +1,21 @@
+\newenvironment{dedication}
+{\clearpage           % we want a new page
+	\thispagestyle{empty}% no header and footer
+	\vspace*{\stretch{1}}% some space at the top 
+	\itshape             % the text is in italics
+	\raggedleft          % flush to the right margin
+}
+{\par % end the paragraph
+	\vspace{\stretch{3}} % space at bottom is three times that at the top
+	\clearpage           % finish off the page
+}
+
+\begin{dedication}
+	Dedicado a mi padre, que me guía 
+	
+	y acompaña en cada paso que doy.
+\end{dedication}
+
+\section*{Agradecimientos}
+
+A mi familia por brindarme su apoyo y amor incondicional, a mi director por ayudarme en cada ocasión y mantenerse atento a mis necesidades y al presente director de la carrera de Ingeniería en Informática por darme las herramientas necesarias para desarrollarme durante la carrera.

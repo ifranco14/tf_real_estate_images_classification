@@ -1,0 +1,50 @@
+\BOOKMARK [1][-]{section.1}{Introducci\363n}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Contexto}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Motivaci\363n}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Estructura del documento}{section.1}% 4
+\BOOKMARK [1][-]{section.2}{Revisi\363n de antecedentes}{}% 5
+\BOOKMARK [2][-]{subsection.2.1}{Clasificaci\363n de escenas mediante Redes Neuronales Recurrentes}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.2}{Clasificaci\363n de escenas mediante Redes Neuronales Convolucionales}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.3}{Clasificaci\363n de escenas mediante Aprendizaje por Transferencia}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.4}{Otros trabajos relacionados a las propiedades inmuebles que toman provecho de las im\341genes de los mismos}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.5}{Antecedentes no acad\351micos}{section.2}% 10
+\BOOKMARK [1][-]{section.3}{Marco te\363rico}{}% 11
+\BOOKMARK [2][-]{subsection.3.1}{Aprendizaje autom\341tico}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.2}{Representaci\363n de una neurona}{section.3}% 13
+\BOOKMARK [2][-]{subsection.3.3}{Red Neuronal}{section.3}% 14
+\BOOKMARK [2][-]{subsection.3.4}{Red Neuronal Convolucional}{section.3}% 15
+\BOOKMARK [2][-]{subsection.3.5}{Redes preentrenadas y Aprendizaje por transferencia}{section.3}% 16
+\BOOKMARK [1][-]{section.4}{Dise\361o experimental}{}% 17
+\BOOKMARK [2][-]{subsection.4.1}{Asunciones}{section.4}% 18
+\BOOKMARK [2][-]{subsection.4.2}{Limitaciones}{section.4}% 19
+\BOOKMARK [2][-]{subsection.4.3}{Hardware a utilizar}{section.4}% 20
+\BOOKMARK [2][-]{subsection.4.4}{Hip\363tesis}{section.4}% 21
+\BOOKMARK [3][-]{subsubsection.4.4.1}{Hip\363tesis 1}{subsection.4.4}% 22
+\BOOKMARK [3][-]{subsubsection.4.4.2}{Hip\363tesis 2}{subsection.4.4}% 23
+\BOOKMARK [3][-]{subsubsection.4.4.3}{Hip\363tesis 3}{subsection.4.4}% 24
+\BOOKMARK [3][-]{subsubsection.4.4.4}{Hip\363tesis 4}{subsection.4.4}% 25
+\BOOKMARK [3][-]{subsubsection.4.4.5}{Hip\363tesis 5}{subsection.4.4}% 26
+\BOOKMARK [3][-]{subsubsection.4.4.6}{Hip\363tesis 6}{subsection.4.4}% 27
+\BOOKMARK [2][-]{subsection.4.5}{Experimentos}{section.4}% 28
+\BOOKMARK [3][-]{subsubsection.4.5.1}{Experimento 1}{subsection.4.5}% 29
+\BOOKMARK [3][-]{subsubsection.4.5.2}{Experimento 2}{subsection.4.5}% 30
+\BOOKMARK [3][-]{subsubsection.4.5.3}{Experimento 3}{subsection.4.5}% 31
+\BOOKMARK [3][-]{subsubsection.4.5.4}{Experimento 4}{subsection.4.5}% 32
+\BOOKMARK [3][-]{subsubsection.4.5.5}{Experimento 5}{subsection.4.5}% 33
+\BOOKMARK [3][-]{subsubsection.4.5.6}{Experimento 6}{subsection.4.5}% 34
+\BOOKMARK [1][-]{section.5}{An\341lisis de los resultados obtenidos}{}% 35
+\BOOKMARK [2][-]{subsection.5.1}{Error por categor\355a modelos obtenidos en los experimentos 4.5.2 y 4.5.6}{section.5}% 36
+\BOOKMARK [2][-]{subsection.5.2}{Distribuci\363n de probabilidades de salida para clasificaciones err\363neas}{section.5}% 37
+\BOOKMARK [2][-]{subsection.5.3}{Exactitud categ\363rica casos que deber\355an poder predecirse correctamente}{section.5}% 38
+\BOOKMARK [1][-]{section.6}{Conclusiones}{}% 39
+\BOOKMARK [2][-]{subsection.6.1}{Conclusi\363n general}{section.6}% 40
+\BOOKMARK [2][-]{subsection.6.2}{Lineamientos Futuros}{section.6}% 41
+\BOOKMARK [1][-]{section.7}{Anexo}{}% 42
+\BOOKMARK [2][-]{subsection.7.1}{Anexo 1: Repositorio abierto del trabajo}{section.7}% 43
+\BOOKMARK [2][-]{subsection.7.2}{Anexo 2: Licencia del proyecto}{section.7}% 44
+\BOOKMARK [2][-]{subsection.7.3}{Anexo 3: Mapeo de clases realizado para el experimento 4.5.3}{section.7}% 45
+\BOOKMARK [2][-]{subsection.7.4}{Anexo 4: Arquitectura del Perceptr\363n Multicapa utilizado en experimento 4.5.1}{section.7}% 46
+\BOOKMARK [2][-]{subsection.7.5}{Anexo 5: Arquitectura de la Red Neuronal Convolucional utilizada en los experimentos 4.5.1 y 4.5.2}{section.7}% 47
+\BOOKMARK [2][-]{subsection.7.6}{Anexo 6: Arquitectura de la red PlacesCNN utilizada en experimento 4.5.3}{section.7}% 48
+\BOOKMARK [2][-]{subsection.7.7}{Anexo 7: Arquitectura utilizada en experimentos 4.5.4 y 4.5.6}{section.7}% 49
+\BOOKMARK [2][-]{subsection.7.8}{Anexo 8: Arquitectura utilizada en experimento 4.5.5}{section.7}% 50

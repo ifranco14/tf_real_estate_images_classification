@@ -1,6 +1,6 @@
 \section{Anexo}\label{sec:anexo}
 
-\subsection{Anexo 1: Repositorio abierto del trabajo}
+\subsection{Anexo 1: Repositorio abierto del trabajo}\label{anexo1:repo}
 Para este trabajo final se utilizó la herramienta de control de versionado GIT, puntualmente alojado en la plataforma GitHub, y el tanto el código como los modelos generados por este trabajo son abiertos, es decir, cualquier persona puede acceder y hacer uso de lo realizado bajo su propia responsabilidad (ver Licencia del proyecto \ref{anexo2:license}). Además, la estructura de los directorios elegida se detalla a continuación:
 \begin{itemize}
 	\item LICENSE: Licencia del proyecto.
@@ -85,19 +85,50 @@ En la tabla \ref{anexo:exp3:mapping} se presentan los mapeos elegidos entre las 
 
 
 
-\subsection{Anexo 4: Detalle de arquitectura del Perceptrón Multicapa utilizado en experimento \ref{sssec:exp1}}\label{ssec:anexo4}
-% TODO Crear figura MLP según exp1 (usar plot_model o algo así)
+\subsection{Anexo 4: Arquitectura del Perceptrón Multicapa utilizado en experimento \ref{sssec:exp1}}\label{ssec:anexo4}
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7\linewidth]{images/architecture_exp1}
+\caption{Arquitectura perceptrón multicapa del experimento \ref{sssec:exp1}}
+\label{fig:architectureexp1}
+\end{figure}
 
-\subsection{Anexo 5: Detalle de arquitectura de la Red Neuronal Convolucional utilizada en los experimentos \ref{sssec:exp1} y \ref{sssec:exp2}}\label{ssec:anexo5}
-% TODO Crear figura CNN según exp1 y exp2
 
-\subsection{Anexo 6: Detalle de arquitectura de la red PlacesCNN utilizada en experimento \ref{sssec:exp3}}\label{ssec:anexo6}
-% VGG16
-% TODO Buscar figura CNN según VGG16
+\subsection{Anexo 5: Arquitectura de la Red Neuronal Convolucional utilizada en los experimentos \ref{sssec:exp1} y \ref{sssec:exp2}}\label{ssec:anexo5}
 
-\subsection{Anexo 7: Detalle de arquitecturas utilizadas en experimentos \ref{sssec:exp4}, \ref{sssec:exp6} y \ref{sssec:exp7}}\label{ssec:anexo7}
-% TODO Crear figura CNN_Transfer Learning PlacesCNN VGG16 + clasificador utilizado
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{images/architecture_exp1_cnn}
+	\caption{Arquitectura Red Neuronal Convolucional de los experimentos \ref{sssec:exp1} y \ref{sssec:exp2}}
+	\label{fig:architectureexp2}
+\end{figure}
 
-\subsection{Anexo 8: Detalle de arquitecturas utilizadas en experimento \ref{sssec:exp5}}\label{ssec:anexo8}
-% TODO Crear figura CNN_Transfer Learning ImageNetCNN VGG16 + clasificador utilizado
 
+\subsection{Anexo 6: Arquitectura de la red PlacesCNN utilizada en experimento \ref{sssec:exp3}}\label{ssec:anexo6}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{images/architecture_exp3}
+	\caption{Arquitectura Red Neuronal Convolucional del experimento \ref{sssec:exp3}}
+	\label{fig:architectureexp3}
+\end{figure}
+
+
+\subsection{Anexo 7: Arquitectura utilizada en experimentos \ref{sssec:exp4} y \ref{sssec:exp6}}\label{ssec:anexo7}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{images/architecture_exp4_6_cnn}
+	\caption{Arquitectura Red Neuronal Convolucional de los experimentos \ref{sssec:exp4} y \ref{sssec:exp6} }
+	\label{fig:architectureexp4_6}
+\end{figure}
+
+
+\subsection{Anexo 8: Arquitectura utilizada en experimento \ref{sssec:exp5}}\label{ssec:anexo8}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{images/architecture_exp4_6_cnn}
+	\caption{Arquitectura Red Neuronal Convolucional del  experimento \ref{sssec:exp5}}
+	\label{fig:architectureexp5}
+\end{figure}

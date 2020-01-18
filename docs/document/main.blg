@@ -2,6 +2,8 @@ This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: portada.aux
+A level-1 auxiliary file: abstract.aux
+A level-1 auxiliary file: acknowledgements.aux
 A level-1 auxiliary file: introduccion.aux
 A level-1 auxiliary file: revision_de_antecedentes.aux
 A level-1 auxiliary file: marco_teorico.aux
@@ -15,45 +17,45 @@ Warning--I didn't find a database entry for "raahlen2019image"
 Warning--empty journal in lecun1995convolutional
 Name 1 in "Xianghua Xie, Mark W. Jones, and Gary K. L. Tam" has a comma at the end for entry BMVC2015_52
 while executing---line 969 of file ieeetr.bst
-You've used 27 entries,
+You've used 30 entries,
             1876 wiz_defined-function locations,
-            633 strings with 8906 characters,
-and the built_in function-call counts, 7646 in all, are:
-= -- 704
-> -- 377
+            649 strings with 9424 characters,
+and the built_in function-call counts, 8551 in all, are:
+= -- 790
+> -- 419
 < -- 0
-+ -- 135
-- -- 108
-* -- 552
-:= -- 1099
-add.period$ -- 31
-call.type$ -- 27
-change.case$ -- 23
++ -- 150
+- -- 120
+* -- 618
+:= -- 1226
+add.period$ -- 34
+call.type$ -- 30
+change.case$ -- 26
 chr.to.int$ -- 0
-cite$ -- 28
-duplicate$ -- 391
-empty$ -- 715
-format.name$ -- 108
-if$ -- 1828
+cite$ -- 31
+duplicate$ -- 438
+empty$ -- 799
+format.name$ -- 120
+if$ -- 2046
 int.to.chr$ -- 0
-int.to.str$ -- 27
-missing$ -- 25
-newline$ -- 88
-num.names$ -- 29
-pop$ -- 111
+int.to.str$ -- 30
+missing$ -- 28
+newline$ -- 97
+num.names$ -- 32
+pop$ -- 123
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 247
+skip$ -- 278
 stack$ -- 0
-substring$ -- 489
-swap$ -- 151
+substring$ -- 553
+swap$ -- 170
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 71
-width$ -- 29
-write$ -- 251
+while$ -- 80
+width$ -- 32
+write$ -- 279
 (There was 1 error message)

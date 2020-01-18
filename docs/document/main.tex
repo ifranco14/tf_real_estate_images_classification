@@ -1,13 +1,24 @@
-\documentclass[a4paper,14pt]{extarticle}
-\usepackage{geometry}
+\documentclass[a4paper,14pt, multi, tikz]{extarticle}
+
 \usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
 \usepackage{graphicx}
-%\usepackage[chapter]{algorithm}
-%\usepackage{algorithmicx}
 \usepackage{amsmath}
 \usepackage{booktabs}
 \usepackage{tabularx}
 \usepackage{ctable}
+\usepackage{imakeidx}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	filecolor=magenta,      
+	urlcolor=cyan,
+	bookmarks=true,
+	pdfpagemode=FullScreen,
+}
+
 
 \graphicspath{ {./images/} }
 
@@ -15,6 +26,16 @@
  
 \include{portada}
 \vfill
+
+\shipout\null
+
+\include{abstract}
+\vfill
+
+\include{acknowledgements}
+\vfill
+
+\tableofcontents
 
 \include{introduccion}
 \vfill
@@ -36,8 +57,6 @@
 
 \include{anexo}
 \vfill
-
-\newpage
 
 \bibliography{bibliografia}
 
