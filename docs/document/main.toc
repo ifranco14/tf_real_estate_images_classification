@@ -1,51 +1,51 @@
 \babel@toc {spanish}{}
-\contentsline {section}{\numberline {1}Introducci\IeC {\'o}n}{6}{section.1}
-\contentsline {subsection}{\numberline {1.1}Contexto}{6}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Motivaci\IeC {\'o}n}{7}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}Estructura del documento}{11}{subsection.1.3}
-\contentsline {section}{\numberline {2}Revisi\IeC {\'o}n de antecedentes}{13}{section.2}
-\contentsline {subsection}{\numberline {2.1}Clasificaci\IeC {\'o}n de escenas mediante Redes Neuronales Recurrentes}{13}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Clasificaci\IeC {\'o}n de escenas mediante Redes Neuronales Convolucionales}{16}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Clasificaci\IeC {\'o}n de escenas mediante Aprendizaje por Transferencia}{26}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Otros trabajos relacionados a las propiedades inmuebles que toman provecho de las im\IeC {\'a}genes de los mismos}{29}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Antecedentes no acad\IeC {\'e}micos}{31}{subsection.2.5}
-\contentsline {section}{\numberline {3}Marco te\IeC {\'o}rico}{33}{section.3}
-\contentsline {subsection}{\numberline {3.1}Aprendizaje autom\IeC {\'a}tico}{33}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Representaci\IeC {\'o}n de una neurona}{34}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Red Neuronal}{35}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Red Neuronal Convolucional}{41}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Redes preentrenadas y Aprendizaje por transferencia}{44}{subsection.3.5}
-\contentsline {section}{\numberline {4}Dise\IeC {\~n}o experimental}{47}{section.4}
-\contentsline {subsection}{\numberline {4.1}Asunciones}{47}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Limitaciones}{47}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Hardware a utilizar}{48}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Hip\IeC {\'o}tesis}{48}{subsection.4.4}
-\contentsline {subsubsection}{\numberline {4.4.1}Hip\IeC {\'o}tesis 1}{48}{subsubsection.4.4.1}
-\contentsline {subsubsection}{\numberline {4.4.2}Hip\IeC {\'o}tesis 2}{48}{subsubsection.4.4.2}
-\contentsline {subsubsection}{\numberline {4.4.3}Hip\IeC {\'o}tesis 3}{49}{subsubsection.4.4.3}
-\contentsline {subsubsection}{\numberline {4.4.4}Hip\IeC {\'o}tesis 4}{49}{subsubsection.4.4.4}
-\contentsline {subsubsection}{\numberline {4.4.5}Hip\IeC {\'o}tesis 5}{49}{subsubsection.4.4.5}
-\contentsline {subsubsection}{\numberline {4.4.6}Hip\IeC {\'o}tesis 6}{50}{subsubsection.4.4.6}
-\contentsline {subsection}{\numberline {4.5}Experimentos}{50}{subsection.4.5}
-\contentsline {subsubsection}{\numberline {4.5.1}Experimento 1}{50}{subsubsection.4.5.1}
-\contentsline {subsubsection}{\numberline {4.5.2}Experimento 2}{52}{subsubsection.4.5.2}
-\contentsline {subsubsection}{\numberline {4.5.3}Experimento 3}{53}{subsubsection.4.5.3}
-\contentsline {subsubsection}{\numberline {4.5.4}Experimento 4}{56}{subsubsection.4.5.4}
-\contentsline {subsubsection}{\numberline {4.5.5}Experimento 5}{58}{subsubsection.4.5.5}
-\contentsline {subsubsection}{\numberline {4.5.6}Experimento 6}{59}{subsubsection.4.5.6}
-\contentsline {section}{\numberline {5}An\IeC {\'a}lisis de los resultados obtenidos}{62}{section.5}
-\contentsline {subsection}{\numberline {5.1}Error por categor\IeC {\'\i }a modelos obtenidos en los experimentos \ref {sssec:exp2} y \ref {sssec:exp6}}{62}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Distribuci\IeC {\'o}n de probabilidades de salida para clasificaciones err\IeC {\'o}neas}{62}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Exactitud categ\IeC {\'o}rica casos que deber\IeC {\'\i }an poder predecirse correctamente}{65}{subsection.5.3}
-\contentsline {section}{\numberline {6}Conclusiones}{69}{section.6}
-\contentsline {subsection}{\numberline {6.1}Conclusi\IeC {\'o}n general}{69}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Lineamientos Futuros}{71}{subsection.6.2}
-\contentsline {section}{\numberline {7}Anexo}{73}{section.7}
-\contentsline {subsection}{\numberline {7.1}Anexo 1: Repositorio abierto del trabajo}{73}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Anexo 2: Licencia del proyecto}{74}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Anexo 3: Mapeo de clases realizado para el experimento \ref {sssec:exp3}}{75}{subsection.7.3}
-\contentsline {subsection}{\numberline {7.4}Anexo 4: Arquitectura del Perceptr\IeC {\'o}n Multicapa utilizado en experimento \ref {sssec:exp1}}{75}{subsection.7.4}
-\contentsline {subsection}{\numberline {7.5}Anexo 5: Arquitectura de la Red Neuronal Convolucional utilizada en los experimentos \ref {sssec:exp1} y \ref {sssec:exp2}}{77}{subsection.7.5}
-\contentsline {subsection}{\numberline {7.6}Anexo 6: Arquitectura de la red PlacesCNN utilizada en experimento \ref {sssec:exp3}}{77}{subsection.7.6}
-\contentsline {subsection}{\numberline {7.7}Anexo 7: Arquitectura utilizada en experimentos \ref {sssec:exp4} y \ref {sssec:exp6}}{77}{subsection.7.7}
-\contentsline {subsection}{\numberline {7.8}Anexo 8: Arquitectura utilizada en experimento \ref {sssec:exp5}}{77}{subsection.7.8}
+\contentsline {section}{\numberline {1}Introducci\IeC {\'o}n}{6}{section.1}% 
+\contentsline {subsection}{\numberline {1.1}Contexto}{6}{subsection.1.1}% 
+\contentsline {subsection}{\numberline {1.2}Motivaci\IeC {\'o}n}{8}{subsection.1.2}% 
+\contentsline {subsection}{\numberline {1.3}Estructura del documento}{11}{subsection.1.3}% 
+\contentsline {section}{\numberline {2}Revisi\IeC {\'o}n de antecedentes}{13}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}Clasificaci\IeC {\'o}n de escenas mediante Redes Neuronales Recurrentes}{13}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2}Clasificaci\IeC {\'o}n de escenas mediante Redes Neuronales Convolucionales}{16}{subsection.2.2}% 
+\contentsline {subsection}{\numberline {2.3}Clasificaci\IeC {\'o}n de escenas mediante Aprendizaje por Transferencia}{26}{subsection.2.3}% 
+\contentsline {subsection}{\numberline {2.4}Otros trabajos relacionados a las propiedades inmuebles que toman provecho de las im\IeC {\'a}genes de los mismos}{29}{subsection.2.4}% 
+\contentsline {subsection}{\numberline {2.5}Antecedentes no acad\IeC {\'e}micos}{31}{subsection.2.5}% 
+\contentsline {section}{\numberline {3}Marco te\IeC {\'o}rico}{33}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Aprendizaje autom\IeC {\'a}tico}{33}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Representaci\IeC {\'o}n de una neurona}{34}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.3}Red Neuronal}{35}{subsection.3.3}% 
+\contentsline {subsection}{\numberline {3.4}Red Neuronal Convolucional}{41}{subsection.3.4}% 
+\contentsline {subsection}{\numberline {3.5}Redes preentrenadas y Aprendizaje por transferencia}{44}{subsection.3.5}% 
+\contentsline {section}{\numberline {4}Dise\IeC {\~n}o experimental}{47}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}Asunciones}{47}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.2}Limitaciones}{47}{subsection.4.2}% 
+\contentsline {subsection}{\numberline {4.3}Hardware a utilizar}{48}{subsection.4.3}% 
+\contentsline {subsection}{\numberline {4.4}Hip\IeC {\'o}tesis}{48}{subsection.4.4}% 
+\contentsline {subsubsection}{\numberline {4.4.1}Hip\IeC {\'o}tesis 1}{48}{subsubsection.4.4.1}% 
+\contentsline {subsubsection}{\numberline {4.4.2}Hip\IeC {\'o}tesis 2}{48}{subsubsection.4.4.2}% 
+\contentsline {subsubsection}{\numberline {4.4.3}Hip\IeC {\'o}tesis 3}{49}{subsubsection.4.4.3}% 
+\contentsline {subsubsection}{\numberline {4.4.4}Hip\IeC {\'o}tesis 4}{49}{subsubsection.4.4.4}% 
+\contentsline {subsubsection}{\numberline {4.4.5}Hip\IeC {\'o}tesis 5}{49}{subsubsection.4.4.5}% 
+\contentsline {subsubsection}{\numberline {4.4.6}Hip\IeC {\'o}tesis 6}{50}{subsubsection.4.4.6}% 
+\contentsline {subsection}{\numberline {4.5}Experimentos}{50}{subsection.4.5}% 
+\contentsline {subsubsection}{\numberline {4.5.1}Experimento 1}{50}{subsubsection.4.5.1}% 
+\contentsline {subsubsection}{\numberline {4.5.2}Experimento 2}{52}{subsubsection.4.5.2}% 
+\contentsline {subsubsection}{\numberline {4.5.3}Experimento 3}{53}{subsubsection.4.5.3}% 
+\contentsline {subsubsection}{\numberline {4.5.4}Experimento 4}{56}{subsubsection.4.5.4}% 
+\contentsline {subsubsection}{\numberline {4.5.5}Experimento 5}{58}{subsubsection.4.5.5}% 
+\contentsline {subsubsection}{\numberline {4.5.6}Experimento 6}{59}{subsubsection.4.5.6}% 
+\contentsline {section}{\numberline {5}An\IeC {\'a}lisis de los resultados obtenidos}{62}{section.5}% 
+\contentsline {subsection}{\numberline {5.1}Error por categor\IeC {\'\i }a modelos obtenidos en los experimentos \ref {sssec:exp2} y \ref {sssec:exp6}}{62}{subsection.5.1}% 
+\contentsline {subsection}{\numberline {5.2}Distribuci\IeC {\'o}n de probabilidades de salida para clasificaciones err\IeC {\'o}neas}{62}{subsection.5.2}% 
+\contentsline {subsection}{\numberline {5.3}Exactitud categ\IeC {\'o}rica casos que deber\IeC {\'\i }an poder predecirse correctamente}{65}{subsection.5.3}% 
+\contentsline {section}{\numberline {6}Conclusiones}{69}{section.6}% 
+\contentsline {subsection}{\numberline {6.1}Conclusi\IeC {\'o}n general}{69}{subsection.6.1}% 
+\contentsline {subsection}{\numberline {6.2}Lineamientos Futuros}{71}{subsection.6.2}% 
+\contentsline {section}{\numberline {7}Anexo}{74}{section.7}% 
+\contentsline {subsection}{\numberline {7.1}Anexo 1: Repositorio abierto del trabajo}{74}{subsection.7.1}% 
+\contentsline {subsection}{\numberline {7.2}Anexo 2: Licencia del proyecto}{75}{subsection.7.2}% 
+\contentsline {subsection}{\numberline {7.3}Anexo 3: Mapeo de clases realizado para el experimento \ref {sssec:exp3}}{76}{subsection.7.3}% 
+\contentsline {subsection}{\numberline {7.4}Anexo 4: Arquitectura del Perceptr\IeC {\'o}n Multicapa utilizado en experimento \ref {sssec:exp1}}{76}{subsection.7.4}% 
+\contentsline {subsection}{\numberline {7.5}Anexo 5: Arquitectura de la Red Neuronal Convolucional utilizada en los experimentos \ref {sssec:exp1} y \ref {sssec:exp2}}{78}{subsection.7.5}% 
+\contentsline {subsection}{\numberline {7.6}Anexo 6: Arquitectura de la red PlacesCNN utilizada en experimento \ref {sssec:exp3}}{78}{subsection.7.6}% 
+\contentsline {subsection}{\numberline {7.7}Anexo 7: Arquitectura utilizada en experimentos \ref {sssec:exp4} y \ref {sssec:exp6}}{78}{subsection.7.7}% 
+\contentsline {subsection}{\numberline {7.8}Anexo 8: Arquitectura utilizada en experimento \ref {sssec:exp5}}{78}{subsection.7.8}% 
