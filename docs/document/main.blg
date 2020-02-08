@@ -14,42 +14,43 @@ A level-1 auxiliary file: anexo.aux
 The style file: ieeetr.bst
 Database file #1: bibliografia.bib
 Warning--I didn't find a database entry for "raahlen2019image"
+Warning--I didn't find a database entry for "balanced_accuracy_score"
 Warning--empty journal in lecun1995convolutional
 Name 1 in "Xianghua Xie, Mark W. Jones, and Gary K. L. Tam" has a comma at the end for entry BMVC2015_52
 while executing---line 969 of file ieeetr.bst
 You've used 30 entries,
             1876 wiz_defined-function locations,
-            649 strings with 9424 characters,
-and the built_in function-call counts, 8551 in all, are:
-= -- 790
-> -- 419
+            649 strings with 9399 characters,
+and the built_in function-call counts, 8577 in all, are:
+= -- 788
+> -- 426
 < -- 0
-+ -- 150
-- -- 120
-* -- 618
-:= -- 1226
-add.period$ -- 34
++ -- 152
+- -- 122
+* -- 622
+:= -- 1230
+add.period$ -- 32
 call.type$ -- 30
-change.case$ -- 26
+change.case$ -- 27
 chr.to.int$ -- 0
 cite$ -- 31
-duplicate$ -- 438
-empty$ -- 799
-format.name$ -- 120
-if$ -- 2046
+duplicate$ -- 435
+empty$ -- 802
+format.name$ -- 122
+if$ -- 2053
 int.to.chr$ -- 0
 int.to.str$ -- 30
 missing$ -- 28
-newline$ -- 97
+newline$ -- 96
 num.names$ -- 32
-pop$ -- 123
+pop$ -- 124
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 278
+skip$ -- 283
 stack$ -- 0
 substring$ -- 553
-swap$ -- 170
+swap$ -- 168
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
@@ -57,5 +58,5 @@ type$ -- 0
 warning$ -- 1
 while$ -- 80
 width$ -- 32
-write$ -- 279
+write$ -- 277
 (There was 1 error message)

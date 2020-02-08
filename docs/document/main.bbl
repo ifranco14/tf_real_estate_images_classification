@@ -144,10 +144,8 @@ A.~Radford, J.~Wu, R.~Child, D.~Luan, D.~Amodei, and I.~Sutskever, ``Language
   models are unsupervised multitask learners,'' {\em OpenAI Blog}, vol.~1,
   no.~8, 2019.
 
-\bibitem{balanced_accuracy_score}
-Scikit-learn, {\em Balanced Accuracy Score}.
-\newblock
-  \url{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.balanced\_accuracy\_score.html},
-  último acceso: 2019-12-08.
+\bibitem{hernandez2010metodologia}
+R.~Hern{\'a}ndez~Sampieri, C.~Fern{\'a}ndez~Collado, {\em et~al.},
+  ``Metodolog{\'\i}a de la investigaci{\'o}n.''
 
 \end{thebibliography}
