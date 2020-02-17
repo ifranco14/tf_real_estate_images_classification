@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2019/dev/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: portada.aux
@@ -13,41 +13,39 @@ A level-1 auxiliary file: conclusiones.aux
 A level-1 auxiliary file: anexo.aux
 The style file: ieeetr.bst
 Database file #1: bibliografia.bib
-Warning--I didn't find a database entry for "raahlen2019image"
-Warning--I didn't find a database entry for "balanced_accuracy_score"
 Warning--empty journal in lecun1995convolutional
 Name 1 in "Xianghua Xie, Mark W. Jones, and Gary K. L. Tam" has a comma at the end for entry BMVC2015_52
 while executing---line 969 of file ieeetr.bst
-You've used 30 entries,
+You've used 31 entries,
             1876 wiz_defined-function locations,
-            649 strings with 9399 characters,
-and the built_in function-call counts, 8577 in all, are:
-= -- 788
-> -- 426
+            650 strings with 9490 characters,
+and the built_in function-call counts, 8716 in all, are:
+= -- 799
+> -- 434
 < -- 0
-+ -- 152
-- -- 122
-* -- 622
-:= -- 1230
-add.period$ -- 32
-call.type$ -- 30
-change.case$ -- 27
++ -- 155
+- -- 124
+* -- 628
+:= -- 1250
+add.period$ -- 33
+call.type$ -- 31
+change.case$ -- 28
 chr.to.int$ -- 0
-cite$ -- 31
-duplicate$ -- 435
-empty$ -- 802
-format.name$ -- 122
-if$ -- 2053
+cite$ -- 32
+duplicate$ -- 439
+empty$ -- 820
+format.name$ -- 124
+if$ -- 2088
 int.to.chr$ -- 0
-int.to.str$ -- 30
+int.to.str$ -- 31
 missing$ -- 28
-newline$ -- 96
-num.names$ -- 32
-pop$ -- 124
+newline$ -- 99
+num.names$ -- 33
+pop$ -- 131
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 283
+skip$ -- 288
 stack$ -- 0
 substring$ -- 553
 swap$ -- 168
@@ -56,7 +54,7 @@ text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 80
-width$ -- 32
-write$ -- 277
+while$ -- 81
+width$ -- 33
+write$ -- 284
 (There was 1 error message)

@@ -1,7 +1,10 @@
 \section{Marco teórico}\label{sec:marco_teorico}
 
+\subsection{Escenas}
+Para el trabajo actual se utilizarán archivos en formato de imagen (.jpg, .jpeg, etc) guardados en disco duro, que de ahora en más serán llamados imágenes o conjunto de datos de imágenes. Los seleccionados para el trabajo están compuestos por subconjuntos, cada uno relacionados a alguna de las escenas pertenecientes a propiedades inmobiliarias, es decir: un subconjunto con imágenes de baños, otro de cocinas, de comedores, de livings, frentes, patios, etc. La tarea de los modelos será predecir a qué escena pertenece una imagen cargada, es decir, definir qué parte de la propiedad es (de las existentes en el conjunto de datos) viendo sólo una imagen obtenida de disco que contiene una fotografía de una de las escenas. 
+
 \subsection{Detección de escena}
-A lo largo de esta investigación se atacará el problema definido inicialmente como detección de escenas. Esta tarea difiere de clasificación de objetos en imágenes en cantidad de situaciones; mientras que por un lado al clasificar un objeto en una imagen se trata con un único elemento, en el caso de una escena se cuenta tanto con una cohesión de diversidad de objetos contenidos como con un contexto determinado, estilos de decoración, fondos más comunes, etc.
+A lo largo de esta investigación se atacará el problema definido inicialmente como detección de escenas. Esta tarea difiere de clasificación de objetos en imágenes ya que por un lado al clasificar un objeto en una imagen se trata con un único elemento, en el caso de una escena se cuenta tanto con una cohesión de diversidad de objetos contenidos como con un contexto determinado, estilos de decoración, fondos más comunes, etc.
 
 \subsection{Aprendizaje automático}
 %- explicación resumida tipos de aprendizaje (supervisado, no supervisado, semisupervisado)
@@ -101,7 +104,7 @@ Y=\sigma\left(W^{T} X+b\right)
  %		- dropout
  %		- batch norm
 
- Por el lado de la métrica seleccionada para evaluar resultados, a lo largo de los experimentos se utilizará \(Exactitud\) \(Categorica\) \cite{balanced_accuracy_score}: la frecuencia con la cual la predicción es igual a la etiqueta real. En problemas de clasificación multiclase, como se verá posteriormente, la capa de salida es una capa con activación \(Softmax\). La suma de probabilidades que devuelve esta capa es igual a 1, por lo que se toma como predicción aquella neurona que tenga el valor de probabilidad más alto. 
+ Por el lado de la métrica seleccionada para evaluar resultados, a lo largo de los experimentos se utilizará \(Exactitud\) \(Categorica\) \cite{scikit-learn}: la frecuencia con la cual la predicción es igual a la etiqueta real. En problemas de clasificación multiclase, como se verá posteriormente, la capa de salida es una capa con activación \(Softmax\). La suma de probabilidades que devuelve esta capa es igual a 1, por lo que se toma como predicción aquella neurona que tenga el valor de probabilidad más alto. 
  Por ejemplo, si para tres casos etiquetas verdaderas son \([1, 2, 3]\), éstas serán codificadas como \([[1, 0, 0], [0, 1, 0], [0, 0, 1]]\). Luego, la capa de salida brindará la probabilidad de cada clase tal como \([[0.6, 0.3, 0.1], [0.3, 0.5, 0.2], [0.25, 0.25, 0.5]]\). Como se puede observar, para el caso planteado, la probabilidad máxima se encuentra en la misma posición que la etiqueta codificada, por lo que el valor de la métrica que se calcula como: número de casos etiquetados correctamente / cantidad total de casos, sería igual a 1.
 
 

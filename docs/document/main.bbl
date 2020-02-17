@@ -35,6 +35,10 @@ F.~Zhang, B.~Du, and L.~Zhang, ``Scene classification via a gradient boosting
   random convolutional network framework,'' {\em IEEE Transactions on
   Geoscience and Remote Sensing}, vol.~54, no.~3, pp.~1793--1802, 2015.
 
+\bibitem{raahlen2019image}
+O.~R{\aa}hl{\'e}n and S.~Sj{\"o}qvist, ``Image classification of real estate
+  images with transfer learning,'' 2019.
+
 \bibitem{hemnet}
 Hemnet, {\em Hemnet}.
 \newblock \url{https://www.hemnet.se/}, último acceso: 2019-12-08.

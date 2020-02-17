@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.1.22)  8 FEB 2020 17:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.2.17)  17 FEB 2020 14:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -37,16 +37,16 @@ Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@posthook=\toks15
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2018/11/13 3.27 The Babel package
+Package: babel 2019/06/03 3.32 The Babel package
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2018/11/13 3.27 Babel switching mechanism
+File: switch.def 2019/06/03 3.32 Babel switching mechanism
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2018/11/13 3.27 Babel common definitions
+File: babel.def 2019/06/03 3.32 Babel common definitions
 \babel@savecnt=\count88
 \U@D=\dimen104
 
@@ -614,16 +614,16 @@ Overfull \hbox (16.6427pt too wide) in paragraph at lines 9--9
 
 [4
 
-])
+] [5])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [5] [6]
+ [6]
 \openout2 = `introduccion.aux'.
 
  (./introduccion.tex [7
 
-] [8] [9] [10] [11]) [12] [13]
+] [8] [9] [10] [11]) [12]
 \openout2 = `revision_de_antecedentes.aux'.
 
 
@@ -632,7 +632,7 @@ Overfull \hbox (9.53818pt too wide) in paragraph at lines 2--2
 []\OT1/cmr/bx/n/17.28 Clasificaci^^Son de es-ce-nas me-dian-te Re-des Neu-
  []
 
-<images/lstm_clahe_example.png, id=359, 908.39375pt x 772.8875pt>
+<images/lstm_clahe_example.png, id=360, 908.39375pt x 772.8875pt>
 File: images/lstm_clahe_example.png Graphic file (type png)
 <use images/lstm_clahe_example.png>
 Package pdftex.def Info: images/lstm_clahe_example.png  used on input line 11.
@@ -640,11 +640,11 @@ Package pdftex.def Info: images/lstm_clahe_example.png  used on input line 11.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14
+[13
 
 
-] [15 <./images/lstm_clahe_example.png>]
-<images/lstm_architecture.png, id=374, 856.19875pt x 351.3125pt>
+] [14 <./images/lstm_clahe_example.png>]
+<images/lstm_architecture.png, id=375, 856.19875pt x 351.3125pt>
 File: images/lstm_architecture.png Graphic file (type png)
 <use images/lstm_architecture.png>
 Package pdftex.def Info: images/lstm_architecture.png  used on input line 23.
@@ -654,8 +654,8 @@ Overfull \hbox (9.53818pt too wide) in paragraph at lines 33--33
 []\OT1/cmr/bx/n/17.28 Clasificaci^^Son de es-ce-nas me-dian-te Re-des Neu-
  []
 
-[16 <./images/lstm_architecture.png>] [17] [18]
-<images/places_metrics.png, id=401, 770.88pt x 162.6075pt>
+[15 <./images/lstm_architecture.png>] [16] [17]
+<images/places_metrics.png, id=402, 770.88pt x 162.6075pt>
 File: images/places_metrics.png Graphic file (type png)
 <use images/places_metrics.png>
 Package pdftex.def Info: images/places_metrics.png  used on input line 66.
@@ -664,14 +664,14 @@ Package pdftex.def Info: images/places_metrics.png  used on input line 66.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[19]
-<images/places_metrics_hybrid.png, id=410, 1252.68pt x 73.27374pt>
+[18]
+<images/places_metrics_hybrid.png, id=411, 1252.68pt x 73.27374pt>
 File: images/places_metrics_hybrid.png Graphic file (type png)
 <use images/places_metrics_hybrid.png>
 Package pdftex.def Info: images/places_metrics_hybrid.png  used on input line 7
 6.
 (pdftex.def)             Requested size: 418.25368pt x 24.4655pt.
-<images/objects_detectors_emerge_min_representation_examples.png, id=413, 1290.
+<images/objects_detectors_emerge_min_representation_examples.png, id=414, 1290.
 8225pt x 538.01pt>
 File: images/objects_detectors_emerge_min_representation_examples.png Graphic f
 ile (type png)
@@ -679,11 +679,11 @@ ile (type png)
 Package pdftex.def Info: images/objects_detectors_emerge_min_representation_exa
 mples.png  used on input line 89.
 (pdftex.def)             Requested size: 418.25368pt x 174.32578pt.
- [20 <./images/places_metrics.png> <./images/places_metrics_hybrid.png>]
+ [19 <./images/places_metrics.png> <./images/places_metrics_hybrid.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/objects_detectors_emerge_final_example.png, id=423, 1078.0275pt x 781.9
+<images/objects_detectors_emerge_final_example.png, id=424, 1078.0275pt x 781.9
 2125pt>
 File: images/objects_detectors_emerge_final_example.png Graphic file (type png)
 
@@ -691,13 +691,13 @@ File: images/objects_detectors_emerge_final_example.png Graphic file (type png)
 Package pdftex.def Info: images/objects_detectors_emerge_final_example.png  use
 d on input line 98.
 (pdftex.def)             Requested size: 418.25772pt x 414.07028pt.
-[21]
+[20]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[22 <./images/objects_detectors_emerge_min_representation_examples.png>]
-[23 <./images/objects_detectors_emerge_final_example.png>] [24] [25]
-<images/gbrcnn_architecture.png, id=454, 1072.005pt x 738.76pt>
+[21 <./images/objects_detectors_emerge_min_representation_examples.png>]
+[22 <./images/objects_detectors_emerge_final_example.png>] [23] [24]
+<images/gbrcnn_architecture.png, id=455, 1072.005pt x 738.76pt>
 File: images/gbrcnn_architecture.png Graphic file (type png)
 <use images/gbrcnn_architecture.png>
 Package pdftex.def Info: images/gbrcnn_architecture.png  used on input line 135
@@ -707,18 +707,14 @@ Package pdftex.def Info: images/gbrcnn_architecture.png  used on input line 135
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Citation `raahlen2019image' on page 26 undefined on input line 1
-46.
-
-<images/transfer_learning_dataset.png, id=458, 963.6pt x 551.05875pt>
+<images/transfer_learning_dataset.png, id=460, 963.6pt x 551.05875pt>
 File: images/transfer_learning_dataset.png Graphic file (type png)
 <use images/transfer_learning_dataset.png>
 Package pdftex.def Info: images/transfer_learning_dataset.png  used on input li
 ne 151.
 (pdftex.def)             Requested size: 292.77629pt x 167.42941pt.
-[26] [27 <./images/gbrcnn_architecture.png>]
-<images/metrics_transfer_learning.png, id=474, 982.67125pt x 417.56pt>
+[25] [26 <./images/gbrcnn_architecture.png>]
+<images/metrics_transfer_learning.png, id=477, 982.67125pt x 417.56pt>
 File: images/metrics_transfer_learning.png Graphic file (type png)
 <use images/metrics_transfer_learning.png>
 Package pdftex.def Info: images/metrics_transfer_learning.png  used on input li
@@ -728,126 +724,110 @@ ne 162.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/metrics_transfer_learning_fine_tunned.png, id=476, 654.445pt x 275.0275
+<images/metrics_transfer_learning_fine_tunned.png, id=479, 654.445pt x 275.0275
 pt>
 File: images/metrics_transfer_learning_fine_tunned.png Graphic file (type png)
 <use images/metrics_transfer_learning_fine_tunned.png>
 Package pdftex.def Info: images/metrics_transfer_learning_fine_tunned.png  used
  on input line 170.
 (pdftex.def)             Requested size: 292.77629pt x 123.03522pt.
-[28 <./images/transfer_learning_dataset.png>]
-<images/vision_based_example_3c.png, id=485, 1230.5975pt x 911.405pt>
+[27 <./images/transfer_learning_dataset.png>]
+<images/vision_based_example_3c.png, id=488, 1230.5975pt x 911.405pt>
 File: images/vision_based_example_3c.png Graphic file (type png)
 <use images/vision_based_example_3c.png>
 Package pdftex.def Info: images/vision_based_example_3c.png  used on input line
  184.
 (pdftex.def)             Requested size: 376.42575pt x 278.77776pt.
- [29 <./images/metrics_transfer_learning.png> <./images/metrics_transfer_learni
+ [28 <./images/metrics_transfer_learning.png> <./images/metrics_transfer_learni
 ng_fine_tunned.png>]
-
-LaTeX Warning: Reference `embedding' on page 30 undefined on input line 189.
-
-
-LaTeX Warning: Reference `fig:vision_based_example_3c' on page 30 undefined on 
-input line 189.
-
-<./images/arquitectura_vision_based.png, id=495, 1392.20125pt x 400.49625pt>
+<./images/arquitectura_vision_based.png, id=498, 1392.20125pt x 400.49625pt>
 File: ./images/arquitectura_vision_based.png Graphic file (type png)
 <use ./images/arquitectura_vision_based.png>
 Package pdftex.def Info: ./images/arquitectura_vision_based.png  used on input 
-line 193.
+line 194.
 (pdftex.def)             Requested size: 418.23717pt x 207.04314pt.
-[30] [31 <./images/vision_based_example_3c.png>]) [32 <./images/arquitectura_vi
-sion_based.png>] [33]
+ [29] [30 <./images/vision_based_example_3c.png>]) [31 <./images/arquitectura_v
+ision_based.png>] [32]
 \openout2 = `marco_teorico.aux'.
 
- (./marco_teorico.tex [34
+ (./marco_teorico.tex [33
 
 
-] [35]
-<images/representacion_neurona.png, id=536, 1188.44pt x 653.44125pt>
+] [34]
+<images/representacion_neurona.png, id=537, 1188.44pt x 653.44125pt>
 File: images/representacion_neurona.png Graphic file (type png)
 <use images/representacion_neurona.png>
 Package pdftex.def Info: images/representacion_neurona.png  used on input line 
-35.
+38.
 (pdftex.def)             Requested size: 334.60422pt x 183.97931pt.
- [36 <./images/representacion_neurona.png>]
-<images/red_neuronal.png, id=547, 1322.9425pt x 865.2325pt>
+ [35 <./images/representacion_neurona.png>]
+<images/red_neuronal.png, id=549, 1322.9425pt x 865.2325pt>
 File: images/red_neuronal.png Graphic file (type png)
 <use images/red_neuronal.png>
-Package pdftex.def Info: images/red_neuronal.png  used on input line 56.
+Package pdftex.def Info: images/red_neuronal.png  used on input line 59.
 (pdftex.def)             Requested size: 292.77629pt x 191.47394pt.
- [37 <./images/red_neuronal.png (PNG copy)>] [38]
-
-LaTeX Warning: Citation `balanced_accuracy_score' on page 39 undefined on input
- line 104.
-
-[39] [40]
-<images/activations_sigmoid.png, id=599, 1047.915pt x 540.0175pt>
-File: images/activations_sigmoid.png Graphic file (type png)
-<use images/activations_sigmoid.png>
-Package pdftex.def Info: images/activations_sigmoid.png  used on input line 139
-.
-(pdftex.def)             Requested size: 292.77629pt x 150.87427pt.
-<images/activations_tanh.png, id=602, 1059.96pt x 541.02126pt>
-File: images/activations_tanh.png Graphic file (type png)
-<use images/activations_tanh.png>
-Package pdftex.def Info: images/activations_tanh.png  used on input line 151.
-(pdftex.def)             Requested size: 292.77629pt x 149.43759pt.
- [41 <./images/activations_sigmoid.png>]
-<images/activations_relu.png, id=617, 1039.885pt x 528.97626pt>
-File: images/activations_relu.png Graphic file (type png)
-<use images/activations_relu.png>
-Package pdftex.def Info: images/activations_relu.png  used on input line 159.
-(pdftex.def)             Requested size: 292.77629pt x 148.92755pt.
- [42 <./images/activations_tanh.png> <./images/activations_relu.png>]
-<images/convolution.png, id=629, 680.5425pt x 463.7325pt>
-File: images/convolution.png Graphic file (type png)
-<use images/convolution.png>
-Package pdftex.def Info: images/convolution.png  used on input line 182.
-(pdftex.def)             Requested size: 292.77629pt x 199.50014pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[43]
-<images/cnn_explanation.png, id=639, 2164.085pt x 935.495pt>
+[36] [37 <./images/red_neuronal.png (PNG copy)>] [38] [39]
+<images/activations_sigmoid.png, id=600, 1047.915pt x 540.0175pt>
+File: images/activations_sigmoid.png Graphic file (type png)
+<use images/activations_sigmoid.png>
+Package pdftex.def Info: images/activations_sigmoid.png  used on input line 142
+.
+(pdftex.def)             Requested size: 292.77629pt x 150.87427pt.
+<images/activations_tanh.png, id=603, 1059.96pt x 541.02126pt>
+File: images/activations_tanh.png Graphic file (type png)
+<use images/activations_tanh.png>
+Package pdftex.def Info: images/activations_tanh.png  used on input line 154.
+(pdftex.def)             Requested size: 292.77629pt x 149.43759pt.
+ [40]
+<images/activations_relu.png, id=619, 1039.885pt x 528.97626pt>
+File: images/activations_relu.png Graphic file (type png)
+<use images/activations_relu.png>
+Package pdftex.def Info: images/activations_relu.png  used on input line 162.
+(pdftex.def)             Requested size: 292.77629pt x 148.92755pt.
+ [41 <./images/activations_sigmoid.png> <./images/activations_tanh.png>] [42 <.
+/images/activations_relu.png>]
+<images/convolution.png, id=640, 680.5425pt x 463.7325pt>
+File: images/convolution.png Graphic file (type png)
+<use images/convolution.png>
+Package pdftex.def Info: images/convolution.png  used on input line 185.
+(pdftex.def)             Requested size: 292.77629pt x 199.50014pt.
+ [43 <./images/convolution.png (PNG copy)>]
+<images/cnn_explanation.png, id=648, 2164.085pt x 935.495pt>
 File: images/cnn_explanation.png Graphic file (type png)
 <use images/cnn_explanation.png>
-Package pdftex.def Info: images/cnn_explanation.png  used on input line 203.
+Package pdftex.def Info: images/cnn_explanation.png  used on input line 206.
 (pdftex.def)             Requested size: 313.69025pt x 135.59334pt.
- [44 <./images/convolution.png (PNG copy)>]
-Overfull \hbox (5.4094pt too wide) in paragraph at lines 208--211
+
+Overfull \hbox (5.4094pt too wide) in paragraph at lines 211--214
 \OT1/cmr/m/n/14.4 RGB nor-ma-li-za-das, es de-cir, una ma-triz de $[\OML/cmm/m/
 it/14.4 alto x ancho x n: canales\OT1/cmr/m/n/14.4 ]$
  []
 
-[45 <./images/cnn_explanation.png (PNG copy)>]
-Overfull \hbox (15.44014pt too wide) in paragraph at lines 212--212
+[44 <./images/cnn_explanation.png (PNG copy)>]
+Overfull \hbox (15.44014pt too wide) in paragraph at lines 215--215
 []\OT1/cmr/bx/n/17.28 Redes preen-tre-na-das y Apren-di-za-je por trans-
  []
 
-<images/vgg16.png, id=654, 903.375pt x 508.90125pt>
+<images/vgg16.png, id=659, 903.375pt x 508.90125pt>
 File: images/vgg16.png Graphic file (type png)
 <use images/vgg16.png>
-Package pdftex.def Info: images/vgg16.png  used on input line 220.
+Package pdftex.def Info: images/vgg16.png  used on input line 223.
 (pdftex.def)             Requested size: 418.25368pt x 235.61938pt.
-[46 <./images/vgg16.png>]
-<images/googlenet.png, id=671, 1797.71625pt x 402.50375pt>
+[45] [46 <./images/vgg16.png>]
+<images/googlenet.png, id=687, 1797.71625pt x 402.50375pt>
 File: images/googlenet.png Graphic file (type png)
 <use images/googlenet.png>
-Package pdftex.def Info: images/googlenet.png  used on input line 234.
+Package pdftex.def Info: images/googlenet.png  used on input line 237.
 (pdftex.def)             Requested size: 418.25368pt x 93.64256pt.
 ) [47 <./images/googlenet.png (PNG copy)>]
 \openout2 = `definiciones_trabajo.aux'.
 
 
-(./definiciones_trabajo.tex
-
-LaTeX Warning: Citation `balanced_accuracy_score' on page 48 undefined on input
- line 14.
-
-[48
+(./definiciones_trabajo.tex [48
 
 
 ] [49] [50] [51] [52] [53]
@@ -891,7 +871,7 @@ Overfull \hbox (58.45755pt too wide) in paragraph at lines 331--345
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [60]
-<images/normal_vs_clahe_png.png, id=832, 473.77pt x 669.50125pt>
+<images/normal_vs_clahe_png.png, id=843, 473.77pt x 669.50125pt>
 File: images/normal_vs_clahe_png.png Graphic file (type png)
 <use images/normal_vs_clahe_png.png>
 Package pdftex.def Info: images/normal_vs_clahe_png.png  used on input line 358
@@ -931,7 +911,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [65]
-<images/results_exp_2_errors_by_threshold.png, id=889, 1440.38126pt x 838.13126
+<images/results_exp_2_errors_by_threshold.png, id=899, 1440.38126pt x 838.13126
 pt>
 File: images/results_exp_2_errors_by_threshold.png Graphic file (type png)
 <use images/results_exp_2_errors_by_threshold.png>
@@ -946,7 +926,7 @@ Overfull \hbox (41.82791pt too wide) in paragraph at lines 100--101
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/results_exp_6_errors_by_threshold.png, id=892, 1441.385pt x 830.10126pt
+<images/results_exp_6_errors_by_threshold.png, id=902, 1441.385pt x 830.10126pt
 >
 File: images/results_exp_6_errors_by_threshold.png Graphic file (type png)
 <use images/results_exp_6_errors_by_threshold.png>
@@ -962,7 +942,7 @@ Overfull \hbox (41.82791pt too wide) in paragraph at lines 107--108
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [66]
-<images/results_exp_2_distribution_of_pred_proba.png, id=905, 1477.52pt x 775.8
+<images/results_exp_2_distribution_of_pred_proba.png, id=915, 1477.52pt x 775.8
 9874pt>
 File: images/results_exp_2_distribution_of_pred_proba.png Graphic file (type pn
 g)
@@ -978,7 +958,7 @@ Overfull \hbox (41.82791pt too wide) in paragraph at lines 116--117
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/results_exp_6_distribution_of_pred_proba.png, id=908, 1483.5425pt x 785
+<images/results_exp_6_distribution_of_pred_proba.png, id=918, 1483.5425pt x 785
 .93625pt>
 File: images/results_exp_6_distribution_of_pred_proba.png Graphic file (type pn
 g)
@@ -1022,18 +1002,18 @@ Overfull \hbox (23.67848pt too wide) in paragraph at lines 35--82
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/architecture_exp1.png, id=999, 790.955pt x 666.49pt>
+<images/architecture_exp1.png, id=1009, 790.955pt x 666.49pt>
 File: images/architecture_exp1.png Graphic file (type png)
 <use images/architecture_exp1.png>
 Package pdftex.def Info: images/architecture_exp1.png  used on input line 90.
 (pdftex.def)             Requested size: 292.77629pt x 246.7093pt.
-<images/architecture_exp1_cnn.png, id=1004, 459.7175pt x 715.67375pt>
+<images/architecture_exp1_cnn.png, id=1014, 459.7175pt x 715.67375pt>
 File: images/architecture_exp1_cnn.png Graphic file (type png)
 <use images/architecture_exp1_cnn.png>
 Package pdftex.def Info: images/architecture_exp1_cnn.png  used on input line 1
 00.
 (pdftex.def)             Requested size: 292.77629pt x 455.81282pt.
-<images/architecture_exp3.png, id=1010, 411.5375pt x 893.3375pt>
+<images/architecture_exp3.png, id=1020, 411.5375pt x 893.3375pt>
 File: images/architecture_exp3.png Graphic file (type png)
 <use images/architecture_exp3.png>
 Package pdftex.def Info: images/architecture_exp3.png  used on input line 110.
@@ -1042,7 +1022,7 @@ Package pdftex.def Info: images/architecture_exp3.png  used on input line 110.
 LaTeX Warning: Float too large for page by 88.01157pt on input line 113.
 
 [78 <./images/architecture_exp1.png>] [79 <./images/architecture_exp1_cnn.png>]
-<images/architecture_exp4_6_cnn.png, id=1025, 420.57124pt x 839.135pt>
+<images/architecture_exp4_6_cnn.png, id=1035, 420.57124pt x 839.135pt>
 File: images/architecture_exp4_6_cnn.png Graphic file (type png)
 <use images/architecture_exp4_6_cnn.png>
 Package pdftex.def Info: images/architecture_exp4_6_cnn.png  used on input line
@@ -1082,20 +1062,16 @@ LaTeX Info: Redefining \% on input line 25.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 66.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 66.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 03198E355818A4C926FBF877EFCEDA58;4235.
-
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: 6F2E1803098E6FCC7ECC9AED04478BAB;4292.
  ) 
 Here is how much of TeX's memory you used:
- 9397 strings out of 494499
- 138832 string characters out of 6175516
- 263773 words of memory out of 5000000
- 12589 multiletter control sequences out of 15000+600000
+ 9411 strings out of 494491
+ 139058 string characters out of 6175439
+ 265481 words of memory out of 5000000
+ 12609 multiletter control sequences out of 15000+600000
  8868 words of font info for 32 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
- 30i,15n,53p,2009b,672s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,15n,53p,2009b,676s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
@@ -1108,10 +1084,10 @@ amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 ti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.p
 fb>
-Output written on main.pdf (90 pages, 7736336 bytes).
+Output written on main.pdf (90 pages, 7737582 bytes).
 PDF statistics:
- 1177 PDF objects out of 1200 (max. 8388607)
- 988 compressed objects within 10 object streams
- 253 named destinations out of 1000 (max. 500000)
- 559 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1187 PDF objects out of 1200 (max. 8388607)
+ 998 compressed objects within 10 object streams
+ 255 named destinations out of 1000 (max. 500000)
+ 567 words of extra memory for PDF output out of 10000 (max. 10000000)
 
